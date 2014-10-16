@@ -35,6 +35,10 @@ You can also find all the icons on [npm](http://npmjs.org).
 $ npm install material-design-icons
 ```
 
+## Usage
+
+Take a look at the included `index.html` file for a preview of all icons included in the set. You are free to use the icons in the way that makes most sense to your project.
+
 ## Structure
 
 ### Icons
@@ -51,13 +55,11 @@ Decide on the icon resolution required for your project and copy, then reference
 
 ### Spritesheets
 
-Material Design icons come with SVG and CSS sprites for each category of icon we include. These can be found in the `sprites` directory, under the `svg-sprite` and `css-sprite` sub-directories.
+Material Design icons come with SVG and CSS sprites for each category of icon we include. These can be found in the `sprites` directory, under `svg-sprite` and `css-sprite`.
 
 #### Using CSS Sprites
 
-To use a CSS spritesheet, reference the stylesheet for the icon category you wish to use, then include the icon definition in your markup. 
-
-E.g: to use one of the play icons in `css-sprite-av`, we would do the following:
+To use a CSS spritesheet, reference the stylesheet for the icon category you wish to use, then include the icon definition in your markup. E.g to use one of the play icons in `css-sprite-av`:
 
 Reference the stylesheet:
 
@@ -81,11 +83,36 @@ That's it!
 
 Don't forget to publish the corresponding CSS and SVG/PNG files when deploying your project.
 
+#### Using SVG Sprites
 
+Similarly, to use an SVG spritesheet, reference the stylesheet for the icon category, then include the icon definition in your markup. 
 
-## Usage
+E.g: to use one of the play icons in `svg-sprite-av`, reference the stylesheet:
 
-Take a look at the included `index.html` file for a preview of all icons included in the set. You are free to use the icons in the way that makes most sense to your project.
+```html
+	<link href="svg-sprite/svg-sprite-av.css" rel="stylesheet">
+```
+
+Create an element which will use the icon as a background:
+
+```html
+	<div></div>
+```
+
+Next, make sure to set a dimension for the icon. This can either be done inline or via a class. We'll use a class for this example:
+
+```html
+	<style>
+		.svg-ic_play_circle_outline_24px-dims { width: 24px; height: 24px; }
+	</style>
+```
+
+Finally, set the dimension and specific icon `svg-ic_play_circle_outline_24px`, which you can get from the above stylesheet.
+
+```html
+	<div class="svg-ic_play_circle_outline_24px svg-ic_play_circle_outline_24px-dims"></div>
+```
+
 
 ## Licence
 
