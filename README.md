@@ -39,6 +39,16 @@ $ npm install material-design-icons
 
 ### Icons
 
+In general, an icon category (e.g `action`) will include the following directories, containing multiple resolutions of our icons.
+
+* 1x, 2x Web
+* 1x, 2x, 3x iOS
+* drawable hdpi, mdpi, xhdpi, xxhdpi, xxxhdpi
+* svg
+
+Decide on the icon resolution required for your project and copy, then reference the icons you wish to use.
+
+
 ### Spritesheets
 
 Material Design icons come with SVG and CSS sprites for each category of icon we include. These can be found in the `sprites` directory, under the `svg-sprite` and `css-sprite` sub-directories.
@@ -70,6 +80,8 @@ Add a class referencing the `icon` spritesheet and specific icon `icon-ic_play_c
 That's it!
 
 Don't forget to publish the corresponding CSS and SVG/PNG files when deploying your project.
+
+
 
 ## Usage
 
