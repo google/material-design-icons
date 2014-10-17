@@ -1,6 +1,6 @@
 # Material Design Icons
 
-Material Design Icons are the official open-source icons featured in the Google [Material Design](http://www.google.com/design/spec) specification. 
+Material Design Icons are the official open-source icons featured in the Google [Material Design](http://www.google.com/design/spec) specification.
 
 ## What's included?
 
@@ -17,7 +17,7 @@ You have a few options for getting the icon set.
 
 ### Download the Zip
 
-Grab the latest [zip archive](https://github.com/google/material-design-icons/archive/master.zip) of all icons. 
+Grab the latest stable [zip archive](https://github.com/google/material-design-icons/releases/download/v1.0.0/material-design-icons-1.0.0.zip) of all icons or the bleeding-edge version in [master](https://github.com/google/material-design-icons/archive/master.zip).
 
 ### Bower
 
@@ -85,7 +85,7 @@ Don't forget to publish the corresponding CSS and SVG/PNG files when deploying y
 
 #### Using SVG Sprites
 
-Similarly, to use an SVG spritesheet, reference the stylesheet for the icon category, then include the icon definition in your markup. 
+Similarly, to use an SVG spritesheet, reference the stylesheet for the icon category, then include the icon definition in your markup.
 
 E.g: to use one of the play icons in `svg-sprite-av`, reference the stylesheet:
 
@@ -116,4 +116,4 @@ Finally, set the dimension and specific icon `svg-ic_play_circle_outline_24px`, 
 
 ## Licence
 
-All icons are released under an [Attribution-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/) license. 
+All icons are released under an [Attribution-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/) license.
