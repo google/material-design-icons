@@ -1,6 +1,6 @@
 # Material Design Icons
 
-Material Design Icons are the official open-source icons featured in the Google [Material Design](http://www.google.com/design/spec) specification.
+Material Design Icons are the official open-source [icons](http://www.google.com/design/spec/resources/sticker-sheets.html#sticker-sheets-components) featured in the Google [Material Design](http://www.google.com/design/spec) specification.
 
 ## What's included?
 
