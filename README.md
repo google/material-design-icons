@@ -18,7 +18,7 @@ You have a few options for getting the icons.
 
 ### Download the Zip
 
-Grab the latest stable [zip archive](https://github.com/google/material-design-icons/releases/download/1.0.0/material-design-icons-1.0.0.zip) (~57MB) of all icons or the bleeding-edge version in [master](https://github.com/google/material-design-icons/archive/master.zip).
+Grab the latest stable [zip archive](https://github.com/google/material-design-icons/releases/download/1.0.0/material-design-icons-1.0.0.zip) (~57MB) of all icons or the bleeding-edge version from [master](https://github.com/google/material-design-icons/archive/master.zip).
 
 ### Bower
 
