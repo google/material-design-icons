@@ -117,4 +117,4 @@ Finally, set the dimension and specific icon `svg-ic_play_circle_outline_24px`, 
 
 ## Licence
 
-All icons are released under an [Attribution-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/) license.
+All icons are released under an [Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/) license.
