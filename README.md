@@ -114,6 +114,10 @@ Finally, set the dimension and specific icon `svg-ic_play_circle_outline_24px`, 
 	<div class="svg-ic_play_circle_outline_24px svg-ic_play_circle_outline_24px-dims"></div>
 ```
 
+## Polymer Icons
+
+If you wish to use the icon set with Polymer, we recommend consuming them via the [`<core-icons>`](https://github.com/Polymer/core-icons) element.
+
 
 ## License
 
