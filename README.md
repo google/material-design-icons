@@ -1,24 +1,32 @@
-# Material Design Icons
+# Material design icons
 
-Material Design Icons are the official open-source [icons](http://www.google.com/design/spec/resources/sticker-sheets.html#sticker-sheets-components) featured in the Google [Material Design](http://www.google.com/design/spec) specification.
+Material design icons are the official [icon set](http://www.google.com/design/spec/style/icons.html#icons-system-icons) from Google that are designed under the [material design guidelines](http://www.google.com/design/spec).
+
+We have made these icons available for you to incorporate them into your
+products under the [Creative Common Attribution 4.0 International License (CC-BY 4.0)](http://creativecommons.org/licenses/by/4.0/). Feel free to remix and re-share these icons and documentation in your
+products.  We'd love attribution in your app's *about* screen, but it's not required. The only thing we ask is that you not re-sell
+the icons themselves.
 
 ## What's included?
 
 * SVG versions of all icons in both 24px and 48px flavours
-* SVG and CSS sprites of all icons
 * 1x, 2x icons targeted at the Web (PNG)
 * 1x, 2x, 3x icons targeted at iOS (PNG)
-* Hi-dpi versions of all icons (hdpi, mdpi, xhdpi, xxhdpi, xxxhdpi) (PNG)
+* Hi-dpi versions of all icons (hdpi, mdpi, xhdpi, xxhdpi, xxxhdpi) for Android (PNG)
+* SVG and CSS sprites of all icons
 
 A live [preview](http://google.github.io/material-design-icons/)  of the icon set is available.
 
-## Getting Started
+## Getting started
 
 You have a few options for getting the icons.
 
-### Download the Zip
+### Download all the icons
 
-Grab the latest stable [zip archive](https://github.com/google/material-design-icons/releases/download/1.0.1/material-design-icons-1.0.1.zip) (~57MB) of all icons or the bleeding-edge version from [master](https://github.com/google/material-design-icons/archive/master.zip).
+Choose either:
+
+  * Latest stable [zip archive (v1.0.1)](https://github.com/google/material-design-icons/releases/download/1.0.1/material-design-icons-1.0.1.zip)
+  * Bleeding-edge [zip archive (master)](https://github.com/google/material-design-icons/archive/master.zip)
 
 ### Bower
 
@@ -49,72 +57,15 @@ In general, an icon category (e.g `action`) will include the following directori
 * 1x, 2x Web
 * 1x, 2x, 3x iOS
 * drawable hdpi, mdpi, xhdpi, xxhdpi, xxxhdpi
-* svg
+* SVG
 
 Decide on the icon resolution required for your project and copy, then reference the icons you wish to use.
 
+### Using sprite sheets
 
-### Spritesheets
+In `css-sprite` and `svg-sprite` are pre-generated sprite sheets. Instructions for using them are in the [sprites documentation](https://github.com/google/material-design-icons/tree/master/sprites).
 
-Material Design icons come with SVG and CSS sprites for each category of icon we include. These can be found in the `sprites` directory, under `svg-sprite` and `css-sprite`.
-
-#### Using CSS Sprites
-
-To use a CSS spritesheet, reference the stylesheet for the icon category you wish to use, then include the icon definition in your markup. E.g to use one of the play icons in `css-sprite-av`:
-
-Reference the stylesheet:
-
-```html
-	<link href="css-sprite/sprite-av-black.css" rel="stylesheet">
-```
-
-Create an element which will use the icon as a background:
-
-```html
-	<div></div>
-```
-
-Add a class referencing the `icon` spritesheet and specific icon `icon-ic_play_circle_outline_black_24dp`, which you can get from the above stylesheet.
-
-```html
-	<div class="icon icon-ic_play_circle_outline_black_24dp"></div>
-```
-
-That's it!
-
-Don't forget to publish the corresponding CSS and SVG/PNG files when deploying your project.
-
-#### Using SVG Sprites
-
-Similarly, to use an SVG spritesheet, reference the stylesheet for the icon category, then include the icon definition in your markup.
-
-E.g: to use one of the play icons in `svg-sprite-av`, reference the stylesheet:
-
-```html
-	<link href="svg-sprite/svg-sprite-av.css" rel="stylesheet">
-```
-
-Create an element which will use the icon as a background:
-
-```html
-	<div></div>
-```
-
-Next, make sure to set a dimension for the icon. This can either be done inline or via a class. We'll use a class for this example:
-
-```html
-	<style>
-		.svg-ic_play_circle_outline_24px-dims { width: 24px; height: 24px; }
-	</style>
-```
-
-Finally, set the dimension and specific icon `svg-ic_play_circle_outline_24px`, which you can get from the above stylesheet.
-
-```html
-	<div class="svg-ic_play_circle_outline_24px svg-ic_play_circle_outline_24px-dims"></div>
-```
-
-## Polymer Icons
+## Polymer icons
 
 If you wish to use the icon set with Polymer, we recommend consuming them via the [`<core-icons>`](https://github.com/Polymer/core-icons) element.
 
