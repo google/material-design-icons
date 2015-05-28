@@ -21,7 +21,7 @@
       <div id="page-inner-container">
 
 
-        <p>An overview of material icons, where to get them and how to integrate them with projects on various different platforms.</p>
+        <p>An overview of material icons—where to get them and how to integrate them with your projects.</p>
 
         <nav class="toc">
           <h1>Contents</h1>
@@ -73,7 +73,7 @@ are making available.</p>
 </code></pre><p><hr></p>
 <h1 id="icon-font-for-the-web">Icon font for the web</h1>
 <p>The material icon font is the easiest way to incorporate material icons with
-web projects. We have packaged all the material icons in to a single font that
+web projects. We have packaged all the material icons into a single font that
 takes advantage of the typographic rendering capabilities of modern browsers so
 that web developers can easily incorporate these icons with only a few lines of
 code.</p>
@@ -90,8 +90,7 @@ screens.</li>
 <p>The icon font contains 750+ icons and weighs in at only 40KB (woff2 format). In
 comparison, a ZIP file of these in SVGs will be more than 50% larger.</p>
 <h2 id="setup-method-1-using-via-google-web-fonts">Setup Method 1. Using via Google Web Fonts</h2>
-<p>The easiest way to set up icon fonts for use in any web page is to use them
-from <a href="https://developers.google.com/fonts/">Google Web Fonts</a>. All that is needed is including a single line of HTML:</p>
+<p>The easiest way to set up icon fonts for use in any web page is through <a href="https://developers.google.com/fonts/">Google Web Fonts</a>. All you need to do is include a single line of HTML:</p>
 <pre><code>&lt;link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot;
       rel=&quot;stylesheet&quot;&gt;
 </code></pre><p>Similar to other Google Web Fonts,  the correct CSS will be served to activate
@@ -99,7 +98,7 @@ the &#39;Material Icons&#39; font specific to the browser. An additional CSS cla
 be declared called <code>.material-icons</code>. Any element that uses this class will have the correct CSS to render these
 icons from the web font.</p>
 <h2 id="setup-method-2-self-hosting">Setup Method 2. Self hosting</h2>
-<p>For those looking to self host the web font, there is some additional setup.
+<p>For those looking to self host the web font, some additional setup is necessary.
 Host the <a href="https://github.com/google/material-design-icons/tree/master/iconfont">icon font</a> in a location, for example <code>https://example.com/material-icons.woff</code> and add the
 following CSS rule:</p>
 <pre><code>@font-face {
@@ -139,8 +138,7 @@ will need to be included manually in your projects when self-hosting the font:</
   font-feature-settings: &#39;liga&#39;;
 }
 </code></pre><h2 id="using-the-icons-in-html">Using the icons in HTML</h2>
-<p>It is easy to place an icon anywhere in the web page. Here is an example of
-including an icon on any page:</p>
+<p>It’s easy to incorporate icons into your web page. Here’s a small example:</p>
 <div class="icons-preview-code">
 
   <div class="icons-preview"><i class="material-icons">face</i></div>
@@ -149,10 +147,7 @@ including an icon on any page:</p>
 class=&quot;material-icons&quot;&gt;face&lt;/i&gt;</code></div>
 
 <p></div></p>
-<p>This example uses a typographic feature called <a href="http://alistapart.com/article/the-era-of-symbol-fonts">ligatures</a>, which allows specifying the icon by simply including the name of the icon in
-text rather than a numeric character.  When using the material icons web font,
-by specifying this name in the text content of the element, the text will
-automatically be rendered as an icon glyph rather than the text.</p>
+<p>This example uses a typographic feature called <a href="http://alistapart.com/article/the-era-of-symbol-fonts">ligatures</a>, which allows rendering of an icon glyph simply by using its textual name. The replacement is done automatically by the web browser and provides more readable code than the equivalent numeric character reference.</p>
 <p>This feature is supported in most modern browsers on both desktop and mobile
 devices.</p>
 <table>
@@ -203,9 +198,7 @@ class=&quot;material-icons&quot;&gt;&amp;#xE87C;&lt;/i&gt;</code></div>
 <p>Find both the icon names and codepoints on the <a href="https://www.google.com/design/icons/">material icons library</a> by selecting any icon and opening the icon font panel. A <a href="https://github.com/google/material-design-icons/blob/master/iconfont/codepoints">codepoints index</a>  is also available on our git repository which shows the complete set of names
 and character codes.</p>
 <h2 id="styling-icons-in-material-design">Styling icons in material design</h2>
-<p>These icons were designed to follow the <a href="https://www.google.com/design/spec/style/icons.html">material design guidelines</a> so they look best when using the recommended icons sizes and colors. We
-recommend using the styles below to easily select the recommended sizes, colors
-and activity states.</p>
+<p>These icons were designed to follow the <a href="https://www.google.com/design/spec/style/icons.html">material design guidelines</a> and they look best when using the recommended icon sizes and colors. The styles below make it easy to apply our recommended sizes, colors, and activity states.</p>
 <pre><code>// Rules for sizing the icon.
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
@@ -227,7 +220,7 @@ and activity states.</p>
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
-</code></pre><p>Material icons look best in 24px, but if an icon needs to be displayed in an
+</code></pre><p>Material icons look best at 24px, but if an icon needs to be displayed in an
 alternative size, using the above CSS rules can help:</p>
 <div class="icons-preview-code">
 
@@ -266,7 +259,7 @@ md-48&quot;&gt;face&lt;/i&gt;</code></div>
 
 <p></div></p>
 <h3 id="coloring">Coloring</h3>
-<p>Using the icons in the font allows for easy styling of the icon with any color.
+<p>Using the icon font allows for easy styling of an icon in any color.
 In accordance with <a href="https://www.google.com/design/spec/style/icons.html#icons-system-icons">material design icon guidelines</a>, for active icons we recommend using either black at 54% opacity or white at
 100% opacity when displaying these on light or dark backgrounds, respectively.
 If an icon is disabled or inactive, using black at 26% or white at 30% for
