@@ -12,7 +12,7 @@ In `css-sprite` and `svg-sprite` are pre-generated sprite sheets. Instructions f
 
 ## Polymer icons
 
-If you wish to use the icon set with Polymer, we recommend consuming them via the [`<core-icons>`](https://github.com/Polymer/core-icons) element.
+If you wish to use the icon set with Polymer, we recommend consuming them via the [`<iron-icons>`](https://github.com/polymerelements/iron-icons) element ([`<core-icons>`](https://github.com/Polymer/core-icons) in v0.5).
 
 ## License
 
