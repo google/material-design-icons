@@ -2215,11 +2215,12 @@ body.icons-docs {
           margin-top: 24px;
           margin-left: 32px; } }
     body.icons-docs footer .google-logo {
-      width: 90px;
+      opacity: 0.54;
+      width: 112px;
       height: 36px; }
       @media screen and (max-width: 820px)  {
         body.icons-docs footer .google-logo {
-          width: 60px;
+          width: 75px;
           height: 24px; } }
   body.icons-docs .icons-preview-code {
     display: -webkit-box;
