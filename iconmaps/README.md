@@ -9,7 +9,7 @@ Material design icons come with an SVG symbol map for each icon category we incl
 To add an icon, place the following in your document wherever it is needed:
 
 ```HTML
-<svg class="svg-ic_24px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink>
+<svg class="svg-ic_24px">
 	<use xlink:href="svg/MaterialIcons.svg#ic_face_24px"></use>
 </svg>
 ```
