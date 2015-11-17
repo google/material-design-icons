@@ -1,27 +1,4 @@
 .icon {
-  background-image: url(../images/sprite-alert-white.PNG);
-}
-.icon-ic_add_alert_white_24dp {
-  background-position: -0px -0px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_error_outline_white_24dp {
-  background-position: -32px -0px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_error_white_24dp {
-  background-position: -0px -32px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_warning_white_24dp {
-  background-position: -32px -32px;
-  width: 32px;
-  height: 32px;
-}
-.icon {
   background-image: url(../images/sprite-alert-black.PNG);
 }
 .icon-ic_add_alert_black_24dp {
@@ -40,6 +17,29 @@
   height: 32px;
 }
 .icon-ic_warning_black_24dp {
+  background-position: -32px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon {
+  background-image: url(../images/sprite-alert-white.PNG);
+}
+.icon-ic_add_alert_white_24dp {
+  background-position: -0px -0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_error_outline_white_24dp {
+  background-position: -32px -0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_error_white_24dp {
+  background-position: -0px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_warning_white_24dp {
   background-position: -32px -32px;
   width: 32px;
   height: 32px;
@@ -277,99 +277,6 @@
   height: 32px;
 }
 .icon {
-  background-image: url(../images/sprite-places-black.PNG);
-}
-.icon-ic_ac_unit_black_24dp {
-  background-position: -32px -0px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_airport_shuttle_black_24dp {
-  background-position: -96px -0px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_all_inclusive_black_24dp {
-  background-position: -0px -32px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_beach_access_black_24dp {
-  background-position: -32px -32px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_business_center_black_24dp {
-  background-position: -64px -0px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_casino_black_24dp {
-  background-position: -64px -32px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_child_care_black_24dp {
-  background-position: -0px -64px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_child_friendly_black_24dp {
-  background-position: -32px -64px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_fitness_center_black_24dp {
-  background-position: -64px -64px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_free_breakfast_black_24dp {
-  background-position: -0px -0px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_golf_course_black_24dp {
-  background-position: -96px -32px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_hot_tub_black_24dp {
-  background-position: -96px -64px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_kitchen_black_24dp {
-  background-position: -0px -96px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_pool_black_24dp {
-  background-position: -32px -96px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_room_service_black_24dp {
-  background-position: -64px -96px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_smoke_free_black_24dp {
-  background-position: -96px -96px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_smoking_rooms_black_24dp {
-  background-position: -128px -0px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_spa_black_24dp {
-  background-position: -128px -32px;
-  width: 32px;
-  height: 32px;
-}
-.icon {
   background-image: url(../images/sprite-places-white.PNG);
 }
 .icon-ic_ac_unit_white_24dp {
@@ -458,6 +365,99 @@
   height: 32px;
 }
 .icon-ic_spa_white_24dp {
+  background-position: -128px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon {
+  background-image: url(../images/sprite-places-black.PNG);
+}
+.icon-ic_ac_unit_black_24dp {
+  background-position: -32px -0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_airport_shuttle_black_24dp {
+  background-position: -96px -0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_all_inclusive_black_24dp {
+  background-position: -0px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_beach_access_black_24dp {
+  background-position: -32px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_business_center_black_24dp {
+  background-position: -64px -0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_casino_black_24dp {
+  background-position: -64px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_child_care_black_24dp {
+  background-position: -0px -64px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_child_friendly_black_24dp {
+  background-position: -32px -64px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_fitness_center_black_24dp {
+  background-position: -64px -64px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_free_breakfast_black_24dp {
+  background-position: -0px -0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_golf_course_black_24dp {
+  background-position: -96px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_hot_tub_black_24dp {
+  background-position: -96px -64px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_kitchen_black_24dp {
+  background-position: -0px -96px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_pool_black_24dp {
+  background-position: -32px -96px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_room_service_black_24dp {
+  background-position: -64px -96px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_smoke_free_black_24dp {
+  background-position: -96px -96px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_smoking_rooms_black_24dp {
+  background-position: -128px -0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_spa_black_24dp {
   background-position: -128px -32px;
   width: 32px;
   height: 32px;
@@ -586,6 +586,134 @@
   height: 32px;
 }
 .icon-ic_unfold_more_black_24dp {
+  background-position: -128px -128px;
+  width: 32px;
+  height: 32px;
+}
+.icon {
+  background-image: url(../images/sprite-social-black.PNG);
+}
+.icon-ic_cake_black_24dp {
+  background-position: -32px -0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_domain_black_24dp {
+  background-position: -0px -96px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_group_add_black_24dp {
+  background-position: -0px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_group_black_24dp {
+  background-position: -32px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_location_city_black_24dp {
+  background-position: -64px -0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_mood_bad_black_24dp {
+  background-position: -64px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_mood_black_24dp {
+  background-position: -0px -64px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_notifications_active_black_24dp {
+  background-position: -32px -64px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_notifications_black_24dp {
+  background-position: -64px -64px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_notifications_none_black_24dp {
+  background-position: -96px -0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_notifications_off_black_24dp {
+  background-position: -96px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_notifications_paused_black_24dp {
+  background-position: -96px -64px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_pages_black_24dp {
+  background-position: -0px -0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_party_mode_black_24dp {
+  background-position: -32px -96px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_people_black_24dp {
+  background-position: -64px -96px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_people_outline_black_24dp {
+  background-position: -96px -96px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_person_add_black_24dp {
+  background-position: -128px -0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_person_black_24dp {
+  background-position: -128px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_person_outline_black_24dp {
+  background-position: -128px -64px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_plus_one_black_24dp {
+  background-position: -128px -96px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_poll_black_24dp {
+  background-position: -0px -128px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_public_black_24dp {
+  background-position: -32px -128px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_school_black_24dp {
+  background-position: -64px -128px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_share_black_24dp {
+  background-position: -96px -128px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_whatshot_black_24dp {
   background-position: -128px -128px;
   width: 32px;
   height: 32px;
@@ -842,134 +970,6 @@
   height: 32px;
 }
 .icon-ic_unfold_more_white_24dp {
-  background-position: -128px -128px;
-  width: 32px;
-  height: 32px;
-}
-.icon {
-  background-image: url(../images/sprite-social-black.PNG);
-}
-.icon-ic_cake_black_24dp {
-  background-position: -32px -0px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_domain_black_24dp {
-  background-position: -0px -96px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_group_add_black_24dp {
-  background-position: -0px -32px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_group_black_24dp {
-  background-position: -32px -32px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_location_city_black_24dp {
-  background-position: -64px -0px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_mood_bad_black_24dp {
-  background-position: -64px -32px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_mood_black_24dp {
-  background-position: -0px -64px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_notifications_active_black_24dp {
-  background-position: -32px -64px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_notifications_black_24dp {
-  background-position: -64px -64px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_notifications_none_black_24dp {
-  background-position: -96px -0px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_notifications_off_black_24dp {
-  background-position: -96px -32px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_notifications_paused_black_24dp {
-  background-position: -96px -64px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_pages_black_24dp {
-  background-position: -0px -0px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_party_mode_black_24dp {
-  background-position: -32px -96px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_people_black_24dp {
-  background-position: -64px -96px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_people_outline_black_24dp {
-  background-position: -96px -96px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_person_add_black_24dp {
-  background-position: -128px -0px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_person_black_24dp {
-  background-position: -128px -32px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_person_outline_black_24dp {
-  background-position: -128px -64px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_plus_one_black_24dp {
-  background-position: -128px -96px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_poll_black_24dp {
-  background-position: -0px -128px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_public_black_24dp {
-  background-position: -32px -128px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_school_black_24dp {
-  background-position: -64px -128px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_share_black_24dp {
-  background-position: -96px -128px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_whatshot_black_24dp {
   background-position: -128px -128px;
   width: 32px;
   height: 32px;
