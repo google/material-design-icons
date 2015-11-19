@@ -328,8 +328,8 @@
         <p>To add an icon using symbol sprites, you will need to add an svg element that <code>&lt;use&gt;</code>es the reference file with a link to the specific icon you want.
             Since the icons are stored as <code>&lt;symbol&gt;</code>s, the viewbox is already set up and can be scaled relatively without needing to keep adjacent symbols in mind. Here’s a small example:</p>
         <div class="icons-preview-code">
-          <div class="icons-preview"><svg><use xlink:href="sprites/svg-sprite/svg-sprite-action-symbol.svg#ic_face"></use></svg></div>
-          <div class="icons-code"><code>&lt;svg&gt;&lt;use xlink:href="sprites/svg-sprite/svg-sprite-action-symbol.svg#ic_face"&gt;&lt;/use&gt;&lt;/svg&gt;</code></div>
+          <div class="icons-preview"><svg><use xlink:href="sprites/svg-sprite/svg-sprite-action-symbol.svg#ic_face_24px"></use></svg></div>
+          <div class="icons-code"><code>&lt;svg&gt;&lt;use xlink:href="sprites/svg-sprite/svg-sprite-action-symbol.svg#ic_face_24px"&gt;&lt;/use&gt;&lt;/svg&gt;</code></div>
         </div>
         
         <h2 id="styling-the-svg-symbol-icons-in-css">Styling the SVG symbol icons in CSS</h2>
@@ -342,9 +342,9 @@
         <p>Classes and IDs can either be added to the <code>&lt;svg&gt;</code> tag or the <code>&lt;use&gt;</code> tag as needed:
         <div class="icons-preview-code">
           <div class="icons-preview"><svg class="material-icons md-svg-48>
-          <use xlink:href="sprites/svg-sprite/svg-sprite-action-symbol.svg#ic_face"></use></svg>
+          <use xlink:href="sprites/svg-sprite/svg-sprite-action-symbol.svg#ic_face_24px"></use></svg>
           <div class="icon-caption">48px</div></div>
-          <div class="icons-code"><code>&lt;svg class="material-icons md-svg-48&gt;&lt;use xlink:href="sprites/svg-sprite/svg-sprite-action-symbol.svg#ic_face"&gt;&lt;/use&gt;&lt;/svg&gt;</code></div>
+          <div class="icons-code"><code>&lt;svg class="material-icons md-svg-48&gt;&lt;use xlink:href="sprites/svg-sprite/svg-sprite-action-symbol.svg#ic_face_24px"&gt;&lt;/use&gt;&lt;/svg&gt;</code></div>
         </div>
         <p>Likewise, there's a difference when it comes to changing the icon color.
             To do so, you will need to target the <code>fill</code> property for the paths that make up the icon:</p>
@@ -355,9 +355,9 @@
             Thankfully, the fill property cascades and so it can be applied, again, to either the <code>&lt;svg&gt;</code> or <code>&lt;use&gt;</code> tag:
         <div class="icons-preview-code">
           <div class="icons-preview"><svg class="material-icons md-svg-orange600>
-          <use xlink:href="sprites/svg-sprite/svg-sprite-action-symbol.svg#ic_face"></use></svg>
+          <use xlink:href="sprites/svg-sprite/svg-sprite-action-symbol.svg#ic_face_24px"></use></svg>
           <div class="icon-caption">Highlighted</div></div>
-          <div class="icons-code"><code>&lt;svg class="material-icons md-svg-orange600&gt;&lt;use xlink:href="sprites/svg-sprite/svg-sprite-action-symbol.svg#ic_face"&gt;&lt;/use&gt;&lt;/svg&gt;</code></div>
+          <div class="icons-code"><code>&lt;svg class="material-icons md-svg-orange600&gt;&lt;use xlink:href="sprites/svg-sprite/svg-sprite-action-symbol.svg#ic_face_24px"&gt;&lt;/use&gt;&lt;/svg&gt;</code></div>
         </div>
         
         <hr>
