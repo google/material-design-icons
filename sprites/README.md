@@ -42,7 +42,7 @@ Then reference the id for the icon you need:
 
 ```HTML
 <svg class="svg-24px">
-  <use xlink:href="MaterialIcons.svg#ic_face"></use>
+  <use xlink:href="MaterialIcons.svg#ic_face_24px"></use>
 </svg>
 ```
 
@@ -60,7 +60,7 @@ svg {
 Then reference the icon:
 
 ```HTML
-<svg><use xlink:href="MaterialIcons.svg#ic_face"></use></svg>
+<svg><use xlink:href="MaterialIcons.svg#ic_face_24px"></use></svg>
 ```
 
 ### Stacking symbol sprite icons
