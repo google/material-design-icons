@@ -128,7 +128,7 @@ function generateIjmap(ijmapPath) {
  */
 function generateSVGFont(svgFontPath) {
   return through2.obj((ttfFontFile, encoding, callback) => {
-    exec(`fonteditor-ttf2svg ${ttfFontFile.path}`, function (err, stdout, stderr) {
+    exec(`./node_modules/.bin/fonteditor-ttf2svg ${ttfFontFile.path}`, function (err, stdout, stderr) {
         callback(err, new File({
           path: svgFontPath,
           contents: false
