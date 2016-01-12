@@ -8,6 +8,7 @@ import sprity from 'sprity';
 import svgSprite from 'gulp-svg-sprite';
 import through2 from 'through2';
 import { humanize, titleize } from 'underscore.string';
+import { exec } from 'child_process';
 
 
 /** Names of directories containing icons. */
@@ -81,9 +82,16 @@ gulp.task('iconjar', () =>
     .pipe(generateIjmap('MaterialIcons-Regular.ijmap'))
     .pipe(gulp.dest('./iconfont/')));
 
+/**
+ * Generates SVG webfont from TTF font.
+ */
+gulp.task('ttf2svg', () =>
+  gulp.src('./iconfont/MaterialIcons-Regular.ttf')
+    .pipe(generateSVGFont('MaterialIcons-Regular.svg'))
+    .pipe(gulp.dest('./iconfont/')));
 
 /** Runs all tasks. */
-gulp.task('default', ['png-sprites', 'svg-sprites', 'iconjar']);
+gulp.task('default', ['png-sprites', 'svg-sprites', 'iconjar', 'ttf2svg']);
 
 
 /**
@@ -114,6 +122,20 @@ function generateIjmap(ijmapPath) {
   });
 }
 
+/**
+ * Returns a stream that transforms between our icon font's TTF file
+ * and a icon font SVG file.
+ */
+function generateSVGFont(svgFontPath) {
+  return through2.obj((ttfFontFile, encoding, callback) => {
+    exec(`./node_modules/.bin/fonteditor-ttf2svg ${ttfFontFile.path}`, function (err, stdout, stderr) {
+        callback(err, new File({
+          path: svgFontPath,
+          contents: false
+        }));
+    });
+  });
+}
 
 /**
  * Returns the SVG sprite configuration for the specified category.
