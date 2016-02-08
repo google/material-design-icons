@@ -1,27 +1,4 @@
 .icon {
-  background-image: url(../images/sprite-alert-black.PNG);
-}
-.icon-ic_add_alert_black_24dp {
-  background-position: -0px -0px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_error_black_24dp {
-  background-position: -32px -0px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_error_outline_black_24dp {
-  background-position: -0px -32px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_warning_black_24dp {
-  background-position: -32px -32px;
-  width: 32px;
-  height: 32px;
-}
-.icon {
   background-image: url(../images/sprite-alert-white.PNG);
 }
 .icon-ic_add_alert_white_24dp {
@@ -40,6 +17,29 @@
   height: 32px;
 }
 .icon-ic_warning_white_24dp {
+  background-position: -32px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon {
+  background-image: url(../images/sprite-alert-black.PNG);
+}
+.icon-ic_add_alert_black_24dp {
+  background-position: -0px -0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_error_black_24dp {
+  background-position: -32px -0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_error_outline_black_24dp {
+  background-position: -0px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_warning_black_24dp {
   background-position: -32px -32px;
   width: 32px;
   height: 32px;

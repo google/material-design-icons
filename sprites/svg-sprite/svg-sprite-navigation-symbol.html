@@ -34,8 +34,10 @@ They might well be outsourced to an external stylesheet of course.
 	.svg-ic_close_24px-dims { width: 24px; height: 24px; }
 	.svg-ic_expand_less_24px-dims { width: 24px; height: 24px; }
 	.svg-ic_expand_more_24px-dims { width: 24px; height: 24px; }
+	.svg-ic_first_page_24px-dims { width: 24px; height: 24px; }
 	.svg-ic_fullscreen_24px-dims { width: 24px; height: 24px; }
 	.svg-ic_fullscreen_exit_24px-dims { width: 24px; height: 24px; }
+	.svg-ic_last_page_24px-dims { width: 24px; height: 24px; }
 	.svg-ic_menu_24px-dims { width: 24px; height: 24px; }
 	.svg-ic_more_horiz_24px-dims { width: 24px; height: 24px; }
 	.svg-ic_more_vert_24px-dims { width: 24px; height: 24px; }
@@ -78,8 +80,10 @@ further details on how to create this embeddable sprite variant.
 		<symbol viewBox="0 0 24 24" id="ic_close_24px"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></symbol>
 		<symbol viewBox="0 0 24 24" id="ic_expand_less_24px"><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"/></symbol>
 		<symbol viewBox="0 0 24 24" id="ic_expand_more_24px"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></symbol>
+		<symbol viewBox="0 0 24 24" id="ic_first_page_24px"><path d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z"/></symbol>
 		<symbol viewBox="0 0 24 24" id="ic_fullscreen_24px"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></symbol>
 		<symbol viewBox="0 0 24 24" id="ic_fullscreen_exit_24px"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></symbol>
+		<symbol viewBox="0 0 24 24" id="ic_last_page_24px"><path d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"/></symbol>
 		<symbol viewBox="0 0 24 24" id="ic_menu_24px"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></symbol>
 		<symbol viewBox="0 0 24 24" id="ic_more_horiz_24px"><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></symbol>
 		<symbol viewBox="0 0 24 24" id="ic_more_vert_24px"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></symbol>
@@ -282,6 +286,17 @@ embedded above. They may be styled via CSS.
 					</div>
 					<h2>ic_expand_more_24px</h2>
 				</li>
+				<li title="ic_first_page_24px">
+					<div class="icon-box">
+						
+						<!-- ic_first_page_24px -->
+						<svg class="svg-ic_first_page_24px-dims">
+							<use xlink:href="#ic_first_page_24px"></use>
+						</svg>
+						
+					</div>
+					<h2>ic_first_page_24px</h2>
+				</li>
 				<li title="ic_fullscreen_24px">
 					<div class="icon-box">
 						
@@ -303,6 +318,17 @@ embedded above. They may be styled via CSS.
 						
 					</div>
 					<h2>ic_fullscreen_exit_24px</h2>
+				</li>
+				<li title="ic_last_page_24px">
+					<div class="icon-box">
+						
+						<!-- ic_last_page_24px -->
+						<svg class="svg-ic_last_page_24px-dims">
+							<use xlink:href="#ic_last_page_24px"></use>
+						</svg>
+						
+					</div>
+					<h2>ic_last_page_24px</h2>
 				</li>
 				<li title="ic_menu_24px">
 					<div class="icon-box">
@@ -578,6 +604,17 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 					</div>
 					<h2>ic_expand_more_24px</h2>
 				</li>
+				<li title="ic_first_page_24px">
+					<div class="icon-box">
+						
+						<!-- ic_first_page_24px -->
+						<svg class="svg-ic_first_page_24px-dims">
+							<use xlink:href="svg-sprite-navigation-symbol.svg#ic_first_page_24px"></use>
+						</svg>
+						
+					</div>
+					<h2>ic_first_page_24px</h2>
+				</li>
 				<li title="ic_fullscreen_24px">
 					<div class="icon-box">
 						
@@ -599,6 +636,17 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 						
 					</div>
 					<h2>ic_fullscreen_exit_24px</h2>
+				</li>
+				<li title="ic_last_page_24px">
+					<div class="icon-box">
+						
+						<!-- ic_last_page_24px -->
+						<svg class="svg-ic_last_page_24px-dims">
+							<use xlink:href="svg-sprite-navigation-symbol.svg#ic_last_page_24px"></use>
+						</svg>
+						
+					</div>
+					<h2>ic_last_page_24px</h2>
 				</li>
 				<li title="ic_menu_24px">
 					<div class="icon-box">
@@ -696,7 +744,7 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 
 		</section>
 		<footer>
-			<p>Generated at Tue, 17 Nov 2015 23:07:28 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
+			<p>Generated at Mon, 08 Feb 2016 20:28:16 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
 		</footer>
 	</body>
 </html>
