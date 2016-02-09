@@ -133,8 +133,17 @@
 	height: 24px;
 }
 
-.svg-ic_smoke_free_24px {
+.svg-ic_rv_hookup_24px {
 	background: url(svg-sprite-places.svg) 75% 100% no-repeat;
+}
+
+.svg-ic_rv_hookup_24px-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-ic_smoke_free_24px {
+	background: url(svg-sprite-places.svg) 100% 0 no-repeat;
 }
 
 .svg-ic_smoke_free_24px-dims {
@@ -143,7 +152,7 @@
 }
 
 .svg-ic_smoking_rooms_24px {
-	background: url(svg-sprite-places.svg) 100% 0 no-repeat;
+	background: url(svg-sprite-places.svg) 100% 33.333333333333336% no-repeat;
 }
 
 .svg-ic_smoking_rooms_24px-dims {
@@ -152,7 +161,7 @@
 }
 
 .svg-ic_spa_24px {
-	background: url(svg-sprite-places.svg) 100% 33.333333333333336% no-repeat;
+	background: url(svg-sprite-places.svg) 100% 66.66666666666667% no-repeat;
 }
 
 .svg-ic_spa_24px-dims {

@@ -2,9 +2,9 @@
 
 Material design icons are the official [icon set](http://www.google.com/design/spec/style/icons.html#icons-system-icons) from Google that are designed under the [material design guidelines](http://www.google.com/design/spec).
 
-### 2.1 Update
+### 2.2 Update
 
-The 2.1 update adds 96 new icons!
+41 new icons!
 
 Check out what's new in the [material icons library](https://www.google.com/design/icons/).
 
