@@ -6,44 +6,50 @@
     <link href="//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="www/css/material.css">
-    <title>Material icons guide - Google design</title>
+    <title>Material Icons Guide - Google Design</title>
+
+    <!-- Google Analytics, modern browser version (degrades for IE9 and under) -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-51798601-4', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
   </head>
   <body class="icons-docs">
     <header>
       <div class="header-wrapper">
         <div class="header-title">
-          <span class="section-title">Material icons guide</span>
+          <span class="section-title">Material Icons Guide</span>
         </div>
       </div>
     </header>
 
     <div id="page-container">
       <div id="page-inner-container">
-
-
         <p>An overview of material icons—where to get them and how to integrate them with your projects.</p>
 
         <nav class="toc">
           <h1>Contents</h1>
           <ul>
             <li><a href="#what-are-material-icons">What are material icons</a></li>
-            <li><a href="#getting-icons">Getting icons</a></li>
-            <li><a href="#icon-font-for-the-web">Icon font for the web</a></li>
+            <li><a href="#getting-icons">Getting the icons</a></li>
+            <li><a href="#icon-font-for-the-web">Icon fonts for the web</a></li>
             <li><a href="#icon-images-for-the-web">Icon images for the web</a></li>
             <li><a href="#icons-for-android">Icons for Android</a></li>
             <li><a href="#icons-for-ios">Icons for iOS</a></li>
           </ul>
         </nav>
 
-      <h1 id="what-are-material-icons">What are material icons</h1>
+        <h1 id="what-are-material-icons-">What are material icons?</h1>
 <p>Material design system icons are simple, modern, friendly, and sometimes
 quirky. Each icon is created using our design guidelines to depict in simple
 and minimal forms the universal concepts used commonly throughout a UI.
 Ensuring readability and clarity at both large and small sizes, these icons
 have been optimized for beautiful display on all common platforms and display
 resolutions.</p>
-<p>See the full set of material design icons at the <a href="https://www.google.com/design/icons/">material icons library</a>.</p>
-<div class="img"><a href="https://www.google.com/design/icons/"><img src="www/images/icons-library.png" alt="alt text"></a></div>
+<p>See the full set of material design icons in the <a href="https://www.google.com/design/icons/">Material Icons Library</a>.</p>
+<div class="img"><a href="https://www.google.com/design/icons/"><img src="www/images/icons-library.png" alt="icons library"></a></div>
 
 <h1 id="getting-icons">Getting icons</h1>
 <p>The icons are available in several formats and are suitable for different types
@@ -59,12 +65,13 @@ the icons themselves.</p>
 suitable for web, Android, and iOS projects or for inclusion in any designer
 tools.</p>
 <h2 id="downloading-everything">Downloading everything</h2>
-<p>Grab the <a href="https://github.com/google/material-design-icons/releases/download/2.0.0/material-design-icons-2.0.0.zip">latest stable zip archive</a> (~57MB) of all icons or the <a href="https://github.com/google/material-design-icons/archive/master.zip">bleeding-edge version from master.</a></p>
+<p>Grab the <a href="https://github.com/google/material-design-icons/archive/2.2.0.zip">latest stable zip archive</a> (~60MB) of all icons or the <a href="https://github.com/google/material-design-icons/archive/master.zip">bleeding-edge version from master.</a></p>
 <h2 id="git-repository">Git Repository</h2>
 <p>The material icons are available from the <a href="https://github.com/google/material-design-icons">git repository</a> which contains the complete set of icons including all the various formats we
 are making available.</p>
-<pre><code>$ git clone http://github.com/google/material-design-icons/
-</code></pre><h2 id="installing-icons-from-bower">Installing icons from bower</h2>
+<pre><code class="lang-shell">$ git clone http://github.com/google/material-design-icons/
+</code></pre>
+<h2 id="installing-icons-from-bower">Installing icons from bower</h2>
 <p>Install the icons using the <a href="http://bower.io/">Bower</a> package manager.</p>
 <pre><code>$ bower install material-design-icons
 </code></pre><h2 id="installing-icons-from-npm">Installing icons from npm</h2>
@@ -80,28 +87,30 @@ code.</p>
 <p>Using the font is not only the most convenient method, but it is efficient and
 looks great:</p>
 <ul>
-<li>750+ icons all from a single download.</li>
+<li>900+ icons all from a single, small file.</li>
 <li>Served from Google Web Font servers or can be self hosted.</li>
 <li>Supported by all modern web browsers.</li>
 <li>Colored, sized and positioned entirely with CSS.</li>
 <li>Vector-based: Looks great at any scale, retina displays, low-dpi display
 screens.</li>
 </ul>
-<p>The icon font contains 750+ icons and weighs in at only 40KB (woff2 format). In
-comparison, a ZIP file of these in SVGs will be more than 50% larger.</p>
+<p>The icon font weighs in at only 42KB in its smallest woff2 format and 56KB in standard woff format.
+By comparison, the SVG files compressed with gzip will generally be around 62KB in size, but this
+can be reduced considerably by compiling only the icons you need into a single SVG file with symbol
+sprites.</p>
 <h2 id="setup-method-1-using-via-google-web-fonts">Setup Method 1. Using via Google Web Fonts</h2>
 <p>The easiest way to set up icon fonts for use in any web page is through <a href="https://developers.google.com/fonts/">Google Web Fonts</a>. All you need to do is include a single line of HTML:</p>
 <pre><code>&lt;link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot;
       rel=&quot;stylesheet&quot;&gt;
-</code></pre><p>Similar to other Google Web Fonts,  the correct CSS will be served to activate
-the &#39;Material Icons&#39; font specific to the browser. An additional CSS class will
-be declared called <code>.material-icons</code>. Any element that uses this class will have the correct CSS to render these
-icons from the web font.</p>
+</code></pre><p>Similar to other Google Web Fonts, the correct CSS will be served to activate the
+&#39;Material Icons&#39; font specific to the browser.
+An additional CSS class will be declared called <code>.material-icons</code>.
+Any element that uses this class will have the correct CSS to render these icons from the web font.</p>
 <h2 id="setup-method-2-self-hosting">Setup Method 2. Self hosting</h2>
 <p>For those looking to self host the web font, some additional setup is necessary.
 Host the <a href="https://github.com/google/material-design-icons/tree/master/iconfont">icon font</a> in a location, for example <code>https://example.com/material-icons.woff</code> and add the
 following CSS rule:</p>
-<pre><code>@font-face {
+<pre><code class="lang-css">@font-face {
   font-family: &#39;Material Icons&#39;;
   font-style: normal;
   font-weight: 400;
@@ -112,20 +121,23 @@ following CSS rule:</p>
        url(https://example.com/MaterialIcons-Regular.woff) format(&#39;woff&#39;),
        url(https://example.com/MaterialIcons-Regular.ttf) format(&#39;truetype&#39;);
 }
-</code></pre><p>In addition, the CSS rules for rendering the icon will need to be declared.
-These rules are normally served as part of the Google Web Font stylesheet, but
-will need to be included manually in your projects when self-hosting the font:</p>
-<pre><code>.material-icons {
+</code></pre>
+<p>In addition, the CSS rules for rendering the icon will need to be declared to
+render the font properly. These rules are normally served as part of the Google
+Web Font stylesheet, but will need to be included manually in your projects when
+self-hosting the font:</p>
+<pre><code class="lang-css">.material-icons {
   font-family: &#39;Material Icons&#39;;
   font-weight: normal;
   font-style: normal;
   font-size: 24px;  /* Preferred icon size */
   display: inline-block;
-  width: 1em;
-  height: 1em;
   line-height: 1;
   text-transform: none;
   letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
@@ -138,7 +150,8 @@ will need to be included manually in your projects when self-hosting the font:</
   /* Support for IE. */
   font-feature-settings: &#39;liga&#39;;
 }
-</code></pre><h2 id="using-the-icons-in-html">Using the icons in HTML</h2>
+</code></pre>
+<h2 id="using-the-icons-in-html">Using the icons in HTML</h2>
 <p>It’s easy to incorporate icons into your web page. Here’s a small example:</p>
 <div class="icons-preview-code">
 
@@ -148,7 +161,11 @@ will need to be included manually in your projects when self-hosting the font:</
 class=&quot;material-icons&quot;&gt;face&lt;/i&gt;</code></div>
 
 <p></div></p>
-<p>This example uses a typographic feature called <a href="http://alistapart.com/article/the-era-of-symbol-fonts">ligatures</a>, which allows rendering of an icon glyph simply by using its textual name. The replacement is done automatically by the web browser and provides more readable code than the equivalent numeric character reference.</p>
+<p>This example uses a typographic feature called
+<a href="http://alistapart.com/article/the-era-of-symbol-fonts">ligatures</a>, which allows
+rendering of an icon glyph simply by using its textual name. The replacement is
+done automatically by the web browser and provides more readable code than the
+equivalent numeric character reference.</p>
 <p>This feature is supported in most modern browsers on both desktop and mobile
 devices.</p>
 <table>
@@ -200,17 +217,17 @@ class=&quot;material-icons&quot;&gt;&amp;#xE87C;&lt;/i&gt;</code></div>
 and character codes.</p>
 <h2 id="styling-icons-in-material-design">Styling icons in material design</h2>
 <p>These icons were designed to follow the <a href="https://www.google.com/design/spec/style/icons.html">material design guidelines</a> and they look best when using the recommended icon sizes and colors. The styles below make it easy to apply our recommended sizes, colors, and activity states.</p>
-<pre><code>// Rules for sizing the icon.
+<pre><code>/* Rules for sizing the icon. */
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 
-// Rules for using icons as black on a light background.
+/* Rules for using icons as black on a light background. */
 .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
 .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
 
-// Rules for using icons as white on a dark background.
+/* Rules for using icons as white on a dark background. */
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 </code></pre><h3 id="sizing">Sizing</h3>
@@ -386,24 +403,16 @@ button.setImage(closeImage, forState:UIControlState.Normal)
 
       </div><!-- page-inner-container -->
     </div><!-- page-container -->
-     <!-- footer -->
+
+    <!-- footer -->
     <footer>
-        <div class="logo"><a href="https://www.google.com/"><img class="google-logo" alt="Google" src="www/images/google-logo.png"></a></div>
-        <div class="links right">
-          <a href="https://www.google.com/intl/en/about/">About</a><span class="dot">·</span>
-          <a href="https://www.google.com/intl/en/policies/">Privacy &amp; Terms</a>
-        </div>
+      <div class="logo">
+        <a href="https://www.google.com/"><img class="google-logo" alt="Google" src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_dark_clr_112x36px.svg"></a>
       </div>
-  </footer>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-51798601-4', 'auto');
-  ga('send', 'pageview');
-
-</script>
+      <div class="links right">
+        <a href="https://www.google.com/intl/en/about/">About</a><span class="dot">·</span>
+        <a href="https://www.google.com/intl/en/policies/">Privacy &amp; Terms</a>
+      </div>
+    </footer>
   </body>
 </html>
