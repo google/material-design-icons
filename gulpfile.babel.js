@@ -154,7 +154,7 @@ function getSvgSpriteConfig(category) {
 
 
 /**
- * Returns the catesian product of categories and colors.
+ * Returns the cartesian product of categories and colors.
  */
 function getCategoryColorPairs() {
   return _(ICON_CATEGORIES)
