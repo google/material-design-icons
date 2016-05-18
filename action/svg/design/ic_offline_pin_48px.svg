@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path id="a" d="M0 0h48v48H0V0z"/>
+    </defs>
+    <clipPath id="b">
+        <use overflow="visible" xlink:href="#a"/>
+    </clipPath>
+    <path d="M24 4C13 4 4 13 4 24s9 20 20 20 20-9 20-20S35 4 24 4m10 32H14v-4h20v4m-13.4-8L14 21.4l2.8-2.8 3.8 3.8 10.6-10.6 2.8 2.8L20.6 28z" clip-path="url(#b)"/>
+</svg>
