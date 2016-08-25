@@ -2,11 +2,9 @@
 
 Material design icons are the official [icon set](http://www.google.com/design/spec/style/icons.html#icons-system-icons) from Google that are designed under the [material design guidelines](http://www.google.com/design/spec).
 
-### 2.2 Update
+### 3.0 Update
 
-41 new icons!
-
-Check out what's new in the [material icons library](https://www.google.com/design/icons/).
+License change to Apache 2.0!
 
 ## Getting Started
 
@@ -33,6 +31,5 @@ If you wish to use the icon set with Polymer, we recommend consuming them via th
 
 ## License
 
-We have made these icons available for you to incorporate them into your products under the [Creative Commons Attribution 4.0 International License (CC-BY 4.0)](http://creativecommons.org/licenses/by/4.0/). Feel free to remix and re-share these icons and documentation in your products.
-We'd love attribution in your app's *about* screen, but it's not required.
-The only thing we ask is that you not re-sell the icons themselves.
+We have made these icons available for you to incorporate them into your products under the [Apache License Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.txt). Feel free to remix and re-share these icons and documentation in your products.
+We'd love attribution in your app's *about* screen, but it's not required. The only thing we ask is that you not re-sell these icons.
