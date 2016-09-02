@@ -2,7 +2,12 @@
 
 Material design icons are the official [icon set](http://www.google.com/design/spec/style/icons.html#icons-system-icons) from Google that are designed under the [material design guidelines](http://www.google.com/design/spec).
 
-### 3.0 Update
+### 3.0.1 Update
+
+* Changed license in package.json.
+* Added missing device symbol sprites.
+
+### 3.0.0 Update
 
 License change to Apache 2.0!
 
