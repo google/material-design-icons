@@ -4,9 +4,12 @@ Material design icons are the official [icon set](http://www.google.com/design/s
 
 ### 3.0.1 Update
 
-* Fixed the license.
-* Added device symbol sprites.
-* Removed unnecessary files.
+* Changed license in package.json.
+* Added missing device symbol sprites.
+
+### 3.0.0 Update
+
+License change to Apache 2.0!
 
 ## Getting Started
 
