@@ -32,16 +32,30 @@
         <nav class="toc">
           <h1>Contents</h1>
           <ul>
-            <li><a href="#what-are-material-icons">What are material icons</a></li>
+            <li><a href="#what-are-material-icons-">What are material icons</a></li>
             <li><a href="#getting-icons">Getting the icons</a></li>
             <li><a href="#icon-font-for-the-web">Icon fonts for the web</a></li>
             <li><a href="#icon-images-for-the-web">Icon images for the web</a></li>
             <li><a href="#icons-for-android">Icons for Android</a></li>
             <li><a href="#icons-for-ios">Icons for iOS</a></li>
+            <li><a href="#icons-in-rtl">Icons in RTL</a></li>
           </ul>
         </nav>
 
-        <h1 id="what-are-material-icons-">What are material icons?</h1>
+        <style type="text/css">
+  .fix-table {
+    display: table !important;
+  }
+  .fix-table tr div {
+    display: flex;
+    align-items: center;
+  }
+  .fix-table .material-icons {
+    margin-right: 10px;
+  }
+</style>
+
+<h1 id="what-are-material-icons-">What are material icons?</h1>
 <p>Material design system icons are simple, modern, friendly, and sometimes
 quirky. Each icon is created using our design guidelines to depict in simple
 and minimal forms the universal concepts used commonly throughout a UI.
@@ -116,10 +130,10 @@ following CSS rule:</p>
   font-weight: 400;
   src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
   src: local(&#39;Material Icons&#39;),
-       local(&#39;MaterialIcons-Regular&#39;),
-       url(https://example.com/MaterialIcons-Regular.woff2) format(&#39;woff2&#39;),
-       url(https://example.com/MaterialIcons-Regular.woff) format(&#39;woff&#39;),
-       url(https://example.com/MaterialIcons-Regular.ttf) format(&#39;truetype&#39;);
+    local(&#39;MaterialIcons-Regular&#39;),
+    url(https://example.com/MaterialIcons-Regular.woff2) format(&#39;woff2&#39;),
+    url(https://example.com/MaterialIcons-Regular.woff) format(&#39;woff&#39;),
+    url(https://example.com/MaterialIcons-Regular.ttf) format(&#39;truetype&#39;);
 }
 </code></pre>
 <p>In addition, the CSS rules for rendering the icon will need to be declared to
@@ -168,7 +182,7 @@ done automatically by the web browser and provides more readable code than the
 equivalent numeric character reference.</p>
 <p>This feature is supported in most modern browsers on both desktop and mobile
 devices.</p>
-<table>
+<table class="fix-table">
  <tr>
     <td><strong>Browser</strong></td>
     <td><strong>Version supporting ligatures</strong></td>
@@ -399,7 +413,114 @@ let closeImage = UIImage(named:&quot;ic_close&quot;)?.imageWithRenderingMode(
     UIImageRenderingMode.AlwaysTemplate)
 button.tintColor = UIColor(white:0, alpha:0.54)
 button.setImage(closeImage, forState:UIControlState.Normal)
-</code></pre>
+</code></pre><p><hr></p>
+<h1 id="icons-in-rtl">Icons in RTL</h1>
+<p>Languages such as Arabic and Hebrew are read from right-to-left (RTL). For RTL languages, UIs should be mirrored to display most elements in RTL. When a user interface is mirrored for RTL, some of the icons should also be mirrored.
+When text, layout, and iconography are mirrored to support right-to-left UIs, anything that relates to time should be depicted as moving from right to left. For example, forward points to the left, and backwards points to the right.
+However, be mindful that the context in which the icon is placed also influences whether an icon should be mirrored or not.</p>
+<p>Icons should only be mirrored if their direction matches other UI elements in RTL mode. When an icon represents visual features of your website that are different in RTL, then the icon should also be mirrored in RTL. For example, if the numbers in a numbered list are on the right side in the RTL language, then the numbers should be on the right side of the mirrored icon.</p>
+<p>Note: Icons that include a question mark need to be mirrored in Arabic and Farsi, but not in Hebrew.
+For an in-depth guidance on this topic, please read the <a href="https://material.io/guidelines/usability/bidirectionality.html">Bidirectionality material design spec article</a>.</p>
+<h2 id="rtl-icons-on-android">RTL icons on Android</h2>
+<p><a href="https://developer.android.com/about/versions/android-4.2.html#RTL">This Android developer article</a> describes in-depth how to implement RTL user interfaces. By default on Android, icons are not mirrored when the layout direction is mirrored. You need to specifically mirror the appropriate icons when needed, either by providing specialized assets for RTL languages, or using framework functionality to mirror the assets.</p>
+<p>To provide specialized assets for RTL languages, you can use the <code>ldrtl</code> qualifier on resource directories, such as <code>res/drawable-ldrtl/</code>. Resources inside such directories will only be used for RTL languages. For devices running Android API 19 or newer, the framework also provides the <a href="https://developer.android.com/about/versions/android-4.4.html#DrawableMirroring">autoMirrored attribute</a> for Drawables. When this attribute is set to true, the drawable will be automatically mirrored on RTL languages.</p>
+<p>Using autoMirrored:</p>
+<pre><code>&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+        android:width=&quot;24dp&quot;
+        android:height=&quot;24dp&quot;
+        android:viewportWidth=&quot;24.0&quot;
+        android:viewportHeight=&quot;24.0&quot;
+        android:tint=&quot;?attr/colorControlNormal&quot;
+        android:autoMirrored=&quot;true&quot;&gt;
+  &lt;path
+        android:fillColor=&quot;@android:color/white&quot;
+        android:pathData=&quot;M20,11H7.83l5.59,-5.59L12,4l-8,8 8,
+                          8 1.41,-1.41L7.83,13H20v-2z&quot;/&gt;
+&lt;/vector&gt;
+</code></pre><p>If using autoMirrored or providing alternate Drawable resources isn’t an option, the ImageView scaleX attribute can also be used to mirror drawables (for instance, by providing a RTL-specific layout in a <code>res/layout-ldrtl</code> directory).</p>
+<p>Mirroring within the layout file:</p>
+<pre><code>&lt;ImageView
+    android:id=&quot;@+id/my_icon&quot;
+    android:layout_width=&quot;60dp&quot;
+    android:layout_height=&quot;60dp&quot;
+    android:scaleX=&quot;-1&quot; /&gt;
+</code></pre><p>Lastly, drawables can be mirrored programmatically.</p>
+<p>Manually check for layout direction using <a href="https://developer.android.com/reference/android/support/v4/view/ViewCompat.html#getLayoutDirection%28android.view.View%29">getLayoutDirection</a>:</p>
+<pre><code>if (ViewCompat.getLayoutDirection(view) == ViewCompat.LAYOUT_DIRECTION_RTL) {
+  // custom code
+}
+</code></pre><p>Mirroring ImageView contents programmatically:</p>
+<pre><code>imageView.setScaleX(-1);
+</code></pre><h2 id="rtl-icons-on-ios">RTL icons on iOS</h2>
+<p>iOS has the concept of a <a href="https://developer.apple.com/reference/uikit/uisemanticcontentattribute">UISemanticContentAttribute</a> that is attached to each view. This can be <code>unspecified</code>, <code>forceLeftToRight</code>, <code>forceRightToLeft</code>, <code>playback</code> or <code>spatial</code>. iOS uses this value and the (left-to-right (LTR)/RTL setting of the device presenting the interface to determine the effectiveLayoutDirection of the view. This effectiveLayoutDirection determines whether or not to mirror an image when it is displayed.</p>
+<p>By default, images&#39; semantic content is set to <code>unspecified</code>.  This causes them to be mirrored in RTL mode. If you do not want an icon to ever be mirrored, you need to explicitly set it to be <code>forceLeftToRight</code>. Apple calls out some exceptions that should not be mirrored, such as media playback (Fast Forward, rewind, etc.), musical notes, images indicating the passage of time, etc.</p>
+<p>Objective-C example:</p>
+<pre><code>// Prevent an icon from being mirrored in RTL mode
+UIImage *icon = [UIImage imageNamed:@&quot;my_icon.png&quot;];
+UIImageView *iconView = [[UIImageView alloc] initWithImage:icon];
+iconView.semanticContentAttribute =
+  UISemanticContentAttributeForceLeftToRight;
+</code></pre><p>Swift example:</p>
+<pre><code>// Prevent an icon from being mirrored in RTL mode
+let iconImage = UIImage.init(named: &quot;my_icon.png&quot;)
+let iconView = UIImageView.init(image: iconImage)
+iconView.semanticContentAttribute = .forceLeftToRight;
+</code></pre><p>For more in-depth documentation on how to implement RTL on iOS and macOS, please review <a href="https://developer.apple.com/library/prerelease/content/documentation/MacOSX/Conceptual/BPInternational/SupportingRight-To-LeftLanguages/SupportingRight-To-LeftLanguages.html">Apple&#39;s RTL documentation</a>.</p>
+<p>Semantic content was added in iOS 9. If you are supporting earlier versions of iOS, the <a href="https://github.com/material-foundation/material-internationalization-ios">material internationalization framework</a> backports some of the functionality to iOS 8.</p>
+<h2 id="rtl-icons-on-the-web">RTL icons on the web</h2>
+<p>We recommend the following article as a primer to RTL on the web:
+<a href="https://hacks.mozilla.org/2015/09/building-rtl-aware-web-apps-and-websites-part-1">https://hacks.mozilla.org/2015/09/building-rtl-aware-web-apps-and-websites-part-1</a>
+<a href="https://hacks.mozilla.org/2015/10/building-rtl-aware-web-apps-websites-part-2">https://hacks.mozilla.org/2015/10/building-rtl-aware-web-apps-websites-part-2</a></p>
+<p>By default on the web, icons are not mirrored when the layout direction is mirrored.
+You need to specifically mirror the <strong>appropriate icons</strong> when needed.</p>
+<p>The example below shows how to implement a simple RTL CSS rule. You can also <a href="http://codepen.io/MarcoCP/pen/zowbMa">view
+it on codepen</a>.</p>
+<p>page.html</p>
+<pre><code>&lt;html dir=&quot;rtl&quot;&gt;
+    &lt;img class=&quot;icon&quot; src=&quot;my_icon.png&quot; alt=&quot;my icon&quot;/&gt;
+&lt;/html&gt;
+</code></pre><p>page.css</p>
+<pre><code>html[dir=&quot;rtl&quot;] .icon {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: &quot;FlipH&quot;;
+}
+</code></pre><h2 id="generate-your-own-rtl-icons-using-imagemagick">Generate your own RTL icons using ImageMagick</h2>
+<p>If mirroring the icons in code is not an option you can use <a href="https://www.imagemagick.org">ImageMagick</a> to horizontally mirror the image.</p>
+<pre><code>convert -flop my_icon.png my_icon_rtl.png
+</code></pre><h2 id="which-icons-should-be-mirrored-for-rtl-">Which icons should be mirrored for RTL?</h2>
+<p>Here is a list of icons that can be programmatically mirrored to RTL:</p>
+<table class="fix-table">
+  <tbody>
+  <tr><td><div><i class="material-icons">arrow_back</i> arrow back</div></td><td><div><i class="material-icons">arrow_back_ios</i> arrow back ios</div></td><td><div><i class="material-icons">arrow_forward</i> arrow forward</div></td></tr>
+  <tr><td><div><i class="material-icons">arrow_forward_ios</i> arrow forward ios</div></td><td><div><i class="material-icons">arrow_left</i> arrow left</div></td><td><div><i class="material-icons">arrow_right</i> arrow right</div></td></tr>
+  <tr><td><div><i class="material-icons">assignment</i> assignment</div></td><td><div><i class="material-icons">assignment_return</i> assignment return</div></td><td><div><i class="material-icons">backspace</i> backspace</div></td></tr>
+  <tr><td><div><i class="material-icons">battery_unknown</i> battery unknown</div></td><td><div><i class="material-icons">call_made</i> call made</div></td><td><div><i class="material-icons">call_merge</i> call merge</div></td></tr>
+  <tr><td><div><i class="material-icons">call_missed</i> call missed</div></td><td><div><i class="material-icons">call_missed_outgoing</i> call missed outgoing</div></td><td><div><i class="material-icons">call_received</i> call received</div></td></tr>
+  <tr><td><div><i class="material-icons">call_split</i> call split</div></td><td><div><i class="material-icons">chevron_left</i> chevron left</div></td><td><div><i class="material-icons">chevron_right</i> chevron right</div></td></tr>
+  <tr><td><div><i class="material-icons">chrome_reader_mode</i> chrome reader mode</div></td><td><div><i class="material-icons">device_unknown</i> device unknown</div></td><td><div><i class="material-icons">dvr</i> dvr</div></td></tr>
+  <tr><td><div><i class="material-icons">event_note</i> event note</div></td><td><div><i class="material-icons">featured_play_list</i> featured play list</div></td><td><div><i class="material-icons">featured_video</i> featured video</div></td></tr>
+  <tr><td><div><i class="material-icons">first_page</i> first page</div></td><td><div><i class="material-icons">flight_land</i> flight land</div></td><td><div><i class="material-icons">flight_takeoff</i> flight takeoff</div></td></tr>
+  <tr><td><div><i class="material-icons">format_indent_decrease</i> format indent decrease</div></td><td><div><i class="material-icons">format_indent_increase</i> format indent increase</div></td><td><div><i class="material-icons">format_list_bulleted</i> format list bulleted</div></td></tr>
+  <tr><td><div><i class="material-icons">forward</i> forward</div></td><td><div><i class="material-icons">functions</i> functions</div></td><td><div><i class="material-icons">help</i> help</div></td></tr>
+  <tr><td><div><i class="material-icons">help_outline</i> help outline</div></td><td><div><i class="material-icons">input</i> input</div></td><td><div><i class="material-icons">keyboard_backspace</i> keyboard backspace</div></td></tr>
+  <tr><td><div><i class="material-icons">keyboard_tab</i> keyboard tab</div></td><td><div><i class="material-icons">label</i> label</div></td><td><div><i class="material-icons">label_important</i> label important</div></td></tr>
+  <tr><td><div><i class="material-icons">label_outline</i> label outline</div></td><td><div><i class="material-icons">last_page</i> last page</div></td><td><div><i class="material-icons">launch</i> launch</div></td></tr>
+  <tr><td><div><i class="material-icons">list</i> list</div></td><td><div><i class="material-icons">live_help</i> live help</div></td><td><div><i class="material-icons">mobile_screen_share</i> mobile screen share</div></td></tr>
+  <tr><td><div><i class="material-icons">multiline_chart</i> multiline chart</div></td><td><div><i class="material-icons">navigate_before</i> navigate before</div></td><td><div><i class="material-icons">navigate_next</i> navigate next</div></td></tr>
+  <tr><td><div><i class="material-icons">next_week</i> next week</div></td><td><div><i class="material-icons">note</i> note</div></td><td><div><i class="material-icons">open_in_new</i> open in new</div></td></tr>
+  <tr><td><div><i class="material-icons">playlist_add</i> playlist add</div></td><td><div><i class="material-icons">queue_music</i> queue music</div></td><td><div><i class="material-icons">redo</i> redo</div></td></tr>
+  <tr><td><div><i class="material-icons">reply</i> reply</div></td><td><div><i class="material-icons">reply_all</i> reply all</div></td><td><div><i class="material-icons">screen_share</i> screen share</div></td></tr>
+  <tr><td><div><i class="material-icons">send</i> send</div></td><td><div><i class="material-icons">short_text</i> short text</div></td><td><div><i class="material-icons">show_chart</i> show chart</div></td></tr>
+  <tr><td><div><i class="material-icons">sort</i> sort</div></td><td><div><i class="material-icons">star_half</i> star half</div></td><td><div><i class="material-icons">subject</i> subject</div></td></tr>
+  <tr><td><div><i class="material-icons">trending_flat</i> trending flat</div></td><td><div><i class="material-icons">toc</i> toc</div></td><td><div><i class="material-icons">trending_down</i> trending down</div></td></tr>
+  <tr><td><div><i class="material-icons">trending_up</i> trending up</div></td><td><div><i class="material-icons">undo</i> undo</div></td><td><div><i class="material-icons">view_list</i> view list</div></td></tr>
+  <tr><td><div><i class="material-icons">view_quilt</i> view quilt</div></td><td><div><i class="material-icons">wrap_text</i> wrap text</div></td><td></td></tr>
+  </tbody>
+</table>
 
       </div><!-- page-inner-container -->
     </div><!-- page-container -->
