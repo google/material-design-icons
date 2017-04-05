@@ -578,7 +578,9 @@ input[type="submit"] {
 html {
   box-sizing: border-box; }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit; }
 
 html {
@@ -1577,7 +1579,8 @@ header {
     header {
       height: 128px;
       padding-top: 64px; } }
-  .noninitial-chapter header, header.qp-ui-peekaboo.qp-ui-peekaboo-active {
+  .noninitial-chapter header,
+  header.qp-ui-peekaboo.qp-ui-peekaboo-active {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
     left: 0;
     right: 0;
@@ -1585,7 +1588,8 @@ header {
     z-index: 1;
     position: fixed; }
     @media screen and (max-width: 820px) {
-      .noninitial-chapter header, header.qp-ui-peekaboo.qp-ui-peekaboo-active {
+      .noninitial-chapter header,
+      header.qp-ui-peekaboo.qp-ui-peekaboo-active {
         top: -72px; } }
 
 .header-wrapper {
@@ -1622,7 +1626,8 @@ header {
       float: left; }
   .header-wrapper .chapter-title {
     display: none; }
-  .noninitial-chapter .header-wrapper, .header-wrapper.qp-ui-peekaboo.qp-ui-peekaboo-active {
+  .noninitial-chapter .header-wrapper,
+  .header-wrapper.qp-ui-peekaboo.qp-ui-peekaboo-active {
     height: 64px;
     left: 72px;
     right: 72px;
@@ -1630,20 +1635,24 @@ header {
     z-index: 2;
     position: fixed; }
     @media screen and (max-width: 820px) {
-      .noninitial-chapter .header-wrapper, .header-wrapper.qp-ui-peekaboo.qp-ui-peekaboo-active {
+      .noninitial-chapter .header-wrapper,
+      .header-wrapper.qp-ui-peekaboo.qp-ui-peekaboo-active {
         height: 56px;
         left: 56px;
         right: 56px; } }
-    .noninitial-chapter .header-wrapper .header-title, .header-wrapper.qp-ui-peekaboo.qp-ui-peekaboo-active .header-title {
+    .noninitial-chapter .header-wrapper .header-title,
+    .header-wrapper.qp-ui-peekaboo.qp-ui-peekaboo-active .header-title {
       font-size: 24px;
       line-height: 64px;
       width: 100%; }
       @media screen and (max-width: 820px) {
-        .noninitial-chapter .header-wrapper .header-title, .header-wrapper.qp-ui-peekaboo.qp-ui-peekaboo-active .header-title {
+        .noninitial-chapter .header-wrapper .header-title,
+        .header-wrapper.qp-ui-peekaboo.qp-ui-peekaboo-active .header-title {
           font-size: 20px;
           line-height: 56px; } }
     @media screen and (max-width: 820px) {
-      .noninitial-chapter .header-wrapper .section-title, .header-wrapper.qp-ui-peekaboo.qp-ui-peekaboo-active .section-title {
+      .noninitial-chapter .header-wrapper .section-title,
+      .header-wrapper.qp-ui-peekaboo.qp-ui-peekaboo-active .section-title {
         display: none; } }
   .header-wrapper #header-button-bar {
     position: absolute;
