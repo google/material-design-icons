@@ -237,7 +237,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -1682,9 +1683,9 @@ footer {
     -ms-transform: translateX(120px);
     -o-transform: translateX(120px);
     transform: translateX(120px);
-    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    -moz-transition: -moz-transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+    -webkit-transition: -webkit-transform;
+    -moz-transition: -moz-transform;
+    transition: transform; }
     @media screen and (max-width: 1479px) {
       footer .footer-L {
         -webkit-transform: translateX(0px);
@@ -1710,9 +1711,9 @@ footer {
     -ms-transform: translateX(120px);
     -o-transform: translateX(120px);
     transform: translateX(120px);
-    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    -moz-transition: -moz-transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+    -webkit-transition: -webkit-transform;
+    -moz-transition: -moz-transform;
+    transition: transform; }
     @media screen and (max-width: 1479px) {
       footer .footer-R {
         -webkit-transform: translateX(0px);
