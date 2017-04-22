@@ -1,5 +1,4 @@
 'use strict';
-
 import _ from 'lodash';
 import File from 'vinyl';
 import gulp from 'gulp';
@@ -8,8 +7,6 @@ import sprity from 'sprity';
 import svgSprite from 'gulp-svg-sprite';
 import through2 from 'through2';
 import { humanize, titleize } from 'underscore.string';
-
-
 /** Names of directories containing icons. */
 const ICON_CATEGORIES = [
   'action',
@@ -30,13 +27,11 @@ const ICON_CATEGORIES = [
   'toggle',
 ];
 
-
 /** Standard PNG colors. */
 const PNG_COLORS = [
   'black',
   'white',
 ];
-
 
 /**
  * Generates PNG sprites and their corresponding CSS files for each category of
@@ -72,7 +67,6 @@ gulp.task('svg-sprites', () =>
     .value()
     .pipe(gulp.dest('./sprites/svg-sprite')));
 
-
 /**
  * Generates a file to allow the consumption of the icon font by Iconjar
  * (http://geticonjar.com/).
@@ -85,7 +79,6 @@ gulp.task('iconjar', () =>
 
 /** Runs all tasks. */
 gulp.task('default', ['png-sprites', 'svg-sprites', 'iconjar']);
-
 
 /**
  * Returns a stream that transforms between our icon font's codepoint file
