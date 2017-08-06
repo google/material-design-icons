@@ -1,4 +1,5 @@
 # Material design icons
+[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://github.com/google/material-design-icons/blob/master/LICENSE)
 
 Material design icons are the official [icon set](http://www.google.com/design/spec/style/icons.html#icons-system-icons) from Google that are designed under the [material design guidelines](http://www.google.com/design/spec).
 
@@ -33,8 +34,3 @@ The `css-sprite` and `svg-sprite` folders contain pre-generated sprite sheets, a
 ## Polymer icons
 
 If you wish to use the icon set with Polymer, we recommend consuming them via the [`<iron-icons>`](https://github.com/polymerelements/iron-icons) element ([`<core-icons>`](https://github.com/Polymer/core-icons) in v0.5).
-
-## License
-
-We have made these icons available for you to incorporate them into your products under the [Apache License Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.txt). Feel free to remix and re-share these icons and documentation in your products.
-We'd love attribution in your app's *about* screen, but it's not required. The only thing we ask is that you not re-sell these icons.
