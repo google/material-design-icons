@@ -38,3 +38,11 @@ If you wish to use the icon set with Polymer, we recommend consuming them via th
 
 We have made these icons available for you to incorporate them into your products under the [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt). Feel free to remix and re-share these icons and documentation in your products.
 We'd love attribution in your app's *about* screen, but it's not required. The only thing we ask is that you not re-sell these icons.
+
+## Troubleshooting: Known issues
+
+Add known issues or strange behavior in this section.
+
+### Web icon strange behavior
+
+If a web icon name is formed from two names connected with `_` and the icon name is found it will display correctly. If the second name part can't be found but the first one can it will display the icon matching the first name part (i.e. `image_badname` will display the `image` icon). In case the first part can't be found it will display an empty field with the size of `.material-icons` `font-size` property.
