@@ -1,6 +1,6 @@
 # Material design icons
 
-Material design icons are the official [icon set](http://www.google.com/design/spec/style/icons.html#icons-system-icons) from Google that are designed under the [material design guidelines](http://www.google.com/design/spec).
+Material design icons are the official [icon set](https://www.google.com/design/spec/style/icons.html#icons-system-icons) from Google that are designed under the [material design guidelines](https://material.io/guidelines/).
 
 ### 3.0.1 Update
 
@@ -13,7 +13,7 @@ License change to Apache 2.0!
 
 ## Getting Started
 
-Read the [developer guide](http://google.github.io/material-design-icons/) on how to use the material design icons in your project.
+Read the [developer guide](https://google.github.io/material-design-icons/) on how to use the material design icons in your project.
 
 ### Using a font collection
 
@@ -24,7 +24,7 @@ The `iconfont` folder contains pre-generated font files that can be included in 
       rel="stylesheet">
 ```
 
-Read more in the [font portion](http://google.github.io/material-design-icons/#icon-font-for-the-web) of our full developer guide.
+Read more in the [font portion](https://google.github.io/material-design-icons/#icon-font-for-the-web) of our full developer guide.
 
 ### Using symbols and sprites
 
@@ -36,5 +36,5 @@ If you wish to use the icon set with Polymer, we recommend consuming them via th
 
 ## License
 
-We have made these icons available for you to incorporate them into your products under the [Apache License Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.txt). Feel free to remix and re-share these icons and documentation in your products.
+We have made these icons available for you to incorporate them into your products under the [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt). Feel free to remix and re-share these icons and documentation in your products.
 We'd love attribution in your app's *about* screen, but it's not required. The only thing we ask is that you not re-sell these icons.
