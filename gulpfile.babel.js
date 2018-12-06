@@ -17,6 +17,7 @@ const ICON_CATEGORIES = [
   'av',
   'communication',
   'content',
+  'device',
   'editor',
   'file',
   'hardware',
