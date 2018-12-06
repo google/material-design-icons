@@ -45,49 +45,6 @@
   height: 32px;
 }
 .icon {
-  background-image: url(../images/sprite-toggle-black.PNG);
-}
-.icon-ic_check_box_black_24dp {
-  background-position: -0px -0px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_check_box_outline_blank_black_24dp {
-  background-position: -32px -0px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_indeterminate_check_box_black_24dp {
-  background-position: -0px -32px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_radio_button_checked_black_24dp {
-  background-position: -32px -32px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_radio_button_unchecked_black_24dp {
-  background-position: -64px -0px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_star_black_24dp {
-  background-position: -64px -32px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_star_border_black_24dp {
-  background-position: -0px -64px;
-  width: 32px;
-  height: 32px;
-}
-.icon-ic_star_half_black_24dp {
-  background-position: -32px -64px;
-  width: 32px;
-  height: 32px;
-}
-.icon {
   background-image: url(../images/sprite-toggle-white.PNG);
 }
 .icon-ic_check_box_outline_blank_white_24dp {
@@ -126,6 +83,49 @@
   height: 32px;
 }
 .icon-ic_star_white_24dp {
+  background-position: -32px -64px;
+  width: 32px;
+  height: 32px;
+}
+.icon {
+  background-image: url(../images/sprite-toggle-black.PNG);
+}
+.icon-ic_check_box_black_24dp {
+  background-position: -0px -0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_check_box_outline_blank_black_24dp {
+  background-position: -32px -0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_indeterminate_check_box_black_24dp {
+  background-position: -0px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_radio_button_checked_black_24dp {
+  background-position: -32px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_radio_button_unchecked_black_24dp {
+  background-position: -64px -0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_star_black_24dp {
+  background-position: -64px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_star_border_black_24dp {
+  background-position: -0px -64px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_star_half_black_24dp {
   background-position: -32px -64px;
   width: 32px;
   height: 32px;
