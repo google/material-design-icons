@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/google/material-design-icons",
   "devDependencies": {
+    "@svgr/core": "^4.3.2",
     "babel-core": "^6.1.2",
     "babel-preset-es2015": "^6.1.2",
+    "camelcase": "^5.3.1",
     "gulp": "^3.9.0",
     "gulp-if": "^2.0.0",
     "gulp-svg-sprite": "^1.2.14",

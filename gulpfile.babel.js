@@ -1,6 +1,9 @@
 'use strict';
 
+import path from 'path';
+
 import _ from 'lodash';
+import camelcase from 'camelcase';
 import File from 'vinyl';
 import gulp from 'gulp';
 import merge from 'merge-stream';
@@ -8,6 +11,7 @@ import sprity from 'sprity';
 import svgSprite from 'gulp-svg-sprite';
 import through2 from 'through2';
 import { humanize, titleize } from 'underscore.string';
+import svgr from '@svgr/core'
 
 
 /** Names of directories containing icons. */
@@ -36,6 +40,18 @@ const PNG_COLORS = [
   'black',
   'white',
 ];
+
+gulp.task('react-components', () => {
+  _(ICON_CATEGORIES)
+    .map((category) => {
+      return gulp
+        .src(`./${category}/svg/production/*_24px.svg`)
+        .pipe(generateReactComp())
+        .pipe(gulp.dest(`./${category}/react`))
+    })
+    .thru(merge)
+    .value()
+});
 
 
 /**
@@ -84,7 +100,33 @@ gulp.task('iconjar', () =>
 
 
 /** Runs all tasks. */
-gulp.task('default', ['png-sprites', 'svg-sprites', 'iconjar']);
+gulp.task('default', ['react-components', 'png-sprites', 'svg-sprites', 'iconjar']);
+
+
+function parseSvgName(svgPath) {
+  return path.basename(svgPath, '_24px.svg');
+}
+
+
+function getComponentName(svgName) {
+  return camelcase(svgName, {pascalCase: true});
+}
+
+function generateReactComp() {
+  return through2.obj((chunk, enc, cb) => {
+    const svgName = parseSvgName(chunk.path);
+    const componentName = getComponentName(svgName);
+    const componentFile = componentName + '.js';
+
+    const svgCode = chunk.contents;
+    svgr(svgCode, { icon: false }, { componentName }).then(jsCode => {
+      cb(null, new File({
+        path: componentFile,
+        contents: new Buffer(jsCode),
+      }));
+    })
+  });
+}
 
 
 /**
