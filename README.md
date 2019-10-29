@@ -1,6 +1,6 @@
 # Material design icons
 
-Material design icons is the official [icon set](https://www.google.com/design/spec/style/icons.html#icons-system-icons) from Google.  The icons are designed under the [material design guidelines](https://material.io/guidelines/).
+Material design icons are the official [icon set](https://www.google.com/design/spec/style/icons.html#icons-system-icons) from Google.  The icons are designed under the [material design guidelines](https://material.io/guidelines/).
 
 ### 3.0.1 Update
 
@@ -17,7 +17,7 @@ Read the [developer guide](https://google.github.io/material-design-icons/) on h
 
 ### Using a font collection
 
-The `iconfont` folder contains pre-generated font files that can be included in a project. This is especially convenient for the web; however, it is generally better to link to the web font hosted on Google Fonts:
+The `icon font` folder contains pre-generated font files that can be included in a project. This is especially convenient for the web; however, it is generally better to link to the web font hosted on Google Fonts:
 
 ```html
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -28,7 +28,7 @@ Read more in the [font portion](https://google.github.io/material-design-icons/#
 
 ### Using symbols and sprites
 
-The `css-sprite` and `svg-sprite` folders contain pre-generated sprite sheets, as well as svg symbols that can be `<use>`d more directly and with fewer constraints. Instructions for using them are in the [sprites documentation](https://github.com/google/material-design-icons/tree/master/sprites).
+The `CSS-sprite` and `SVG-sprite` folders contain pre-generated sprite sheets, as well as SVG symbols that can be `<use>`d more directly and with fewer constraints. Instructions for using them are in the [sprites documentation](https://github.com/google/material-design-icons/tree/master/sprites).
 
 ## Polymer icons
 
