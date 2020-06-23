@@ -1,4 +1,4 @@
-# Help us understand this Repository
+# Help us understand this repository
 
 The Google Fonts team has adopted the Material Icon program. Please help us understand the use of this repository by filling out a short [survey](https://docs.google.com/forms/d/e/1FAIpQLSevBKRto6KVC0kHezBDnzxLQdGidiLfE21EzyoFsceiz1hv2Q/viewform).
 
