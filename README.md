@@ -1,4 +1,8 @@
-# Material design icons
+# Help us understand this Repository
+
+The Google Fonts team has adopted the Material Icon program. Please help us understand the use of this repository by filling out a short [survey](https://docs.google.com/forms/d/e/1FAIpQLSevBKRto6KVC0kHezBDnzxLQdGidiLfE21EzyoFsceiz1hv2Q/viewform).
+
+## Material design icons
 
 Material design icons is the official [icon set](https://www.google.com/design/spec/style/icons.html#icons-system-icons) from Google.  The icons are designed under the [material design guidelines](https://material.io/guidelines/).
 
