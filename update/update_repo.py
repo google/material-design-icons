@@ -21,7 +21,7 @@ from pathlib import Path
 import re
 import requests
 import time
-from typing import NamedTuple, Sequence, Tuple
+from typing import NamedTuple, Set, Sequence, Tuple
 from zipfile import ZipFile
 
 
@@ -38,7 +38,7 @@ flags.DEFINE_bool("explode_zip_files", True, "Whether to unzip any zip assets.")
 flags.DEFINE_integer("icon_limit", 0, "If > 0, the max # of icons to process.")
 
 
-_METADATA_URL = "http://fonts.google.com/metadata/icons"
+_METADATA_URL = "http://fonts.google.com/metadata/icons?incomplete=1"
 
 
 class Asset(NamedTuple):
@@ -56,6 +56,7 @@ class Icon(NamedTuple):
     category: str
     version: int
     sizes_px: Tuple[int, ...]
+    stylistic_sets: Set[str]
 
 
 _ICON_ASSETS = (
@@ -114,12 +115,15 @@ def _version_key(icon: Icon):
 
 
 def _icons(metadata):
+    all_sets = set(metadata["families"])
     for raw_icon in metadata["icons"]:
+        unsupported = set(raw_icon["unsupported_families"])
         yield Icon(
             raw_icon["name"],
             raw_icon["categories"][0],
             raw_icon["version"],
             tuple(raw_icon["sizes_px"]),
+            all_sets - unsupported,
         )
 
 
@@ -228,8 +232,11 @@ def main(_):
         num_changed += 1
         for size_px in icon.sizes_px:
             for stylistic_set in stylistic_sets:
+                if stylistic_set not in icon.stylistic_sets:
+                    continue
+
                 pattern_args = _pattern_args(metadata, stylistic_set)
-                pattern_args["icon"] = (icon,)
+                pattern_args["icon"] = icon
                 pattern_args["size_px"] = size_px
 
                 for asset in _ICON_ASSETS:
