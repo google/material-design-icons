@@ -66,6 +66,26 @@ _ASSETS = (
         "https://{host}/s/i/{stylistic_set}/{icon.name}/v{icon.version}/black-android.zip",
         "android/{icon.category}/{icon.name}/{stylistic_set}/black.zip",
     ),
+    Asset(
+        "https://{host}/s/i/{stylistic_set}/{icon.name}/v{icon.version}/black-ios.zip",
+        "ios/{icon.category}/{icon.name}/{stylistic_set}/black.zip",
+    ),
+    Asset(
+        "https://{host}/s/i/{stylistic_set}/{icon.name}/v{icon.version}/black-18dp.zip",
+        "png/{icon.category}/{icon.name}/{stylistic_set}/18dp.zip",
+    ),
+    Asset(
+        "https://{host}/s/i/{stylistic_set}/{icon.name}/v{icon.version}/black-24dp.zip",
+        "png/{icon.category}/{icon.name}/{stylistic_set}/24dp.zip",
+    ),
+    Asset(
+        "https://{host}/s/i/{stylistic_set}/{icon.name}/v{icon.version}/black-36dp.zip",
+        "png/{icon.category}/{icon.name}/{stylistic_set}/36dp.zip",
+    ),
+    Asset(
+        "https://{host}/s/i/{stylistic_set}/{icon.name}/v{icon.version}/black-48dp.zip",
+        "png/{icon.category}/{icon.name}/{stylistic_set}/48dp.zip",
+    ),
 )
 
 
