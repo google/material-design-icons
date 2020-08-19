@@ -18,6 +18,7 @@ from absl import app
 from absl import flags
 import json
 from pathlib import Path
+import re
 import requests
 import time
 from typing import NamedTuple, Sequence, Tuple
@@ -33,7 +34,7 @@ flags.DEFINE_bool(
     "Do not download if local file exists, even if an update is available.",
 )
 flags.DEFINE_bool("fetch", True, "Whether we can attempt to download assets.")
-flags.DEFINE_bool("explode_zips", True, "Whether to unzip any zip assets.")
+flags.DEFINE_bool("explode_zip_files", True, "Whether to unzip any zip assets.")
 flags.DEFINE_integer("icon_limit", 0, "If > 0, the max # of icons to process.")
 
 
@@ -57,34 +58,42 @@ class Icon(NamedTuple):
     sizes_px: Tuple[int, ...]
 
 
-_ASSETS = (
+_ICON_ASSETS = (
     Asset(
-        "https://{host}/s/i/{stylistic_set}/{icon.name}/v{icon.version}/{size_px}px.svg",
-        "src/{icon.category}/{icon.name}/{stylistic_set}/{size_px}px.svg",
+        "https://{host}/s/i/{stylistic_set_snake}/{icon.name}/v{icon.version}/{size_px}px.svg",
+        "src/{icon.category}/{icon.name}/{stylistic_set_snake}/{size_px}px.svg",
     ),
     Asset(
-        "https://{host}/s/i/{stylistic_set}/{icon.name}/v{icon.version}/black-android.zip",
-        "android/{icon.category}/{icon.name}/{stylistic_set}/black.zip",
+        "https://{host}/s/i/{stylistic_set_snake}/{icon.name}/v{icon.version}/black-android.zip",
+        "android/{icon.category}/{icon.name}/{stylistic_set_snake}/black.zip",
     ),
     Asset(
-        "https://{host}/s/i/{stylistic_set}/{icon.name}/v{icon.version}/black-ios.zip",
-        "ios/{icon.category}/{icon.name}/{stylistic_set}/black.zip",
+        "https://{host}/s/i/{stylistic_set_snake}/{icon.name}/v{icon.version}/black-ios.zip",
+        "ios/{icon.category}/{icon.name}/{stylistic_set_snake}/black.zip",
     ),
     Asset(
-        "https://{host}/s/i/{stylistic_set}/{icon.name}/v{icon.version}/black-18dp.zip",
-        "png/{icon.category}/{icon.name}/{stylistic_set}/18dp.zip",
+        "https://{host}/s/i/{stylistic_set_snake}/{icon.name}/v{icon.version}/black-18dp.zip",
+        "png/{icon.category}/{icon.name}/{stylistic_set_snake}/18dp.zip",
     ),
     Asset(
-        "https://{host}/s/i/{stylistic_set}/{icon.name}/v{icon.version}/black-24dp.zip",
-        "png/{icon.category}/{icon.name}/{stylistic_set}/24dp.zip",
+        "https://{host}/s/i/{stylistic_set_snake}/{icon.name}/v{icon.version}/black-24dp.zip",
+        "png/{icon.category}/{icon.name}/{stylistic_set_snake}/24dp.zip",
     ),
     Asset(
-        "https://{host}/s/i/{stylistic_set}/{icon.name}/v{icon.version}/black-36dp.zip",
-        "png/{icon.category}/{icon.name}/{stylistic_set}/36dp.zip",
+        "https://{host}/s/i/{stylistic_set_snake}/{icon.name}/v{icon.version}/black-36dp.zip",
+        "png/{icon.category}/{icon.name}/{stylistic_set_snake}/36dp.zip",
     ),
     Asset(
-        "https://{host}/s/i/{stylistic_set}/{icon.name}/v{icon.version}/black-48dp.zip",
-        "png/{icon.category}/{icon.name}/{stylistic_set}/48dp.zip",
+        "https://{host}/s/i/{stylistic_set_snake}/{icon.name}/v{icon.version}/black-48dp.zip",
+        "png/{icon.category}/{icon.name}/{stylistic_set_snake}/48dp.zip",
+    ),
+)
+
+_SET_ASSETS = (
+    # Fonts are acquired by abusing the Google Fonts web api. Nobody tell them :D
+    Asset(
+        "https://fonts.googleapis.com/css2?family={stylistic_set_url}",
+        "font/{stylistic_set_font}.css",
     ),
 )
 
@@ -145,7 +154,7 @@ def _unzip_target(zip_path: Path):
     return zip_path.parent.resolve() / zip_path.stem
 
 
-def _explode_zips(zips: Sequence[Path]):
+def _explode_zip_files(zips: Sequence[Path]):
     for zip_path in zips:
         assert zip_path.suffix == ".zip", zip_path
         if not zip_path.is_file():
@@ -158,12 +167,26 @@ def _explode_zips(zips: Sequence[Path]):
         zip_path.unlink()
 
 
+def _fetch_fonts(css_files: Sequence[Path]):
+    for css_file in css_files:
+        css = css_file.read_text()
+        url = re.search(r"src:\s+url\(([^)]+)\)", css).group(1)
+        assert url.endswith(".otf") or url.endswith(".ttf")
+        fetch = Fetch(url, css_file.parent / (css_file.stem + url[-4:]))
+        _do_fetch(fetch)
+        css_file.unlink()
+
+
+def _is_css(p: Path):
+    return p.suffix == ".css"
+
+
 def _is_zip(p: Path):
     return p.suffix == ".zip"
 
 
-def _zips(fetches: Sequence[Fetch]):
-    return [f.dest_file for f in fetches if _is_zip(f.dest_file)]
+def _files(fetches: Sequence[Fetch], pred):
+    return [f.dest_file for f in fetches if pred(f.dest_file)]
 
 
 def _should_skip(fetch: Fetch):
@@ -175,12 +198,19 @@ def _should_skip(fetch: Fetch):
     return fetch.dest_file.is_file()
 
 
-def main(_):
-    metadata = _latest_metadata()
-    current_versions = json.loads(_current_versions().read_text())
+def _pattern_args(metadata, stylistic_set):
+    return {
+        "host": metadata["host"],
+        "stylistic_set_snake": stylistic_set.replace(" ", "").lower(),
+        "stylistic_set_url": stylistic_set.replace(" ", "+"),
+        "stylistic_set_font": stylistic_set.replace(" ", "") + "-Regular",
+    }
 
-    host = metadata["host"]
-    stylistic_sets = tuple(s.replace(" ", "").lower() for s in metadata["families"])
+
+def main(_):
+    current_versions = json.loads(_current_versions().read_text())
+    metadata = _latest_metadata()
+    stylistic_sets = tuple(metadata["families"])
 
     fetches = []
     skips = []
@@ -198,20 +228,24 @@ def main(_):
         num_changed += 1
         for size_px in icon.sizes_px:
             for stylistic_set in stylistic_sets:
-                pattern_args = {
-                    "host": host,
-                    "stylistic_set": stylistic_set,
-                    "icon": icon,
-                    "size_px": size_px,
-                }
-                for asset in _ASSETS:
+                pattern_args = _pattern_args(metadata, stylistic_set)
+                pattern_args["icon"] = (icon,)
+                pattern_args["size_px"] = size_px
+
+                for asset in _ICON_ASSETS:
                     fetch = _create_fetch(asset, pattern_args)
                     if _should_skip(fetch):
                         skips.append(fetch)
                     else:
                         fetches.append(fetch)
 
-    print(f"{num_changed}/{len(icons)} have changed")
+    for stylistic_set in stylistic_sets:
+        for asset in _SET_ASSETS:
+            pattern_args = _pattern_args(metadata, stylistic_set)
+            fetch = _create_fetch(asset, pattern_args)
+            fetches.append(fetch)
+
+    print(f"{num_changed}/{len(icons)} icons have changed")
     if skips:
         print(f"{len(skips)} fetches skipped because assets exist")
 
@@ -221,8 +255,10 @@ def main(_):
         else:
             print(f"fetch disabled; not fetching {len(fetches)} assets")
 
-    if FLAGS.explode_zips:
-        _explode_zips([f.dest_file for f in fetches + skips if _is_zip(f.dest_file)])
+    if FLAGS.explode_zip_files:
+        _explode_zip_files(_files(fetches + skips, _is_zip))
+
+    _fetch_fonts(_files(fetches + skips, _is_css))
 
     with open(_current_versions(), "w") as f:
         json.dump(current_versions, f, indent=4, sort_keys=True)
