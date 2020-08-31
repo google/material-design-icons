@@ -16,6 +16,7 @@
 
 from absl import app
 from absl import flags
+import icons
 import json
 from pathlib import Path
 import re
@@ -179,6 +180,9 @@ def _fetch_fonts(css_files: Sequence[Path]):
         fetch = Fetch(url, css_file.parent / (css_file.stem + url[-4:]))
         _do_fetch(fetch)
         css_file.unlink()
+        with open(fetch.dest_file.with_suffix(".codepoints"), "w") as f:
+            for name, codepoint in sorted(icons.enumerate(fetch.dest_file)):
+                f.write(f"{name} {codepoint:04x}\n")
 
 
 def _is_css(p: Path):
