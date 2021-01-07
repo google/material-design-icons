@@ -17,6 +17,8 @@ The recommended way to use the Material Icons font is by linking to the web font
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
       rel="stylesheet">
 
+<!-- https://material.io/resources/icons/?style=twotone -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone"
+      rel="stylesheet">
 ```
-
 
