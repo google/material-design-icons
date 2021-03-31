@@ -1,6 +1,8 @@
 ## Material design icons
 
-Material design icons is the official [icon set](https://material.io/design/iconography/system-icons.html) from Google.  The icons are designed under the [material design guidelines](https://material.io/guidelines/).
+Material design icons is the official icon set from Google.
+They can be browsed at https://fonts.google.com/icons.
+The icons are designed under the [material design guidelines](https://material.io/guidelines/).
 
 ### 4.0.0 Update
 
