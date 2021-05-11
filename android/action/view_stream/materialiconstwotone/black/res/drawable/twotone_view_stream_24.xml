@@ -6,10 +6,10 @@
     android:tint="?attr/colorControlNormal">
   <path
       android:fillColor="@android:color/white"
-      android:pathData="M6,13h13v3L6,16zM6,8h13v3L6,11z"
+      android:pathData="M19,17H5v-4h14V17zM5,11V7h14v4H5z"
       android:strokeAlpha="0.3"
       android:fillAlpha="0.3"/>
   <path
       android:fillColor="@android:color/white"
-      android:pathData="M4,6v12h17L21,6L4,6zM19,16L6,16v-3h13v3zM19,11L6,11L6,8h13v3z"/>
+      android:pathData="M3,7v10c0,1.1 0.9,2 2,2h14c1.1,0 2,-0.9 2,-2V7c0,-1.1 -0.9,-2 -2,-2H5C3.9,5 3,5.9 3,7zM19,17H5v-4h14V17zM5,11V7h14v4H5z"/>
 </vector>
