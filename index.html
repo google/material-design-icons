@@ -247,7 +247,7 @@ class=&quot;material-icons&quot;&gt;&amp;#xE87C;&lt;/span&gt;</code></div>
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 </code></pre><h3 id="sizing">Sizing</h3>
-<p>Although the icons in the font can be scaled to any size, in accordance with <a href="https://www.google.com/design/spec/style/icons.html#icons-system-icons">material design icons guidelines</a>, we recommend them to be shown in either 18, 24, 36 or 48px. The default being
+<p>Although the icons in the font can be scaled to any size, in accordance with <a href="https://material.io/design/iconography/system-icons.html#design-principles">material design icons guidelines</a>, we recommend them to be shown in either 18, 24, 36 or 48px. The default being
 24px.</p>
 <p>CSS rules for the standard material design sizing guidelines:</p>
 <pre><code>.material-icons.md-18 { font-size: 18px; }
@@ -425,7 +425,7 @@ However, be mindful that the context in which the icon is placed also influences
 For an in-depth guidance on this topic, please read the <a href="https://material.io/guidelines/usability/bidirectionality.html">Bidirectionality material design spec article</a>.</p>
 <h2 id="rtl-icons-on-android">RTL icons on Android</h2>
 <p><a href="https://developer.android.com/about/versions/android-4.2.html#RTL">This Android developer article</a> describes in-depth how to implement RTL user interfaces. By default on Android, icons are not mirrored when the layout direction is mirrored. You need to specifically mirror the appropriate icons when needed, either by providing specialized assets for RTL languages, or using framework functionality to mirror the assets.</p>
-<p>To provide specialized assets for RTL languages, you can use the <code>ldrtl</code> qualifier on resource directories, such as <code>res/drawable-ldrtl/</code>. Resources inside such directories will only be used for RTL languages. For devices running Android API 19 or newer, the framework also provides the <a href="https://developer.android.com/about/versions/android-4.4.html#DrawableMirroring">autoMirrored attribute</a> for Drawables. When this attribute is set to true, the drawable will be automatically mirrored on RTL languages.</p>
+<p>To provide specialized assets for RTL languages, you can use the <code>ldrtl</code> qualifier on resource directories, such as <code>res/drawable-ldrtl/</code>. Resources inside such directories will only be used for RTL languages. For devices running Android API 19 or newer, the framework also provides the <a href="https://developer.android.com/about/versions/kitkat/android-4.4#DrawableMirroring">autoMirrored attribute</a> for Drawables. When this attribute is set to true, the drawable will be automatically mirrored on RTL languages.</p>
 <p>Using autoMirrored:</p>
 <pre><code>&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
         android:width=&quot;24dp&quot;
