@@ -6,10 +6,16 @@
     android:tint="?attr/colorControlNormal">
   <path
       android:fillColor="@android:color/white"
-      android:pathData="M12.07,6.01c-3.87,0 -7,3.13 -7,7s3.13,7 7,7 7,-3.13 7,-7 -3.13,-7 -7,-7zM13.07,14.01h-2v-6h2v6z"
+      android:pathData="M12,6c-3.87,0 -7,3.13 -7,7s3.13,7 7,7s7,-3.13 7,-7S15.87,6 12,6zM13,14h-2V8h2V14z"
       android:strokeAlpha="0.3"
       android:fillAlpha="0.3"/>
   <path
       android:fillColor="@android:color/white"
-      android:pathData="M9.07,1.01h6v2h-6zM11.07,8.01h2v6h-2zM19.1,7.39l1.42,-1.42c-0.43,-0.51 -0.9,-0.99 -1.41,-1.41l-1.42,1.42C16.14,4.74 14.19,4 12.07,4c-4.97,0 -9,4.03 -9,9s4.02,9 9,9 9,-4.03 9,-9c0,-2.11 -0.74,-4.07 -1.97,-5.61zM12.07,20.01c-3.87,0 -7,-3.13 -7,-7s3.13,-7 7,-7 7,3.13 7,7 -3.13,7 -7,7z"/>
+      android:pathData="M9,1h6v2h-6z"/>
+  <path
+      android:fillColor="@android:color/white"
+      android:pathData="M19.03,7.39l1.42,-1.42c-0.43,-0.51 -0.9,-0.99 -1.41,-1.41l-1.42,1.42C16.07,4.74 14.12,4 12,4c-4.97,0 -9,4.03 -9,9c0,4.97 4.02,9 9,9s9,-4.03 9,-9C21,10.88 20.26,8.93 19.03,7.39zM12,20c-3.87,0 -7,-3.13 -7,-7s3.13,-7 7,-7s7,3.13 7,7S15.87,20 12,20z"/>
+  <path
+      android:fillColor="@android:color/white"
+      android:pathData="M11,8h2v6h-2z"/>
 </vector>
