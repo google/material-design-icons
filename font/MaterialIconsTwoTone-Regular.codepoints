@@ -224,10 +224,17 @@ bar_chart e26b
 batch_prediction f0f5
 bathroom efdd
 bathtub ea41
+battery_0_bar ebdc
+battery_1_bar ebd9
 battery_20 f09c
+battery_2_bar ebe0
 battery_30 f09d
+battery_3_bar ebdd
+battery_4_bar ebe2
 battery_50 f09e
+battery_5_bar ebd4
 battery_60 f09f
+battery_6_bar ebd2
 battery_80 f0a0
 battery_90 f0a1
 battery_alert e19c
@@ -303,6 +310,7 @@ brightness_high e1ac
 brightness_low e1ad
 brightness_medium e1ae
 broken_image e3ad
+browse_gallery ebd1
 browser_not_supported ef47
 browser_updated e7cf
 brunch_dining ea73
@@ -321,6 +329,7 @@ cable efe6
 cached e86a
 cake e7e9
 calculate ea5f
+calendar_month ebcc
 calendar_today e935
 calendar_view_day e936
 calendar_view_month efe7
@@ -348,6 +357,7 @@ cancel e5c9
 cancel_presentation e0e9
 cancel_schedule_send ea39
 candlestick_chart ead4
+car_crash ebf2
 car_rental ea55
 car_repair ea56
 card_giftcard e8f6
@@ -467,6 +477,7 @@ credit_card e870
 credit_card_off e4f4
 credit_score eff1
 crib e588
+crisis_alert ebe9
 crop e3be
 crop_16_9 e3bc
 crop_3_2 e3bd
@@ -481,6 +492,7 @@ crop_rotate e437
 crop_square e3c6
 cruelty_free e799
 css eb93
+currency_bitcoin ebc5
 currency_exchange eb70
 currency_franc eafa
 currency_lira eaef
@@ -490,6 +502,7 @@ currency_rupee eaf7
 currency_yen eafb
 currency_yuan eaf9
 cut f08b
+cyclone ebd5
 dangerous e99a
 dark_mode e51c
 dashboard e871
@@ -528,6 +541,7 @@ device_hub e335
 device_thermostat e1ff
 device_unknown e339
 devices e1b1
+devices_fold ebde
 devices_other e337
 dialer_sip e0bb
 dialpad e0bc
@@ -559,6 +573,7 @@ disabled_by_default f230
 disabled_visible e76e
 disc_full e610
 discord ea6c
+discount ebc9
 display_settings eb97
 dnd_forwardslash e611
 dns e875
@@ -639,6 +654,8 @@ electrical_services f102
 elevator f1a0
 email e0be
 emergency e1eb
+emergency_recording ebf4
+emergency_share ebf6
 emoji_emotions ea22
 emoji_events ea23
 emoji_flags ea1a
@@ -768,11 +785,13 @@ flip_camera_android ea37
 flip_camera_ios ea38
 flip_to_back e882
 flip_to_front e883
+flood ebe6
 flourescent f00d
 flutter_dash e00b
 fmd_bad f00e
 fmd_good f00f
 folder e2c7
+folder_copy ebbd
 folder_delete eb34
 folder_off eb83
 folder_open e2c8
@@ -867,6 +886,7 @@ groups f233
 h_mobiledata f018
 h_plus_mobiledata f019
 hail e9b1
+handshake ebcb
 handyman f10b
 hardware ea59
 hd e052
@@ -1015,6 +1035,7 @@ label_off e9b6
 label_outline e893
 lan eb2f
 landscape e3f7
+landslide ebd7
 language e894
 laptop e31e
 laptop_chromebook e31f
@@ -1120,6 +1141,7 @@ mail_outline e0e1
 male e58e
 man e4eb
 manage_accounts f02e
+manage_history ebe7
 manage_search f02f
 map e55b
 maps_home_work f030
@@ -1138,6 +1160,7 @@ maximize e930
 media_bluetooth_off f031
 media_bluetooth_on f032
 mediation efa7
+medical_information ebed
 medical_services f109
 medication f033
 medication_liquid ea87
@@ -1159,6 +1182,7 @@ mic_off e02b
 microwave f204
 military_tech ea3f
 minimize e931
+minor_crash ebf1
 miscellaneous_services f10c
 missed_video_call e073
 mms e618
@@ -1229,7 +1253,11 @@ nearby_off f03c
 network_cell e1b9
 network_check e640
 network_locked e61a
+network_ping ebca
 network_wifi e1ba
+network_wifi_1_bar ebe4
+network_wifi_2_bar ebd6
+network_wifi_3_bar ebe1
 new_label e609
 new_releases e031
 newspaper eb81
@@ -1244,6 +1272,7 @@ nights_stay ea46
 no_accounts f03e
 no_backpack f237
 no_cell f1a4
+no_crash ebf0
 no_drinks f1a5
 no_encryption e641
 no_encryption_gmailerrorred f03f
@@ -1256,6 +1285,8 @@ no_photography f1a8
 no_sim e0cc
 no_stroller f1af
 no_transfer f1d5
+noise_aware ebec
+noise_control_off ebf3
 nordic_walking e50e
 north f1e0
 north_east f1e1
@@ -1297,6 +1328,7 @@ outbox ef5f
 outdoor_grill ea47
 outlet f1d4
 outlined_flag e16e
+output ebbe
 padding e9c8
 pages e7f9
 pageview e8a0
@@ -1541,6 +1573,7 @@ rice_bowl f1f5
 ring_volume e0d1
 rocket eba5
 rocket_launch eb9b
+roller_skating ebcd
 roofing f201
 room e8b4
 room_preferences f1b8
@@ -1563,6 +1596,7 @@ rule_folder f1c9
 run_circle ef6f
 running_with_errors e51d
 rv_hookup e642
+safety_check ebef
 safety_divider e1cc
 sailing e502
 sanitizer f21d
@@ -1582,13 +1616,16 @@ schema e4fd
 school e80c
 science ea4b
 score e269
+scoreboard ebd0
 screen_lock_landscape e1be
 screen_lock_portrait e1bf
 screen_lock_rotation e1c0
 screen_rotation e1c1
+screen_rotation_alt ebee
 screen_search_desktop ef70
 screen_share e0e2
 screenshot f056
+scuba_diving ebce
 sd e9dd
 sd_card e623
 sd_card_alert f057
@@ -1639,6 +1676,7 @@ settings_remote e8c7
 settings_suggest f05e
 settings_system_daydream e1c3
 settings_voice e8c8
+severe_cold ebd3
 share e80d
 share_arrival_time e524
 share_location f05f
@@ -1660,12 +1698,15 @@ shuffle e043
 shuffle_on e9e1
 shutter_speed e43d
 sick f220
+sign_language ebe5
 signal_cellular_0_bar f0a8
 signal_cellular_1_bar f0a9
 signal_cellular_2_bar f0aa
 signal_cellular_3_bar f0ab
 signal_cellular_4_bar e1c8
 signal_cellular_alt e202
+signal_cellular_alt_1_bar ebdf
+signal_cellular_alt_2_bar ebe3
 signal_cellular_connected_no_internet_0_bar f0ac
 signal_cellular_connected_no_internet_1_bar f0ad
 signal_cellular_connected_no_internet_2_bar f0ae
@@ -1733,6 +1774,7 @@ soap f1b2
 social_distance e1cb
 sort e164
 sort_by_alpha e053
+sos ebf7
 soup_kitchen e7d3
 source f1c4
 south f1e3
@@ -1742,6 +1784,9 @@ south_west f1e5
 spa eb4c
 space_bar e256
 space_dashboard e66b
+spatial_audio ebeb
+spatial_audio_off ebe8
+spatial_tracking ebea
 speaker e32d
 speaker_group e32e
 speaker_notes e8cd
@@ -1759,6 +1804,7 @@ sports_cricket ea27
 sports_esports ea28
 sports_football ea29
 sports_golf ea2a
+sports_gymnastics ebc4
 sports_handball ea33
 sports_hockey ea2b
 sports_kabaddi ea34
@@ -1904,6 +1950,7 @@ thumb_up e8dc
 thumb_up_alt e817
 thumb_up_off_alt e9f3
 thumbs_up_down e8dd
+thunderstorm ebdb
 tiktok ea7e
 time_to_leave e62c
 timelapse e422
@@ -1915,6 +1962,7 @@ timer_3 e424
 timer_3_select f07b
 timer_off e426
 tips_and_updates e79a
+tire_repair ebc8
 title e264
 toc e8de
 today e8df
@@ -1943,6 +1991,7 @@ trending_neutral e8e4
 trending_up e8e5
 trip_origin e57b
 try f07c
+tsunami ebd8
 tty f1aa
 tune e429
 tungsten f07d
@@ -1975,6 +2024,8 @@ upload_file e9fc
 usb e1e0
 usb_off e4fa
 vaccines e138
+vape_free ebc6
+vaping_rooms ebcf
 verified ef76
 verified_user e8e8
 vertical_align_bottom e258
@@ -2024,6 +2075,7 @@ visibility_off e8f5
 voice_chat e62e
 voice_over_off e94a
 voicemail e0d9
+volcano ebda
 volume_down e04d
 volume_mute e04e
 volume_off e04f
@@ -2071,6 +2123,8 @@ wheelchair_pickup f1ab
 where_to_vote e177
 widgets e75e
 wifi e63e
+wifi_1_bar e4ca
+wifi_2_bar e4d9
 wifi_calling ef77
 wifi_calling_1 f0e7
 wifi_calling_2 f0f6
