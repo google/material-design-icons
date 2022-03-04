@@ -205,6 +205,7 @@ auto_fix_high e663
 auto_fix_normal e664
 auto_fix_off e665
 auto_graph e4fb
+auto_mode ec20
 auto_stories e666
 autofps_select efdc
 autorenew e863
@@ -249,6 +250,8 @@ bento f1f4
 bike_scooter ef45
 biotech ea3a
 blender efe3
+blinds e286
+blinds_closed ec1f
 block e14b
 bloodtype efe4
 bluetooth e1a7
@@ -489,6 +492,8 @@ currency_ruble eaec
 currency_rupee eaf7
 currency_yen eafb
 currency_yuan eaf9
+curtains ec1e
+curtains_closed ec1d
 cut f08b
 cyclone ebd5
 dangerous e99a
@@ -634,7 +639,9 @@ eject e8fb
 elderly f21a
 elderly_woman eb69
 electric_bike eb1b
+electric_bolt ec1c
 electric_car eb1c
+electric_meter ec1b
 electric_moped eb1d
 electric_rickshaw eb1e
 electric_scooter eb1f
@@ -653,6 +660,7 @@ emoji_objects ea24
 emoji_people ea1d
 emoji_symbols ea1e
 emoji_transportation ea1f
+energy_savings_leaf ec1a
 engineering ea3d
 enhance_photo_translate e8fc
 enhanced_encryption e63f
@@ -838,6 +846,7 @@ g_translate e927
 gamepad e30f
 games e021
 garage f011
+gas_meter ec19
 gavel e90e
 generating_tokens e749
 gesture e155
@@ -898,6 +907,7 @@ health_and_safety e1d5
 hearing e023
 hearing_disabled f104
 heart_broken eac2
+heat_pump ec18
 height ea16
 help e887
 help_center f1c0
@@ -1047,6 +1057,7 @@ library_music e030
 light f02a
 light_mode e518
 lightbulb e0f0
+lightbulb_circle ebfe
 lightbulb_outline e90f
 line_axis ea9a
 line_style e919
@@ -1124,7 +1135,9 @@ lte_mobiledata f02c
 lte_plus_mobiledata f02d
 luggage f235
 lunch_dining ea61
+lyrics ec0b
 mail e158
+mail_lock ec0a
 mail_outline e0e1
 male e58e
 man e4eb
@@ -1182,6 +1195,7 @@ mode f097
 mode_comment e253
 mode_edit e254
 mode_edit_outline f035
+mode_fan_off ec17
 mode_night f036
 mode_of_travel e7ce
 mode_standby f037
@@ -1238,6 +1252,7 @@ near_me e569
 near_me_disabled f1ef
 nearby_error f03b
 nearby_off f03c
+nest_cam_wired_stand ec16
 network_cell e1b9
 network_check e640
 network_locked e61a
@@ -1301,6 +1316,8 @@ numbers eac7
 offline_bolt e932
 offline_pin e90a
 offline_share e9c5
+oil_barrel ec15
+on_device_training ebfd
 ondemand_video e63a
 online_prediction f0eb
 opacity e91c
@@ -1472,6 +1489,8 @@ priority_high e645
 privacy_tip f0dc
 private_connectivity e744
 production_quantity_limits e1d1
+propane ec14
+propane_tank ec13
 psychology ea4a
 public e80b
 public_off f1ca
@@ -1530,6 +1549,7 @@ remove_done e9d3
 remove_from_queue e067
 remove_moderator e9d4
 remove_red_eye e417
+remove_road ebfc
 remove_shopping_cart e928
 reorder e8fe
 repeat e040
@@ -1561,6 +1581,8 @@ rice_bowl f1f5
 ring_volume e0d1
 rocket eba5
 rocket_launch eb9b
+roller_shades ec12
+roller_shades_closed ec11
 roller_skating ebcd
 roofing f201
 room e8b4
@@ -1613,6 +1635,7 @@ screen_rotation_alt ebee
 screen_search_desktop ef70
 screen_share e0e2
 screenshot f056
+screenshot_monitor ec08
 scuba_diving ebce
 sd e9dd
 sd_card e623
@@ -1633,6 +1656,7 @@ send_and_archive ea0c
 send_time_extension eadb
 send_to_mobile f05c
 sensor_door f1b5
+sensor_occupied ec10
 sensor_window f1b4
 sensors e51e
 sensors_off e51f
@@ -1736,6 +1760,7 @@ snowmobile e503
 snowshoeing e514
 soap f1b2
 social_distance e1cb
+solar_power ec0f
 sort e164
 sort_by_alpha e053
 sos ebf7
@@ -1936,6 +1961,7 @@ token ea25
 toll e8e0
 tonality e427
 topic f1c8
+tornado e199
 touch_app e913
 tour ef75
 toys e332
@@ -1954,6 +1980,7 @@ trending_flat e8e4
 trending_neutral e8e4
 trending_up e8e5
 trip_origin e57b
+troubleshoot e1d2
 try f07c
 tsunami ebd8
 tty f1aa
@@ -1996,6 +2023,8 @@ vertical_align_bottom e258
 vertical_align_center e259
 vertical_align_top e25a
 vertical_distribute e076
+vertical_shades ec0e
+vertical_shades_closed ec0d
 vertical_split e949
 vibration e62d
 video_call e070
@@ -2101,12 +2130,14 @@ wifi_tethering e1e2
 wifi_tethering_error f086
 wifi_tethering_error_rounded f086
 wifi_tethering_off f087
+wind_power ec0c
 window f088
 wine_bar f1e8
 woman e13e
 woo_commerce ea6d
 wordpress ea9f
 work e8f9
+work_history ec09
 work_off e942
 work_outline e943
 workspace_premium e7af
