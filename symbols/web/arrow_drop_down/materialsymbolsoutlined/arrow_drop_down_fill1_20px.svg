@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M9.979 12.5 5.833 8.333H14.146Z"/></svg>

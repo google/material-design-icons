@@ -39,15 +39,24 @@ def _cmap(ttfont):
   unicode_cmaps = (t.cmap for t in ttfont['cmap'].tables if t.isUnicode())
   return functools.reduce(_cmap_reducer, unicode_cmaps, {})
 
+def _LookupSubtablesOfType(lookup_list, lookup_type):
+  # Direct matches
+  for lookup in lookup_list.Lookup:
+    if lookup.LookupType == lookup_type:
+      for subtable in lookup.SubTable:
+        yield subtable
 
 def _ligatures(ttfont):
-  liga_lookups = tuple(
-      filter(lambda l: l.LookupType == 4,
-             ttfont['GSUB'].table.LookupList.Lookup))
-  for lookup in liga_lookups:
-    for subtable in lookup.SubTable:
-      yield subtable.ligatures
+  lookup_list = ttfont['GSUB'].table.LookupList
 
+  # Direct ligatures
+  for subtable in _LookupSubtablesOfType(lookup_list, 4):
+    yield subtable.ligatures
+
+  # Extensions
+  for ext_subtable in _LookupSubtablesOfType(lookup_list, 7):
+    if ext_subtable.ExtensionLookupType == 4:
+      yield ext_subtable.ExtSubTable.ligatures
 
 def enumerate(font_file: Path):
   """Yields (icon name, codepoint) tuples for icon font."""
