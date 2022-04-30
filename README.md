@@ -81,14 +81,18 @@ Read the [developer guide](https://google.github.io/material-design-icons/) on h
 
 ### Using a font
 
-The `font` folder contains pre-generated font files that can be included in a project. This is especially convenient for the web; however, it is generally better to link to the web font hosted on Google Fonts:
+The `font` and `variablefont` folders contain pre-generated font files that can be included in a project. This is especially convenient for the web; however, it is generally better to link to the web font hosted on Google Fonts:
 
 ```html
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet">
 ```
 
-Read more in the [font portion](https://google.github.io/material-design-icons/#icon-font-for-the-web) of our full developer guide.
+```html
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols"
+      rel="stylesheet">
+```
+Read more on [Material Symbols](https://developers.google.com/fonts/docs/material_symbols/) or [Material Icons](https://developers.google.com/fonts/docs/material_icons/) in the Google Fonts developer guide.
 
 
 ## License
