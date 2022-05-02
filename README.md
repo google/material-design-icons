@@ -2,7 +2,7 @@
 
 These are two different official icon sets from Google. Material Icons is the classic set, while Material Symbols was introduced in April 2022, built on variable font technology.
 
-The icons can be browsed in a more user-friendly way at https://fonts.google.com/icons (use the popdown menu near top left to choose between the two sets, Material Symbols is the default).
+The icons can be browsed in a more user-friendly way at https://fonts.google.com/icons. Use the popdown menu near top left to choose between the two sets, Material Symbols is the default.
 
 The icons are designed under the [material design guidelines](https://material.io/guidelines/).
 
@@ -12,17 +12,10 @@ The icons can be browsed in a more user-friendly way at https://fonts.google.com
 
 These classic icons are available in five distinct styles:
 - Outlined
-- Filled
+- Filled (the font version is just called Material Icons, as this is the oldest style)
 - Rounded
 - Sharp
 - Two tone
-
-Additionally, there are several fonts available, each corresponding to one of the sets above:
-- Material Icons (the filled style)
-- Material Icons Outlined
-- Material Icons Round
-- Material Icons Sharp
-- Material Icons Two Tone
 
 The following directories in this repo contain specifically Material Icons (not Material Symbols) content:
 - android
@@ -41,11 +34,11 @@ What is currently _not_ available in Material Icons?
 
 These newer icons can be browsed in a more user-friendly way at https://fonts.google.com/icons. (Use the popdown menu near top left to choose between the two sets, Material Symbols is the default).
 
-These icons were built/designed as variable fonts first (based on the 24 px designs from Material Icons). There are three separate Material Symbols variable fonts:
+These icons were built/designed as variable fonts first (based on the 24 px designs from Material Icons). There are three separate Material Symbols variable fonts, which also have static icons available (but those do not have all the variations available, as that would be hundreds of styles):
 - Outlined
 - Rounded
 - Sharp
-- (although there is no separate Filled font, the Fill axis allows access to filled styles on all three fonts.)
+- Note that although there is no separate Filled font, the Fill axis allows access to filled styles—in all three fonts.
 
 Each of the fonts has these design axes, which can be varied in CSS, or in many more modern design apps:
 - Optical Size (opsz) from 20 to 48 px. The default is 24.
@@ -62,6 +55,8 @@ What is currently _not_ available in Material Symbols?
 - the only pre-made fonts are the variable fonts
 - there are no two-tone icons
 
+## Material Icons update history
+
 ### 4.0.0 Update
 
 Restructured repository, updated assets.
@@ -77,7 +72,7 @@ License change to Apache 2.0!
 
 ## Getting Started
 
-Read the [developer guide](https://google.github.io/material-design-icons/) on how to use the material design icons in your project.
+Read the [developer guide](https://developers.google.com/fonts/docs/material_icons) on how to use the material design icons in your project.
 
 ### Using a font
 
