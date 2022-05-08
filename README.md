@@ -10,6 +10,12 @@ The icons are designed under the [material design guidelines](https://material.i
 
 Google does not currently maintain npm packages for the repo, past v3. However, user @marella is hosting the following, currently for the Material Icons only (not Material Symbols). He tells us these are automatically updated and published using GitHub Actions. Google does NOT monitor or vet these packages.
 
+### [material-symbols](https://github.com/marella/material-symbols/tree/main/material-symbols#readme) [![npm](https://img.shields.io/npm/v/material-symbols)](https://www.npmjs.com/package/material-symbols) [![install size](https://packagephobia.com/badge?p=material-symbols)](https://packagephobia.com/result?p=material-symbols)
+
+- Only WOFF2 variable fonts and CSS for Material Symbols
+- Includes outlined, rounded, and sharp icons and all variations of fill, weight, grade, and optical size
+- Supports Sass
+
 ### [material-icons](https://github.com/marella/material-icons#readme) [![npm](https://img.shields.io/npm/v/material-icons)](https://www.npmjs.com/package/material-icons) [![install size](https://packagephobia.com/badge?p=material-icons)](https://packagephobia.com/result?p=material-icons) [![Downloads](https://img.shields.io/npm/dm/material-icons)](https://www.npmjs.com/package/material-icons)
 
 - Only WOFF2, WOFF fonts and CSS
