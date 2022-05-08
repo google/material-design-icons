@@ -8,7 +8,7 @@ The icons are designed under the [material design guidelines](https://material.i
 
 ## npm Packages
 
-Google does not currently maintain npm packages for the repo, past v3. However, user @marella is hosting the following, currently for the Material Icons only (not Material Symbols). He tells us these are automatically updated and published using GitHub Actions. Google does NOT monitor or vet these packages.
+Google does not currently maintain npm packages for the repo, past v3. However, user @marella is hosting the following. He tells us these are automatically updated and published using GitHub Actions. Google does NOT monitor or vet these packages.
 
 ### [material-symbols](https://github.com/marella/material-symbols/tree/main/material-symbols#readme) [![npm](https://img.shields.io/npm/v/material-symbols)](https://www.npmjs.com/package/material-symbols) [![install size](https://packagephobia.com/badge?p=material-symbols)](https://packagephobia.com/result?p=material-symbols)
 
