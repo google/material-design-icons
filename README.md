@@ -6,6 +6,27 @@ The icons can be browsed in a more user-friendly way at https://fonts.google.com
 
 The icons are designed under the [material design guidelines](https://material.io/guidelines/).
 
+## npm Packages
+
+Google does not currently maintain npm packages for the repo, past v3. However, user @marella is hosting the following, currently for the Material Icons only (not Material Symbols). He tells us these are automatically updated and published using GitHub Actions. Google does NOT monitor or vet these packages.
+
+### [material-icons](https://github.com/marella/material-icons#readme) [![npm](https://img.shields.io/npm/v/material-icons)](https://www.npmjs.com/package/material-icons) [![install size](https://packagephobia.com/badge?p=material-icons)](https://packagephobia.com/result?p=material-icons) [![Downloads](https://img.shields.io/npm/dm/material-icons)](https://www.npmjs.com/package/material-icons)
+
+- Only WOFF2, WOFF fonts and CSS
+- Includes outlined, round, sharp and two-tone icons
+- Supports Sass
+
+### [@material-design-icons/font](https://github.com/marella/material-design-icons/tree/main/font#readme) [![npm (scoped)](https://img.shields.io/npm/v/@material-design-icons/font)](https://www.npmjs.com/package/@material-design-icons/font) [![install size](https://packagephobia.com/badge?p=@material-design-icons/font)](https://packagephobia.com/result?p=@material-design-icons/font)
+
+- Only WOFF2 fonts and CSS
+- Lighter version of `material-icons` package
+- Doesn't support [older browsers](https://caniuse.com/woff2) such as Internet Explorer because of dropping WOFF (v1)
+
+### [@material-design-icons/svg](https://github.com/marella/material-design-icons/tree/main/svg#readme) [![npm (scoped)](https://img.shields.io/npm/v/@material-design-icons/svg)](https://www.npmjs.com/package/@material-design-icons/svg) [![install size](https://packagephobia.com/badge?p=@material-design-icons/svg)](https://packagephobia.com/result?p=@material-design-icons/svg)
+
+- Only SVGs
+- Optimizes SVGs using SVGO
+
 ### Material Icons
 
 The icons can be browsed in a more user-friendly way at https://fonts.google.com/icons?icon.set=Material+Icons
