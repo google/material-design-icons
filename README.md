@@ -33,7 +33,7 @@ Google does not currently maintain the npm package for this repo, past v3 (2016)
 - Only SVGs
 - Optimizes SVGs using SVGO
 
-### Material Icons
+## Material Icons
 
 The icons can be browsed in a more user-friendly way at https://fonts.google.com/icons?icon.set=Material+Icons
 
@@ -57,7 +57,7 @@ What is currently _not_ available in Material Icons?
 - grades other than Regular
 - a means to animate Fill transitions
 
-### Material Symbols
+## Material Symbols
 
 These newer icons can be browsed in a more user-friendly way at https://fonts.google.com/icons. (Use the popdown menu near top left to choose between the two sets, Material Symbols is the default).
 
