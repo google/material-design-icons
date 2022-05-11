@@ -85,17 +85,20 @@ What is currently _not_ available in Material Symbols?
 ## Material Icons update history
 
 ### 4.0.0 Update
-
-Restructured repository, updated assets.
+* 2020 Aug 31
+* Restructured repository, updated assets.
 
 ### 3.0.1 Update
-
+* 2016 Sep 01
 * Changed license in package.json.
 * Added missing device symbol sprites.
 
 ### 3.0.0 Update
+* 2016 Aug 25
+* License change to Apache 2.0!
 
-License change to Apache 2.0!
+### 2.0
+* 2016 May 28
 
 ## Getting Started
 
