@@ -6,6 +6,17 @@ The icons can be browsed in a more user-friendly way at https://fonts.google.com
 
 The icons are designed under the [material design guidelines](https://material.io/guidelines/).
 
+## Icon Requests
+
+We’d love to support your icon needs! Please submit your request here on github as an issue.
+
+Please note that Google Fonts does not accept user submissions of finished icon designs! There are fairly strict  guidelines for Material icons, plus Google has upstream source files from which this repo is generated. Therefore, Google does not accept pull requests for icon files (whether new icon suggestions, or fixes for existing icons). Concepts are appreciated—just don’t design SVGs and submit them via pull request.
+
+However, users are perfectly welcome to point at outside files or images as examples—even multiple examples—for the kind of thing they want, but they won’t just be taken “as is.” 
+
+> For example, there is a fairly universal conceptual logo/icon for “agender,” so if you were proposing Google add an agender icon in the Material style, either mentioning that, or pointing at https://www.google.com/search?q=agender+icon would be a helpful tip.
+
+
 ## npm Packages
 
 Google does not currently maintain the npm package for this repo, past v3 (2016). However, user @marella is hosting the following. He tells us these are automatically updated and published using GitHub Actions. Google does NOT monitor or vet these packages.
