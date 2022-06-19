@@ -1,4 +1,4 @@
-This is the directory for the non-variable classic icon fonts. Variable fonts are at [../variablefont](https://github.com/google/material-design-icons/tree/master/variablefont)
+This is the directory for Material Icons, the non-variable classic icon fonts. The new Material Symbols variable fonts are at [../variablefont](https://github.com/google/material-design-icons/tree/master/variablefont)
 
 The recommended way to use the Material Icons font is by linking to the web font hosted on Google Fonts:
 
