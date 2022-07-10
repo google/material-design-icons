@@ -131,7 +131,7 @@ The `font` and `variablefont` folders contain pre-generated font files that can 
 Read more on [Material Symbols](https://developers.google.com/fonts/docs/material_symbols/) or [Material Icons](https://developers.google.com/fonts/docs/material_icons/) in the Google Fonts developer guide.
 
 
-## License
+## Apache License
 
 We have made these icons available for you to incorporate into your products under the [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt). Feel free to remix and re-share these icons and documentation in your products.
 We'd love attribution in your app's *about* screen, but it's not required.
