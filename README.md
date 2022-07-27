@@ -44,6 +44,11 @@ Google does not currently maintain the npm package for this repo, past v3 (2016)
 - Only SVGs
 - Optimizes SVGs using SVGO
 
+### [@cloudblueconnect/material-svg](https://github.com/cloudblue/material-svg#readme) [![npm (scoped)](https://img.shields.io/npm/v/@cloudblueconnect/material-svg)](https://www.npmjs.com/package/@cloudblueconnect/material-svg) [![install size](https://packagephobia.com/badge?p=@cloudblueconnect/material-svg)](https://packagephobia.com/result?p=@cloudblueconnect/material-svg)
+
+- Only SVGs
+- Automatically updating from [Google's Material Design Icons repository](https://github.com/google/material-design-icons)
+
 ## Material Icons
 
 The icons can be browsed in a more user-friendly way at https://fonts.google.com/icons?icon.set=Material+Icons
