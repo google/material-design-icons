@@ -16,6 +16,9 @@ However, users are perfectly welcome to point at outside files or images as exam
 
 > For example, there is a fairly universal conceptual logo/icon for “agender,” so if you were proposing Google add an agender icon in the Material style, either mentioning that, or pointing at https://www.google.com/search?q=agender+icon would be a helpful tip.
 
+### Third-party logos
+
+Currently, Google does not include 3rd-party logos among the Material Symbols or Material Icons due to legal reasons. Some 3rd-party logos that were included in the past have since been removed.
 
 ## npm Packages
 
