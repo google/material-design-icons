@@ -73,7 +73,7 @@ What is currently _not_ available in Material Icons?
 
 ## Material Symbols
 
-These newer icons can be browsed in a more user-friendly way at https://fonts.google.com/icons. (Use the popdown menu near top left to choose between the two sets, Material Symbols is the default).
+These newer icons can be browsed in a more user-friendly way at https://fonts.google.com/icons. (Use the popdown menu near top left to choose between the two sets, Material Symbols is the default.)
 
 These icons were built/designed as variable fonts first (based on the 24 px designs from Material Icons). There are three separate Material Symbols variable fonts, which also have static icons available (but those do not have all the variations available, as that would be hundreds of styles):
 - Outlined
