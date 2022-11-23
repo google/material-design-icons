@@ -2,7 +2,7 @@
 
 These are two different official icon sets from Google, using the same underlying designs. Material Icons is the classic set, while Material Symbols was introduced in April 2022, built on variable font technology.
 
-The icons can be browsed in a more user-friendly way at https://fonts.google.com/icons. Use the popdown menu near top left to choose between the two sets, Material Symbols is the default.
+The icons can be browsed in a more user-friendly way at https://fonts.google.com/icons. Use the popdown menu near top left to choose between the two sets; Material Symbols is the default.
 
 The icons are designed under the [material design guidelines](https://material.io/guidelines/).
 
@@ -12,10 +12,13 @@ We’d love to support your icon needs! Please submit your request here on githu
 
 Please note that Google Fonts does not accept user submissions of finished icon designs! There are fairly strict  guidelines for Material icons, plus Google has upstream source files from which this repo is generated. Therefore, Google does not accept pull requests for icon files (whether new icon suggestions, or fixes for existing icons). Concepts are appreciated—just don’t design SVGs and submit them via pull request.
 
-However, users are perfectly welcome to point at outside files or images as examples—even multiple examples—for the kind of thing they want, but they won’t just be taken “as is.” 
+However, users are perfectly welcome to point at outside files or images as examples—for the kind of thing they want, but they won’t just be taken “as is.” This works especially well if you have multiple examples for a single icon, to help us understand the “essence” of the idea.
 
 > For example, there is a fairly universal conceptual logo/icon for “agender,” so if you were proposing Google add an agender icon in the Material style, either mentioning that, or pointing at https://www.google.com/search?q=agender+icon would be a helpful tip.
 
+### Third-party logos
+
+Currently, Google does not include 3rd-party logos among the Material Symbols or Material Icons due to legal reasons. Some 3rd-party logos that were included in the past have since been removed.
 
 ## npm Packages
 
@@ -70,7 +73,7 @@ What is currently _not_ available in Material Icons?
 
 ## Material Symbols
 
-These newer icons can be browsed in a more user-friendly way at https://fonts.google.com/icons. (Use the popdown menu near top left to choose between the two sets, Material Symbols is the default).
+These newer icons can be browsed in a more user-friendly way at https://fonts.google.com/icons. Use the popdown menu near top left to choose between the two sets; Material Symbols is the default.
 
 These icons were built/designed as variable fonts first (based on the 24 px designs from Material Icons). There are three separate Material Symbols variable fonts, which also have static icons available (but those do not have all the variations available, as that would be hundreds of styles):
 - Outlined
