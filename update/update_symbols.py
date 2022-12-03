@@ -95,6 +95,8 @@ def _version_key(icon: Icon):
 
 def _symbol_families(metadata):
     return set(s for s in set(metadata["families"]) if "Symbols" in s)
+
+
 def _icons(metadata):
     all_sets = _symbol_families(metadata)
     for raw_icon in metadata["icons"]:
@@ -112,25 +114,32 @@ def _create_fetch(asset, args):
     dest_file = (Path(__file__) / "../.." / dest_file).resolve()
     return Fetch(src_url, dest_file)
 
+
 @delayed
-def _do_fetch(src_url, dest_file, i, total):
+def _do_fetch_delayed(src_url, dest_file, i, total):
+    _do_fetch(src_url, dest_file)
+    if i % 5000 == 0:
+        print("%d/%d complete" % (i, total))
+
+
+def _do_fetch(src_url, dest_file):
     try :
         resp = requests.get(src_url)
         resp.raise_for_status()
         dest_file.parent.mkdir(parents=True, exist_ok=True)
         dest_file.write_bytes(resp.content)
-        if i % 5000 == 0:
-            print("%d/%d complete" % (i, total))
     except Exception as e:
         print(str(e))
+
 
 def _do_fetches(fetches):
     print(f"Starting {len(fetches)} fetches")
     total = len(fetches)
-    Parallel(n_jobs=50)(_do_fetch(f.src_url, f.dest_file, i, total) for i,f in enumerate(fetches))
+    Parallel(n_jobs=50)(_do_fetch_delayed(f.src_url, f.dest_file, i, total) for i,f in enumerate(fetches))
     if total:
         print("%d/%d complete" % (total, total))
     
+
 def _fetch_fonts(css_files: Sequence[Path]):
     for css_file in css_files:
         css = css_file.read_text()
@@ -146,6 +155,7 @@ def _fetch_fonts(css_files: Sequence[Path]):
 
 def _is_css(p: Path):
     return p.suffix == ".css"
+
 
 def _files(fetches: Sequence[Fetch], pred):
     return [f.dest_file for f in fetches if pred(f.dest_file)]
