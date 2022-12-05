@@ -25,6 +25,8 @@ import time
 from typing import NamedTuple, Set, Sequence, Tuple
 from zipfile import ZipFile
 from joblib import Parallel, delayed, wrap_non_picklable_objects
+from fontTools.ttLib import woff2
+import os
 
 FLAGS = flags.FLAGS
 
@@ -69,6 +71,9 @@ _ICON_IOS_ASSETS = (
     ),
 )
 
+_HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
+}
 
 _SET_ASSETS = (
     # Fonts are acquired by abusing the Google Fonts web api. Nobody tell them :D
@@ -124,7 +129,7 @@ def _do_fetch_delayed(src_url, dest_file, i, total):
 
 def _do_fetch(src_url, dest_file):
     try :
-        resp = requests.get(src_url)
+        resp = requests.get(src_url, headers = _HEADERS)
         resp.raise_for_status()
         dest_file.parent.mkdir(parents=True, exist_ok=True)
         dest_file.write_bytes(resp.content)
@@ -140,13 +145,21 @@ def _do_fetches(fetches):
         print("%d/%d complete" % (total, total))
     
 
+def decompress(infilepath: Path, outfilepath: Path):
+    with infilepath.open(mode='rb') as infile:
+        with outfilepath.open(mode='wb') as outfile:
+            woff2.decompress(infile, outfile)
+
+
 def _fetch_fonts(css_files: Sequence[Path]):
     for css_file in css_files:
         css = css_file.read_text()
         url = re.search(r"src:\s+url\(([^)]+)\)", css).group(1)
-        assert url.endswith(".otf") or url.endswith(".ttf")
-        dest_file = css_file.parent / (css_file.stem + url[-4:])
-        _do_fetch(url, dest_file)
+        assert url.endswith(".woff2")
+        woff2_file = css_file.parent / (css_file.stem + ".woff2")
+        dest_file = css_file.parent / (css_file.stem + ".ttf")
+        _do_fetch(url, woff2_file)
+        decompress(woff2_file, dest_file)
         css_file.unlink()
         with open(dest_file.with_suffix(".codepoints"), "w") as f:
             for name, codepoint in sorted(icons.enumerate(dest_file)):
