@@ -92,7 +92,7 @@ The following directories in this repo contain specifically Material Symbols (no
 - variablefont
 
 What is currently _not_ available in Material Symbols?
-- sizes other than 24 are not designed with perfect pixel-grid alignment
+- only the 20 and 24 px versions are designed with perfect pixel-grid alignment
 - the only pre-made fonts are the variable fonts
 - there are no two-tone icons
 
