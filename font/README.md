@@ -1,6 +1,6 @@
-This is the directory for Material Icons; the newer Material Symbols are at [../variablefont](https://github.com/google/material-design-icons/tree/master/variablefont).
+This directory contains the Material Symbols font files; the older Material Icons (non-variable) fonts are at [/material-icons](https://github.com/google/material-design-icons/tree/master/font/material-icons).
 
-Material Icons are the non-variable classic icon fonts, while the Material Symbols variable fonts offer weight, optical size, grade and fill variations (with grade and Fill being intended also for animated effects).
+The Material Symbols variable fonts offer weight, optical size, grade and fill variations (with grade and Fill being intended also for animated effects). Material Symbols are the non-variable classic icon fonts, while
 
 The recommended way to use the Material Icons font is by linking to the web font hosted on Google Fonts:
 
