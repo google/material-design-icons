@@ -6,8 +6,7 @@ The recommended way to use the Material Symbols font is by linking to the web fo
 
 ```html
 <!-- https://material.io/resources/icons/?style=baseline -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols"
-      rel="stylesheet">
+<link href="link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 
 ```
 
