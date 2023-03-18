@@ -128,7 +128,7 @@ The `font` and `variablefont` folders contain pre-generated font files that can 
 ```
 
 ```html
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols"
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet">
 ```
 Read more on [Material Symbols](https://developers.google.com/fonts/docs/material_symbols/) or [Material Icons](https://developers.google.com/fonts/docs/material_icons/) in the Google Fonts developer guide.
