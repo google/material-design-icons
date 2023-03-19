@@ -47,6 +47,11 @@ Google does not currently maintain the npm package for this repo, past v3 (2016)
 - Only SVGs
 - Optimizes SVGs using SVGO
 
+### [react-material-symbols](https://github.com/ed-software/react-material-symbols) [![npm](https://img.shields.io/npm/v/react-material-symbols)](https://www.npmjs.com/package/react-material-symbols) [![install size](https://packagephobia.com/badge?p=react-material-symbols)](https://packagephobia.com/result?p=react-material-symbols) [![Downloads](https://img.shields.io/npm/dm/react-material-symbols)](https://www.npmjs.com/package/react-material-symbols)
+
+- React components build around WOFF2 fonts
+- Supports outlined, rounded, and sharp icons and all variations of fill, weight, grade, and optical size
+
 ## Material Icons
 
 The icons can be browsed in a more user-friendly way at https://fonts.google.com/icons?icon.set=Material+Icons
