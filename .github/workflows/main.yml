@@ -1,8 +1,11 @@
 on:
+  workflow_dispatch:
   schedule:
   - cron: "0 2 * * 5"
 jobs:
   update-symbols:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -27,4 +30,3 @@ jobs:
         git add .
         git commit -m "Update Symbols"
         git push origin master
-    
