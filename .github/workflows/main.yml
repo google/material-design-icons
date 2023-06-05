@@ -1,0 +1,30 @@
+on:
+  schedule:
+  - cron: "0 2 * * 5"
+jobs:
+  update-symbols:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.11
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f update/requirements.txt ]; then pip install -r update/requirements.txt; fi
+    - name: Run Update Script
+      working-directory: ./update
+      run: |
+        python update_symbols.py
+    - name: commit
+      run: |
+        git config user.name "GitHub Actions Bot"
+        git config user.email "<>"
+        git add .
+        git commit -m "Update Symbols"
+        git push origin master
+    
