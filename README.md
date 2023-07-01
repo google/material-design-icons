@@ -8,7 +8,7 @@ The icons are designed under the [material design guidelines](https://material.i
 
 ## Icon Requests
 
-We’d love to support your icon needs! Please submit your request here on github as an issue.
+We’d love to support your icon needs! Please submit your request here on GitHub as an issue.
 
 Please note that Google Fonts does not accept user submissions of finished icon designs! There are fairly strict  guidelines for Material icons, plus Google has upstream source files from which this repo is generated. Therefore, Google does not accept pull requests for icon files (whether new icon suggestions, or fixes for existing icons). Concepts are appreciated—just don’t design SVGs and submit them via pull request.
 
