@@ -210,6 +210,8 @@ approval e982
 approval_delegation f84a
 apps e5c3
 apps_outage e7cc
+aq f55a
+aq_indoor f55b
 ar_on_you ef7c
 architecture ea3b
 archive e149
@@ -300,6 +302,7 @@ auto_read_play f216
 auto_schedule e214
 auto_stories e666
 auto_timer ef7f
+auto_transmission f53f
 auto_videocam f6c0
 autofps_select efdc
 autopause f6b6
@@ -421,6 +424,10 @@ body_system e099
 bolt ea0b
 bomb f568
 book e86e
+book_2 f53e
+book_3 f53d
+book_4 f53c
+book_5 f53b
 book_online f217
 bookmark e8e7
 bookmark_add e598
@@ -504,6 +511,7 @@ cake_add f85b
 calculate ea5f
 calendar_add_on ef85
 calendar_apps_script f0bb
+calendar_clock f540
 calendar_month ebcc
 calendar_today e935
 calendar_view_day e936
@@ -739,6 +747,7 @@ crop_16_9 e3bc
 crop_3_2 e3bd
 crop_5_4 e3bf
 crop_7_5 e3c0
+crop_9_16 f549
 crop_din e3c6
 crop_free e3c2
 crop_landscape e3c3
@@ -845,6 +854,7 @@ dialer_sip e0bb
 dialogs e99f
 dialpad e0bc
 diamond ead5
+dictionary f539
 difference eb7d
 digital_out_of_home f1de
 dining eff4
@@ -1085,6 +1095,7 @@ familiar_face_and_zone e21c
 family_history e0ad
 family_link eb19
 family_restroom f1a2
+farsight_digital f559
 fast_forward e01f
 fast_rewind e020
 fastfood e57a
@@ -1394,6 +1405,7 @@ heart_broken eac2
 heart_check f60a
 heart_minus f883
 heart_plus f884
+heat f537
 heat_pump ec18
 heat_pump_balance e27e
 height ea16
@@ -1410,6 +1422,7 @@ hide_image f022
 hide_source f023
 high_density f79c
 high_quality e024
+high_res f54b
 highlight e25f
 highlight_off e888
 highlighter_size_1 f76b
@@ -1444,6 +1457,7 @@ horizontal_split e947
 hot_tub eb46
 hotel e549
 hotel_class e743
+hourglass ebff
 hourglass_bottom ea5c
 hourglass_disabled ef53
 hourglass_empty e88b
@@ -1463,6 +1477,7 @@ hub e9f4
 humerus f895
 humerus_alt f896
 humidity_high f163
+humidity_indoor f558
 humidity_low f164
 humidity_mid f165
 humidity_percentage f87e
@@ -1537,7 +1552,6 @@ joystick f5ee
 jump_to_element f719
 kayaking e50c
 kebab_dining e842
-keep_public f56f
 kettle e2b9
 key e73c
 key_off eb84
@@ -1653,6 +1667,7 @@ linear_scale e260
 link e250
 link_off e16f
 linked_camera e438
+linked_services f535
 liquor ea60
 list e896
 list_alt e0ee
@@ -1763,6 +1778,9 @@ mark_chat_unread f189
 mark_email_read f18c
 mark_email_unread f18a
 mark_unread_chat_alt eb9d
+markdown f552
+markdown_copy f553
+markdown_paste f554
 markunread e159
 markunread_mailbox e89b
 masked_transitions e72e
@@ -1811,6 +1829,7 @@ minor_crash ebf1
 missed_video_call f0ce
 missed_video_call_filled f0ce
 mist e188
+mitre f547
 mixture_med e4c8
 mms e618
 mobile_friendly e200
@@ -1821,6 +1840,7 @@ mode f097
 mode_comment e253
 mode_cool f166
 mode_cool_off f167
+mode_dual f557
 mode_edit f097
 mode_edit_outline f097
 mode_fan f168
@@ -1974,6 +1994,7 @@ network_wifi_2_bar ebd6
 network_wifi_2_bar_locked f58e
 network_wifi_3_bar ebe1
 network_wifi_3_bar_locked f58d
+network_wifi_locked f532
 neurology e10e
 new_label e609
 new_releases ef76
@@ -2017,6 +2038,7 @@ north f1e0
 north_east f1e1
 north_west f1e2
 not_accessible f0fe
+not_accessible_forward f54a
 not_interested f08c
 not_listed_location e575
 not_started f0d1
@@ -2193,6 +2215,7 @@ phonelink_ring_off f7aa
 phonelink_setup ef41
 photo e432
 photo_album e411
+photo_auto_merge f530
 photo_camera e412
 photo_camera_back ef68
 photo_camera_front ef69
@@ -2210,6 +2233,11 @@ piano_off e520
 picture_as_pdf e415
 picture_in_picture e8aa
 picture_in_picture_alt e911
+picture_in_picture_center f550
+picture_in_picture_large f54f
+picture_in_picture_medium f54e
+picture_in_picture_off f52f
+picture_in_picture_small f54d
 pie_chart f0da
 pie_chart_filled f0da
 pie_chart_outline f0da
@@ -2346,6 +2374,7 @@ ramp_left eb9c
 ramp_right eb96
 range_hood e1ea
 rate_review e560
+raven f555
 raw_off f04f
 raw_on f050
 read_more ef6d
@@ -2482,6 +2511,7 @@ schedule_send ea0a
 schema e4fd
 school e80c
 science ea4b
+science_off f542
 score e269
 scoreboard ebd0
 screen_lock_landscape e1be
@@ -2531,6 +2561,7 @@ sensor_door f1b5
 sensor_occupied ec10
 sensor_window f1b4
 sensors e51e
+sensors_krx f556
 sensors_off e51f
 sentiment_calm f6a7
 sentiment_content f6a6
@@ -2658,6 +2689,8 @@ single_bed ea48
 sip f069
 skateboarding e511
 skeleton f899
+skillet f543
+skillet_cooktop f544
 skip_next e044
 skip_previous e045
 skull f89a
@@ -2794,6 +2827,7 @@ stethoscope_check f806
 sticky_note e9e8
 sticky_note_2 f1fc
 stock_media f570
+stockpot f545
 stop e047
 stop_circle ef71
 stop_screen_share e0e3
