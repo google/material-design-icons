@@ -329,6 +329,7 @@ baby_changing_station f19b
 back_hand e764
 back_to_tab f72b
 background_dot_large f79e
+background_dot_small f514
 background_grid_small f79d
 background_replace f20a
 backlight_high f7ed
@@ -656,6 +657,7 @@ clock_loader_80 f722
 clock_loader_90 f721
 close e5cd
 close_fullscreen f1cf
+close_small f508
 closed_caption e996
 closed_caption_disabled f1dc
 closed_caption_off e996
@@ -679,6 +681,7 @@ coffee efef
 coffee_maker eff0
 cognition e09f
 collapse_all e944
+collapse_content f507
 collections e3d3
 collections_bookmark e431
 color_lens e40a
@@ -1476,7 +1479,10 @@ high_density f79c
 high_quality e024
 high_res f54b
 highlight e25f
+highlight_keyboard_focus f510
+highlight_mouse_cursor f511
 highlight_off e888
+highlight_text_cursor f512
 highlighter_size_1 f76b
 highlighter_size_2 f76a
 highlighter_size_3 f769
@@ -1667,6 +1673,7 @@ language_chinese_wubi f761
 language_french f760
 language_gb_english f75f
 language_international f75e
+language_japanese_kana f513
 language_korean_latin f75d
 language_pinyin f75c
 language_spanish f5e9
@@ -2179,6 +2186,7 @@ package_2 f569
 padding e9c8
 page_control e731
 page_info f614
+pageless f509
 pages e7f9
 pageview e8a0
 paid f041
@@ -2644,6 +2652,7 @@ sensor_occupied ec10
 sensor_window f1b4
 sensors e51e
 sensors_krx f556
+sensors_krx_off f515
 sensors_off e51f
 sentiment_calm f6a7
 sentiment_content f6a6
@@ -2983,6 +2992,7 @@ swipe_up_alt eb35
 swipe_vertical eb51
 switch e1f4
 switch_access f6fd
+switch_access_2 f506
 switch_access_shortcut e7e1
 switch_access_shortcut_add e7e2
 switch_account e9ed
@@ -3160,6 +3170,11 @@ transfer_within_a_station e572
 transform e428
 transgender e58d
 transit_enterexit e579
+transition_chop f50e
+transition_dissolve f50d
+transition_fade f50c
+transition_push f50b
+transition_slide f50a
 translate e8e2
 transportation e21d
 travel ef93
