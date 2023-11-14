@@ -4,7 +4,7 @@ Material Icons are the non-variable classic icon fonts, while the Material Symbo
 
 The recommended way to use the Material Icons font is by linking to the web font hosted on Google Fonts:
 
-```html
+```html,
 <!-- https://material.io/resources/icons/?style=baseline -->
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet">
