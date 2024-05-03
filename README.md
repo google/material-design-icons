@@ -59,17 +59,17 @@ These classic icons are available in five distinct styles:
 - Two tone
 
 The following directories in this repo contain specifically Material Icons (not Material Symbols) content:
-- android
-- font
-- ios
-- png
-- src
+- Android
+- Font
+- Ios
+- Png
+- Src
 
 What is currently _not_ available in Material Icons?
-- variable fonts
-- weights other than Regular
-- grades other than Regular
-- a means to animate Fill transitions
+- Variable fonts
+- Weights other than Regular
+- Grades other than Regular
+- A means to animate Fill transitions
 
 ## Material Symbols
 
@@ -103,7 +103,7 @@ What is currently _not_ available in Material Symbols?
 * Restructured repository, updated assets.
 
 ### 3.0.1 Update
-* 2016 Sep 01
+* 2016 Sep 01 
 * Changed license in package.json.
 * Added missing device symbol sprites.
 
