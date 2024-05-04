@@ -6,10 +6,17 @@ jobs:
   update-symbols:
     permissions:
       contents: write
-    runs-on: ubuntu-22.04-4core
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
     steps:
+    - name: free disk space
+      run: |
+        sudo swapoff -a
+        sudo rm -f /swapfile
+        sudo apt clean
+        docker rmi $(docker image ls -aq)
+        df -h
     - uses: actions/checkout@v3
     - name: Set up Python
       uses: actions/setup-python@v4
