@@ -3,7 +3,8 @@
     android:height="40dp"
     android:viewportWidth="960"
     android:viewportHeight="960"
-    android:tint="?attr/colorControlNormal">
+    android:tint="?attr/colorControlNormal"
+    android:autoMirrored="true">
   <path
       android:fillColor="@android:color/white"
       android:pathData="M748,828L212,828L212,132L748,132L748,828ZM681.33,502.67L681.33,196L453.33,196L453.33,502.67L681.33,502.67Z"/>

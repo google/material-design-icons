@@ -32,6 +32,7 @@ FLAGS = flags.FLAGS
 
 
 flags.DEFINE_bool("fetch", True, "Whether we can attempt to download assets.")
+flags.DEFINE_bool("overwrite", False, "Update and overwrite existing assets.")
 flags.DEFINE_integer("icon_limit", 0, "If > 0, the max # of icons to process.")
 
 
@@ -175,7 +176,7 @@ def _files(fetches: Sequence[Fetch], pred):
 
 
 def _should_skip(fetch: Fetch):
-    return fetch.dest_file.is_file()
+    return not FLAGS.overwrite and fetch.dest_file.is_file()
 
 
 def _pattern_args(metadata, stylistic_set):
@@ -213,7 +214,7 @@ def main(_):
 
     for icon in icons:
         ver_key = _version_key(icon)
-        if icon.version <= current_versions.get(ver_key, 0):
+        if not FLAGS.overwrite and icon.version <= current_versions.get(ver_key, 0):
             continue
         current_versions[ver_key] = icon.version
 

@@ -10,6 +10,13 @@ jobs:
     strategy:
       fail-fast: false
     steps:
+    - name: free disk space
+      run: |
+        sudo swapoff -a
+        sudo rm -f /swapfile
+        sudo apt clean
+        docker rmi $(docker image ls -aq)
+        df -h
     - uses: actions/checkout@v3
     - name: Set up Python
       uses: actions/setup-python@v4

@@ -88,6 +88,8 @@ ad_group e65b
 ad_group_off eae5
 ad_off f7b2
 ad_units ef39
+adaptive_audio_mic f4cc
+adaptive_audio_mic_off f4cb
 adb e60e
 add e145
 add_a_photo e439
@@ -102,6 +104,7 @@ add_chart ef3c
 add_circle e3ba
 add_circle_outline e3ba
 add_comment e266
+add_diamond f49c
 add_home f8eb
 add_home_work f8ed
 add_ic_call f0b7
@@ -119,6 +122,7 @@ add_to_drive e65c
 add_to_home_screen e1fe
 add_to_photos e39d
 add_to_queue e05c
+add_triangle f48e
 addchart ef3c
 adf_scanner eada
 adjust e39e
@@ -195,6 +199,7 @@ amp_stories ea13
 analytics ef3e
 anchor f1cd
 android e859
+animated_images f49a
 animation e71c
 announcement e87f
 aod efda
@@ -231,6 +236,7 @@ arrow_circle_down f181
 arrow_circle_left eaa7
 arrow_circle_right eaaa
 arrow_circle_up f182
+arrow_cool_down f4b6
 arrow_downward e5db
 arrow_downward_alt e984
 arrow_drop_down e5c5
@@ -252,6 +258,7 @@ arrow_top_left f72e
 arrow_top_right f72d
 arrow_upward e5d8
 arrow_upward_alt e986
+arrow_warm_up f4b5
 arrows_more_down f8ab
 arrows_more_up f8ac
 arrows_outward f72c
@@ -322,7 +329,9 @@ autopay f84b
 autoplay f6b5
 autorenew e863
 autostop f682
+av1 f4b0
 av_timer e01b
+avc f4af
 avg_pace f6bb
 avg_time f813
 award_star f612
@@ -522,6 +531,7 @@ buttons_alt e72f
 cabin e589
 cable efe6
 cached e86a
+cadence f4b4
 cake e7e9
 cake_add f85b
 calculate ea5f
@@ -571,6 +581,7 @@ car_tag f4e3
 card_giftcard e8f6
 card_membership e8f7
 card_travel e8f8
+cardio_load f4b9
 cardiology e09c
 cards e991
 carpenter f1f8
@@ -664,6 +675,7 @@ close e5cd
 close_fullscreen f1cf
 close_small f508
 closed_caption e996
+closed_caption_add f4ae
 closed_caption_disabled f1dc
 closed_caption_off e996
 cloud f15c
@@ -737,7 +749,9 @@ contract f5a0
 contract_delete f5a2
 contract_edit f5a1
 contrast eb37
+contrast_circle f49f
 contrast_rtl_off ec72
+contrast_square f4a0
 control_camera e074
 control_point e3ba
 control_point_duplicate e3bb
@@ -1054,6 +1068,7 @@ emoji_emotions ea22
 emoji_events ea23
 emoji_flags f0c6
 emoji_food_beverage ea1b
+emoji_language f4cd
 emoji_nature ea1c
 emoji_objects ea24
 emoji_people ea1d
@@ -1123,6 +1138,7 @@ exposure_plus_2 e3ce
 exposure_zero e3cf
 extension e87b
 extension_off e4f5
+eye_tracking f4c9
 eyeglasses f6ee
 face f008
 face_2 f8da
@@ -1210,6 +1226,7 @@ finance_mode ef92
 find_in_page e880
 find_replace e881
 fingerprint e90d
+fingerprint_off f49d
 fire_extinguisher f1d8
 fire_hydrant f1a3
 fire_truck f8f2
@@ -1325,6 +1342,7 @@ format_text_overflow f829
 format_text_wrap f828
 format_textdirection_l_to_r e247
 format_textdirection_r_to_l e248
+format_textdirection_vertical f4b8
 format_underlined e249
 format_underlined_squiggle f885
 forms_add_on f0c7
@@ -1341,6 +1359,7 @@ forward_to_inbox f187
 foundation f200
 frame_inspect f772
 frame_person f8a6
+frame_person_mic f4d5
 frame_person_off f7d1
 frame_reload f771
 frame_source f770
@@ -1422,6 +1441,7 @@ grouped_bar_chart f211
 groups f233
 groups_2 f8df
 groups_3 f8e0
+guardian f4c1
 gynecology e0f4
 h_mobiledata f018
 h_mobiledata_badge f7e0
@@ -1431,6 +1451,7 @@ hail e9b1
 hallway e6f8
 hand_bones f894
 hand_gesture ef9c
+handheld_controller f4c6
 handshake ebcb
 handwriting_recognition eb02
 handyman f10b
@@ -1451,6 +1472,7 @@ hdr_plus f01e
 hdr_plus_off e3ef
 hdr_strong e3f1
 hdr_weak e3f2
+head_mounted_device f4c5
 headphones f01f
 headphones_battery f020
 headset f01f
@@ -1555,6 +1577,7 @@ humidity_percentage f87e
 hvac f10e
 ice_skating e50b
 icecream ea69
+id_card f4ca
 ifl e025
 iframe f71b
 iframe_off f71c
@@ -1625,6 +1648,10 @@ joystick f5ee
 jump_to_element f719
 kayaking e50c
 kebab_dining e842
+keep f026
+keep_off e6f9
+keep_pin f026
+keep_public f56f
 kettle e2b9
 key e73c
 key_off eb84
@@ -1649,6 +1676,8 @@ keyboard_external_input f7dd
 keyboard_full f7dc
 keyboard_hide e31a
 keyboard_keys f67b
+keyboard_lock f492
+keyboard_lock_off f491
 keyboard_off f67a
 keyboard_onscreen f7db
 keyboard_option_key eae8
@@ -1672,6 +1701,8 @@ label_outline e893
 labs e105
 lan eb2f
 landscape e564
+landscape_2 f4c4
+landscape_2_off f4c3
 landslide ebd7
 language e894
 language_chinese_array f766
@@ -1818,6 +1849,7 @@ loop e863
 loupe e402
 low_density f79b
 low_priority e16d
+lowercase f48a
 loyalty e89a
 lte_mobiledata f02c
 lte_mobiledata_badge f7d9
@@ -1837,6 +1869,7 @@ magnify_docked f7d6
 magnify_fullscreen f7d5
 mail e159
 mail_lock ec0a
+mail_off f48b
 mail_outline e159
 male e58e
 man e4eb
@@ -1972,6 +2005,8 @@ motion_sensor_urgent e78e
 motorcycle e91b
 mountain_flag f5e2
 mouse e323
+mouse_lock f490
+mouse_lock_off f48f
 move e740
 move_down eb61
 move_group f715
@@ -1989,6 +2024,7 @@ movie_creation e404
 movie_edit f840
 movie_filter e43a
 movie_info e02d
+movie_off f499
 moving e501
 moving_beds e73d
 moving_ministry e73e
@@ -2149,6 +2185,7 @@ ods e6e8
 odt e6e9
 offline_bolt e932
 offline_pin e90a
+offline_pin_off f4d0
 offline_share e9c5
 oil_barrel ec15
 on_device_training ebfd
@@ -2165,6 +2202,7 @@ open_in_new_down f70f
 open_in_new_off e4f6
 open_in_phone e702
 open_jam efae
+open_run f4b7
 open_with e89f
 ophthalmology e115
 oral_disease e116
@@ -2223,6 +2261,8 @@ partner_reports efaf
 party_mode e7fa
 passkey f87f
 password f042
+password_2 f4a9
+password_2_off f4a8
 patient_list e653
 pattern f043
 pause e034
@@ -2379,6 +2419,7 @@ podiatry e120
 podium f7fb
 point_of_sale f17e
 point_scan f70c
+poker_chip f49b
 policy ea17
 poll f0cc
 polyline ebbb
@@ -2489,6 +2530,7 @@ receipt e8b0
 receipt_long ef6e
 recent_actors e03f
 recent_patient f808
+recenter f4c0
 recommend e9d2
 record_voice_over e91f
 rectangle eb54
@@ -2643,6 +2685,7 @@ sdk e720
 search e8b6
 search_check f800
 search_hands_free e696
+search_insights f4bc
 search_off ea76
 security e32a
 security_key f503
@@ -2655,6 +2698,7 @@ select_all e162
 select_check_box f1fe
 select_to_speak f7cf
 select_window e6fa
+select_window_2 f4c8
 select_window_off e506
 self_care f86d
 self_improvement ea78
@@ -2685,6 +2729,7 @@ sentiment_stressed f6a2
 sentiment_very_dissatisfied e814
 sentiment_very_satisfied e815
 sentiment_worried f6a1
+serif f4ac
 service_toolbox e717
 set_meal f1ea
 settings e8b8
@@ -2746,6 +2791,7 @@ shield_with_heart e78f
 shield_with_house e78d
 shift e5f2
 shift_lock f7ae
+shift_lock_off f483
 shop e8c9
 shop_2 e8ca
 shop_two e8ca
@@ -2808,6 +2854,7 @@ skillet_cooktop f544
 skip_next e044
 skip_previous e045
 skull f89a
+slab_serif f4ab
 sledding e512
 sleep e213
 sleep_score f6b7
@@ -2816,6 +2863,8 @@ sliders e9e3
 slideshow e41b
 slow_motion_video e068
 smart_button f1c1
+smart_card_reader f4a5
+smart_card_reader_off f4a6
 smart_display f06a
 smart_outlet e844
 smart_screen f06b
@@ -2857,6 +2906,7 @@ space_bar e256
 space_dashboard e66b
 spatial_audio ebeb
 spatial_audio_off ebe8
+spatial_speaker f4cf
 spatial_tracking ebea
 speaker e32d
 speaker_group e32e
@@ -2867,9 +2917,19 @@ special_character f74a
 specific_gravity f872
 speech_to_text f8a7
 speed e9e4
+speed_0_25 f4d4
+speed_0_2x f498
 speed_0_5 f4e2
+speed_0_5x f497
+speed_0_75 f4d3
+speed_0_7x f496
 speed_1_2 f4e1
+speed_1_25 f4d2
+speed_1_2x f495
 speed_1_5 f4e0
+speed_1_5x f494
+speed_1_75 f4d1
+speed_1_7x f493
 speed_2x f4eb
 spellcheck e8ce
 splitscreen f06d
@@ -3109,6 +3169,7 @@ text_select_move_up f736
 text_select_start f735
 text_snippet f1c6
 text_to_speech f1bc
+text_up f49e
 textsms e625
 texture e421
 texture_add f57c
@@ -3151,10 +3212,15 @@ timer_10_select f07a
 timer_3 e424
 timer_3_alt_1 efc0
 timer_3_select f07b
+timer_5 f4b1
+timer_5_shutter f4b2
 timer_off e426
+timer_pause f4bb
+timer_play f4ba
 tips_and_updates e79a
 tire_repair ebc8
 title e264
+titlecase f489
 toast efc1
 toc e8de
 today e8df
@@ -3186,6 +3252,7 @@ toys e332
 toys_and_games efc2
 toys_fan f887
 track_changes e8e1
+trackpad_input f4c7
 traffic e565
 trail_length eb5e
 trail_length_medium eb63
@@ -3256,11 +3323,13 @@ ungroup f731
 universal_currency e9fa
 universal_currency_alt e734
 universal_local e9fb
-unknown_2 e6a2
+unknown_2 f49f
 unknown_5 e6a5
+unknown_7 f49e
 unknown_document f804
 unknown_med eabd
 unlicense eb05
+unpin e6f9
 unpublished f236
 unsubscribe e0eb
 upcoming f07e
@@ -3270,6 +3339,7 @@ upgrade f0fb
 upload f09b
 upload_2 f521
 upload_file e9fc
+uppercase f488
 urology e137
 usb e1e0
 usb_off e4fa
@@ -3328,6 +3398,7 @@ view_kanban eb7f
 view_list e8ef
 view_module e8f0
 view_quilt e8f1
+view_real_size f4c2
 view_sidebar f114
 view_stream e8f2
 view_timeline eb85
@@ -3339,6 +3410,7 @@ visibility_lock f653
 visibility_off e8f5
 vital_signs e650
 vitals e13b
+vo2_max f4aa
 voice_chat e62e
 voice_over_off e94a
 voice_selection f58a
