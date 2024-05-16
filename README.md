@@ -1,6 +1,6 @@
-## Material Icons / Material Symbols
+## Material Symbols / Material Icons
 
-These are two different official icon sets from Google, using the same underlying designs. Material Icons is the classic set, while Material Symbols was introduced in April 2022, built on variable font technology.
+These are two different official icon sets from Google, using the same underlying designs. Material Symbols is the current set, introduced in April 2022, built on variable font technology. Material Icons is the classic set, but no longer actively updated.
 
 The icons can be browsed in a more user-friendly way at https://fonts.google.com/icons. Use the popdown menu near top left to choose between the two sets; Material Symbols is the default.
 
@@ -47,30 +47,6 @@ Google does not currently maintain the npm package for this repo, past v3 (2016)
 - Only SVGs
 - Optimizes SVGs using SVGO
 
-## Material Icons
-
-The icons can be browsed in a more user-friendly way at https://fonts.google.com/icons?icon.set=Material+Icons
-
-These classic icons are available in five distinct styles:
-- Outlined
-- Filled (the font version is just called Material Icons, as this is the oldest style)
-- Rounded
-- Sharp
-- Two tone
-
-The following directories in this repo contain specifically Material Icons (not Material Symbols) content:
-- android
-- font
-- ios
-- png
-- src
-
-What is currently _not_ available in Material Icons?
-- variable fonts
-- weights other than Regular
-- grades other than Regular
-- a means to animate Fill transitions
-
 ## Material Symbols
 
 These newer icons can be browsed in a more user-friendly way at https://fonts.google.com/icons. Use the popdown menu near top left to choose between the two sets; Material Symbols is the default.
@@ -95,6 +71,30 @@ What is currently _not_ available in Material Symbols?
 - only the 20 and 24 px versions are designed with perfect pixel-grid alignment
 - the only pre-made fonts are the variable fonts
 - there are no two-tone icons
+
+## Material Icons
+
+The icons can be browsed in a more user-friendly way at https://fonts.google.com/icons?icon.set=Material+Icons
+
+These classic icons are available in five distinct styles:
+- Outlined
+- Filled (the font version is just called Material Icons, as this is the oldest style)
+- Rounded
+- Sharp
+- Two tone
+
+The following directories in this repo contain specifically Material Icons (not Material Symbols) content:
+- android
+- font
+- ios
+- png
+- src
+
+What is currently _not_ available in Material Icons?
+- variable fonts
+- weights other than Regular
+- grades other than Regular
+- a means to animate Fill transitions
 
 ## Material Icons update history
 
