@@ -421,6 +421,8 @@ bia f6eb
 bid_landscape e678
 bid_landscape_disabled ef81
 bigtop_updates e669
+bike_dock f47b
+bike_lane f47a
 bike_scooter ef45
 biotech ea3a
 blanket e828
@@ -457,8 +459,12 @@ bookmark e8e7
 bookmark_add e598
 bookmark_added e599
 bookmark_border e8e7
+bookmark_check f457
+bookmark_flag f456
+bookmark_heart f455
 bookmark_manager f7b1
 bookmark_remove e59a
+bookmark_star f454
 bookmarks e98b
 border_all e228
 border_bottom e229
@@ -530,6 +536,7 @@ business_messages ef84
 buttons_alt e72f
 cabin e589
 cable efe6
+cable_car f479
 cached e86a
 cadence f4b4
 cake e7e9
@@ -637,6 +644,8 @@ checklist_rtl e6b3
 checkroom f19e
 cheer f6a8
 chess f5e7
+chevron_backward f46b
+chevron_forward f46a
 chevron_left e5cb
 chevron_right e5cc
 child_care eb41
@@ -815,6 +824,7 @@ currency_lira eaef
 currency_pound eaf1
 currency_ruble eaec
 currency_rupee eaf7
+currency_rupee_circle f460
 currency_yen eafb
 currency_yuan eaf9
 curtains ec1e
@@ -872,7 +882,9 @@ design_services f10a
 desk f8f4
 deskphone f7fa
 desktop_access_disabled e99d
+desktop_landscape f45e
 desktop_mac e30b
+desktop_portrait f45d
 desktop_windows e30c
 destruction f585
 details e3c8
@@ -922,6 +934,7 @@ directions_car eff7
 directions_car_filled eff7
 directions_off f10f
 directions_railway eff8
+directions_railway_2 f462
 directions_railway_filled eff8
 directions_run e566
 directions_subway effa
@@ -1238,6 +1251,7 @@ fit_page f77a
 fit_screen ea10
 fit_width f779
 fitness_center eb43
+fitness_tracker f463
 flag f0c6
 flag_circle eaf8
 flag_filled f0c6
@@ -1263,6 +1277,8 @@ flip_camera_android ea37
 flip_camera_ios ea38
 flip_to_back e882
 flip_to_front e883
+float_landscape_2 f45c
+float_portrait_2 f45b
 flood ebe6
 floor f6e4
 floor_lamp e21e
@@ -1274,6 +1290,7 @@ fluid_med f80c
 fluorescent f07d
 flutter f1dd
 flutter_dash e00b
+flyover f478
 fmd_bad f00e
 fmd_good f1db
 foggy e818
@@ -1374,8 +1391,10 @@ full_hd f58b
 full_stacked_bar_chart f212
 fullscreen e5d0
 fullscreen_exit e5d1
+fullscreen_portrait f45a
 function f866
 functions e24a
+funicular f477
 g_mobiledata f010
 g_mobiledata_badge f7e1
 g_translate e927
@@ -1409,6 +1428,7 @@ glucose e4a0
 glyphs f8a3
 go_to_line f71d
 golf_course eb45
+gondola_lift f476
 google_home_devices e715
 google_plus_reshare f57a
 google_tv_remote f5db
@@ -1488,6 +1508,7 @@ heap_snapshot_large f76e
 heap_snapshot_multiple f76d
 heap_snapshot_thumbnail f76c
 hearing e023
+hearing_aid f464
 hearing_disabled f104
 heart_broken eac2
 heart_check f60a
@@ -1562,6 +1583,7 @@ house_siding f202
 house_with_shield e786
 houseboat e584
 household_supplies efa1
+hov f475
 how_to_reg e174
 how_to_vote e175
 hr_resting f6ba
@@ -1927,6 +1949,7 @@ merge eb98
 merge_type e252
 message e0c9
 metabolism e10b
+metro f474
 mfg_nest_yale_lock f11d
 mic e31d
 mic_double f5d1
@@ -1983,6 +2006,7 @@ monitor_weight_gain f6df
 monitor_weight_loss f6de
 monitoring f190
 monochrome_photos e403
+monorail f473
 mood ea22
 mood_bad e7f3
 mop e28d
@@ -2044,8 +2068,8 @@ mystery f5e1
 nat ef5c
 nature e406
 nature_people e407
-navigate_before e408
-navigate_next e409
+navigate_before e5cb
+navigate_next e5cc
 navigation e55d
 near_me e569
 near_me_disabled f1ef
@@ -2510,6 +2534,7 @@ radio_button_partial f560
 radio_button_unchecked e836
 radiology e125
 railway_alert e9d1
+railway_alert_2 f461
 rainy f176
 rainy_heavy f61f
 rainy_light f61e
@@ -2578,8 +2603,15 @@ report_off e170
 report_problem f083
 request_page f22c
 request_quote f1b6
+reset_brightness f482
+reset_focus f481
 reset_image f824
+reset_iso f480
+reset_settings f47f
+reset_shadow f47e
+reset_shutter_speed f47d
 reset_tv e9d9
+reset_white_balance f47c
 reset_wrench f56c
 resize f707
 respiratory_rate e127
@@ -2602,6 +2634,7 @@ right_panel_open f704
 ring_volume f0dd
 ring_volume_filled f0dd
 ripples e9db
+road f472
 robot f882
 robot_2 f5d0
 rocket eba5
@@ -2660,6 +2693,7 @@ schema e4fd
 school e80c
 science ea4b
 science_off f542
+scooter f471
 score e269
 scoreboard ebd0
 screen_lock_landscape e1be
@@ -2677,6 +2711,7 @@ screenshot_keyboard f7d3
 screenshot_monitor ec08
 screenshot_region f7d2
 screenshot_tablet f697
+script f45f
 scrollable_header e9dc
 scuba_diving ebce
 sd e9dd
@@ -2686,6 +2721,7 @@ sd_storage e623
 sdk e720
 search e8b6
 search_check f800
+search_check_2 f469
 search_hands_free e696
 search_insights f4bc
 search_off ea76
@@ -2933,11 +2969,14 @@ speed_1_5x f494
 speed_1_75 f4d1
 speed_1_7x f493
 speed_2x f4eb
+speed_camera f470
 spellcheck e8ce
 splitscreen f06d
 splitscreen_add f4fd
 splitscreen_bottom f676
+splitscreen_landscape f459
 splitscreen_left f675
+splitscreen_portrait f458
 splitscreen_right f674
 splitscreen_top f673
 splitscreen_vertical_add f4fc
@@ -2980,6 +3019,7 @@ stacks f500
 stadia_controller f135
 stadium eb90
 stairs f1a9
+stairs_2 f46c
 star f09a
 star_border f09a
 star_border_purple500 f09a
@@ -3117,6 +3157,7 @@ table f191
 table_bar ead2
 table_chart e265
 table_chart_view f6ef
+table_eye f466
 table_lamp e1f2
 table_restaurant eac6
 table_rows f101
@@ -3256,6 +3297,7 @@ toys_fan f887
 track_changes e8e1
 trackpad_input f4c7
 traffic e565
+traffic_jam f46f
 trail_length eb5e
 trail_length_medium eb63
 trail_length_short eb6d
@@ -3282,6 +3324,7 @@ trending_up e8e5
 trip e6fb
 trip_origin e57b
 trolley f86b
+trolley_cable_car f46e
 trophy ea23
 troubleshoot e1d2
 try f07c
@@ -3331,6 +3374,7 @@ unknown_7 f49e
 unknown_document f804
 unknown_med eabd
 unlicense eb05
+unpaved_road f46d
 unpin e6f9
 unpublished f236
 unsubscribe e0eb
@@ -3445,9 +3489,11 @@ warning_off f7ad
 wash f1b1
 watch e334
 watch_button_press f6aa
+watch_check f468
 watch_later efd6
 watch_off eae3
 watch_screentime f6ae
+watch_vibration f467
 watch_wake f6a9
 water f084
 water_bottle f69d
@@ -3502,9 +3548,9 @@ wifi_1_bar e4ca
 wifi_2_bar e4d9
 wifi_add f7a8
 wifi_calling ef77
-wifi_calling_1 f0f6
+wifi_calling_1 f0e7
 wifi_calling_2 f0f6
-wifi_calling_3 f0f6
+wifi_calling_3 f0e7
 wifi_channel eb6a
 wifi_find eb31
 wifi_home f671
