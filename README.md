@@ -1,6 +1,6 @@
 ## Material Symbols / Material Icons
 
-These are two different official icon sets from Google, using the same underlying designs. Material Symbols is the current set, introduced in April 2022, built on variable font technology. Material Icons is the classic set, but no longer actively updated.
+These are two different official icon sets from Google, using the same underlying designs. Material Symbols is the current set, introduced in April 2022, built on variable font technology. Material Icons is the classic set, but no longer updated. More details below.
 
 The icons can be browsed in a more user-friendly way at https://fonts.google.com/icons. Use the popdown menu near top left to choose between the two sets; Material Symbols is the default.
 
@@ -55,12 +55,12 @@ These icons were built/designed as variable fonts first (based on the 24 px desi
 - Outlined
 - Rounded
 - Sharp
-- Note that although there is no separate Filled font, the Fill axis allows access to filled styles—in all three fonts.
+- Note that although there is no separate Filled font, the Fill axis allows access to filled styles, in all three fonts. It can also be manipulated for an animated fill effect, to indicate user selection.
 
 Each of the fonts has these design axes, which can be varied in CSS, or in many more modern design apps:
 - Optical Size (opsz) from 20 to 48 px. The default is 24.
 - Weight from 100 (Thin) to 700 (Bold). Regular is 400.
-- Grade from -50 to 200. The default is 0 (zero).
+- Grade from -50 to 200. The default is 0 (zero). -50 is suggested for reversed contrast (e.g. white icons on black background)
 - Fill from 0 to 100. The default is 0 (zero).
 
 The following directories in this repo contain specifically Material Symbols (not Material Icons) content:
@@ -95,6 +95,7 @@ What is currently _not_ available in Material Icons?
 - weights other than Regular
 - grades other than Regular
 - a means to animate Fill transitions
+- new icons (since updates were halted in 2022)
 
 ## Material Icons update history
 
