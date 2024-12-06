@@ -1,10 +1,11 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="24dp"
     android:height="24dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24"
-    android:tint="?attr/colorControlNormal">
+    android:viewportWidth="960"
+    android:viewportHeight="960"
+    android:tint="?attr/colorControlNormal"
+    android:autoMirrored="true">
   <path
       android:fillColor="@android:color/white"
-      android:pathData="M6.65,13.35H13.35V12.65H6.65ZM6.65,10.35H17.35V9.65H6.65ZM6.65,7.35H17.35V6.65H6.65ZM3.3,19.5V3.3H20.7V16.7H6.1ZM4,17.8 L5.8,16H20V4H4ZM4,17.8V4V16Z"/>
+      android:pathData="M132,780L132,132L828,132L828,668L244,668L132,780ZM232,640L800,640L800,160L160,160L160,712L232,640ZM160,640L160,640L160,160L160,160L160,640L160,640ZM266,534L534,534L534,506L266,506L266,534ZM266,414L694,414L694,386L266,386L266,414ZM266,294L694,294L694,266L266,266L266,294Z"/>
 </vector>

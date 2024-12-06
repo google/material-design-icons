@@ -1,10 +1,11 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="40dp"
     android:height="40dp"
-    android:viewportWidth="40"
-    android:viewportHeight="40"
-    android:tint="?attr/colorControlNormal">
+    android:viewportWidth="960"
+    android:viewportHeight="960"
+    android:tint="?attr/colorControlNormal"
+    android:autoMirrored="true">
   <path
       android:fillColor="@android:color/white"
-      android:pathData="M7.917,35.125Q6.667,35.125 5.771,34.25Q4.875,33.375 4.875,32.125V8Q4.875,6.792 5.771,5.896Q6.667,5 7.917,5H19.833V8H7.917Q7.917,8 7.917,8Q7.917,8 7.917,8V32.125Q7.917,32.125 7.917,32.125Q7.917,32.125 7.917,32.125H19.833V35.125ZM27.375,27.833 L25.208,25.708 29.375,21.583H15.333V18.542H29.292L25.167,14.417L27.333,12.292L35.125,20.083Z"/>
+      android:pathData="M192.39,843.36Q162.77,843.36 141.37,821.96Q119.97,800.56 119.97,770.94L119.97,192.39Q119.97,162.71 141.37,141.26Q162.77,119.81 192.39,119.81L481.59,119.81L481.59,192.39L192.39,192.39Q192.39,192.39 192.39,192.39Q192.39,192.39 192.39,192.39L192.39,770.94Q192.39,770.94 192.39,770.94Q192.39,770.94 192.39,770.94L481.59,770.94L481.59,843.36L192.39,843.36ZM654.04,668.4L602.41,617.43L701.8,517.88L360.41,517.88L360.41,445.46L700.47,445.46L601.08,345.91L652.7,294.6L840.19,482.17L654.04,668.4Z"/>
 </vector>
