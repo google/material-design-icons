@@ -8,7 +8,7 @@ jobs:
       contents: write
     runs-on: ubuntu-20.04-4core
     strategy:
-      fail-fast: false
+ 
     steps:
     - name: free disk space
       run: |
