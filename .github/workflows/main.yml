@@ -6,7 +6,7 @@ jobs:
   update-symbols:
     permissions:
       contents: write
-    runs-on: ubuntu-20.04-4core
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
     steps:
