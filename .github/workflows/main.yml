@@ -15,7 +15,7 @@ jobs:
         sudo swapoff -a
         sudo rm -f /swapfile
         sudo apt clean
-        docker rmi $(docker image ls -aq)
+        docker image prune -a -f
         df -h
     - uses: actions/checkout@v3
     - name: Set up Python
