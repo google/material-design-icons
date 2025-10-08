@@ -10,13 +10,42 @@ jobs:
     strategy:
       fail-fast: false
     steps:
-    - name: free disk space
+    - name: Aggressive Disk Space Cleanup 🧹
       run: |
+        # 0. Check available space before cleanup
+        echo "Disk space before cleanup:"
+        df -h
+            
+        # 1. Clear out swap space.
         sudo swapoff -a
         sudo rm -f /swapfile
         sudo apt clean
-        docker image prune -a -f
+        
+        # 2. Aggressively remove unused Docker components (superset of `docker image prune -a -f`).
+        docker system prune --all --force --volumes
+        
+        # 3. Use 'rm -rf' on known large, pre-installed tool directories (The BIG space savers).
+        # Note: We only needs Python.
+        
+        echo "Removing .NET SDK (~4 GB)"
+        sudo rm -rf /usr/share/dotnet
+        
+        echo "Removing Android SDKs (~9 GB)"
+        sudo rm -rf /usr/local/lib/android
+        
+        echo "Removing Haskell GHC (~5 GB)"
+        sudo rm -rf /opt/ghc
+        
+        echo "Removing large hosted tool caches (~8 GB total)"
+        sudo rm -rf /opt/hostedtoolcache
+        
+        echo "Removing Java JDKs (~1 GB)"
+        sudo rm -rf /usr/lib/jvm
+        
+        # 4. Check available space after cleanup to verify effectiveness
+        echo "Disk space after aggressive cleanup:"
         df -h
+    
     - uses: actions/checkout@v3
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -30,7 +59,7 @@ jobs:
       working-directory: ./update
       run: |
         python update_symbols.py
-    - name: commit
+    - name: commit		
       run: |
         git add .
         git diff --staged --quiet || git -c user.name='GitHub Actions Bot' -c user.email='<>' commit -m 'Update Symbols'
