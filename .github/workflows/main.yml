@@ -24,15 +24,15 @@ jobs:
         # 2. Aggressively remove unused Docker components (superset of `docker image prune -a -f`).
         docker system prune --all --force --volumes
         
-        # Note: We only need Python.
-        
+        # Note: We only need Python and we need more space.
+       
         echo "Removing .NET SDK"
         sudo rm -rf /usr/share/dotnet
         
         echo "Removing Android SDKs"
         sudo rm -rf /usr/local/lib/android
         
-        # 4. Check available space after cleanup to verify effectiveness
+        # 3. Check available space after cleanup to verify effectiveness
         echo "Disk space after aggressive cleanup:"
         df -h
     
@@ -40,7 +40,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: 3.11
+        python-version: '3.11'
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
