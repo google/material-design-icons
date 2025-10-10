@@ -24,23 +24,13 @@ jobs:
         # 2. Aggressively remove unused Docker components (superset of `docker image prune -a -f`).
         docker system prune --all --force --volumes
         
-        # 3. Use 'rm -rf' on known large, pre-installed tool directories (The BIG space savers).
-        # Note: We only needs Python.
+        # Note: We only need Python.
         
-        echo "Removing .NET SDK (~4 GB)"
+        echo "Removing .NET SDK"
         sudo rm -rf /usr/share/dotnet
         
-        echo "Removing Android SDKs (~9 GB)"
+        echo "Removing Android SDKs"
         sudo rm -rf /usr/local/lib/android
-        
-        echo "Removing Haskell GHC (~5 GB)"
-        sudo rm -rf /opt/ghc
-        
-        echo "Removing large hosted tool caches (~8 GB total)"
-        sudo rm -rf /opt/hostedtoolcache
-        
-        echo "Removing Java JDKs (~1 GB)"
-        sudo rm -rf /usr/lib/jvm
         
         # 4. Check available space after cleanup to verify effectiveness
         echo "Disk space after aggressive cleanup:"
