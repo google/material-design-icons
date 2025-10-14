@@ -1,6 +1,7 @@
-absl-py==0.9.0
+absl-py==1.2.0
 appdirs==1.4.4
-attrs==19.3.0
+attrs==22.2.0
+brotli==1.0.9
 black==19.10b0
 certifi==2020.6.20
 chardet==3.0.4
@@ -12,5 +13,6 @@ regex==2020.7.14
 requests==2.24.0
 six==1.15.0
 toml==0.10.1
-typed-ast==1.4.1
+typed-ast==1.5.4
 urllib3==1.25.10
+joblib==1.2.0

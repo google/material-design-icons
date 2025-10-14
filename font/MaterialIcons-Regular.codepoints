@@ -8,6 +8,7 @@
 15mp e957
 16mp e958
 17mp e959
+18_up_rating f8fd
 18mp e95a
 19mp e95b
 1k e95c
@@ -83,6 +84,8 @@ add_chart e97b
 add_circle e147
 add_circle_outline e148
 add_comment e266
+add_home f8eb
+add_home_work f8ed
 add_ic_call e97c
 add_link e178
 add_location e567
@@ -172,6 +175,7 @@ arrow_drop_up e5c7
 arrow_forward e5c8
 arrow_forward_ios e5e1
 arrow_left e5de
+arrow_outward f8ce
 arrow_right e5df
 arrow_right_alt e941
 arrow_upward e5d8
@@ -180,11 +184,13 @@ article ef42
 aspect_ratio e85b
 assessment e85c
 assignment e85d
+assignment_add f848
 assignment_ind e85e
 assignment_late e85f
 assignment_return e860
 assignment_returned e861
 assignment_turned_in e862
+assist_walker f8d5
 assistant e39f
 assistant_direction e988
 assistant_navigation e989
@@ -207,6 +213,7 @@ auto_fix_high e663
 auto_fix_normal e664
 auto_fix_off e665
 auto_graph e4fb
+auto_mode ec20
 auto_stories e666
 autofps_select efdc
 autorenew e863
@@ -223,6 +230,7 @@ balance eaf6
 balcony e58f
 ballot e172
 bar_chart e26b
+barcode_reader f85c
 batch_prediction f0f5
 bathroom efdd
 bathtub ea41
@@ -251,6 +259,9 @@ bento f1f4
 bike_scooter ef45
 biotech ea3a
 blender efe3
+blind f8d6
+blinds e286
+blinds_closed ec1f
 block e14b
 block_flipped ef46
 bloodtype efe4
@@ -300,6 +311,8 @@ brightness_auto e1ab
 brightness_high e1ac
 brightness_low e1ad
 brightness_medium e1ae
+broadcast_on_home f8f8
+broadcast_on_personal f8f9
 broken_image e3ad
 browse_gallery ebd1
 browser_not_supported ef47
@@ -439,6 +452,7 @@ connect_without_contact f223
 connected_tv e998
 connecting_airports e7c9
 construction ea3c
+contact_emergency f8d1
 contact_mail e0d0
 contact_page f22e
 contact_phone e0cf
@@ -455,6 +469,7 @@ contrast eb37
 control_camera e074
 control_point e3ba
 control_point_duplicate e3bb
+conveyor_belt f867
 cookie eaac
 copy_all e2ec
 copyright e90c
@@ -492,6 +507,8 @@ currency_ruble eaec
 currency_rupee eaf7
 currency_yen eafb
 currency_yuan eaf9
+curtains ec1e
+curtains_closed ec1d
 cyclone ebd5
 dangerous e99a
 dark_mode e51c
@@ -504,6 +521,8 @@ data_saver_off eff2
 data_saver_on eff3
 data_thresholding eb9f
 data_usage e1af
+dataset f8ee
+dataset_linked f8ef
 date_range e916
 deblur eb77
 deck ea42
@@ -520,6 +539,7 @@ departure_board e576
 description e873
 deselect ebb6
 design_services f10a
+desk f8f4
 desktop_access_disabled e99d
 desktop_mac e30b
 desktop_windows e30c
@@ -533,6 +553,7 @@ device_unknown e339
 devices e1b1
 devices_fold ebde
 devices_other e337
+dew_point f879
 dialer_sip e0bb
 dialpad e0bc
 diamond ead5
@@ -565,6 +586,9 @@ disc_full e610
 discord ea6c
 discount ebc9
 display_settings eb97
+diversity_1 f8d7
+diversity_2 f8d8
+diversity_3 f8d9
 dnd_forwardslash e611
 dns e875
 do_disturb f08c
@@ -625,19 +649,23 @@ edgesensor_low f006
 edit e3c9
 edit_attributes e578
 edit_calendar e742
+edit_document f88c
 edit_location e568
 edit_location_alt e1c5
 edit_note e745
 edit_notifications e525
 edit_off e950
 edit_road ef4d
+edit_square f88d
 egg eacc
 egg_alt eac8
 eject e8fb
 elderly f21a
 elderly_woman eb69
 electric_bike eb1b
+electric_bolt ec1c
 electric_car eb1c
+electric_meter ec1b
 electric_moped eb1d
 electric_rickshaw eb1e
 electric_scooter eb1f
@@ -656,6 +684,7 @@ emoji_objects ea24
 emoji_people ea1d
 emoji_symbols ea1e
 emoji_transportation ea1f
+energy_savings_leaf ec1a
 engineering ea3d
 enhance_photo_translate e8fc
 enhanced_encryption e63f
@@ -692,6 +721,11 @@ exposure_zero e3cf
 extension e87b
 extension_off e4f5
 face e87c
+face_2 f8da
+face_3 f8db
+face_4 f8dc
+face_5 f8dd
+face_6 f8de
 face_retouching_natural ef4e
 face_retouching_off f007
 facebook f234
@@ -724,6 +758,7 @@ file_download_off e4fe
 file_open eaf3
 file_present ea0e
 file_upload e2c6
+file_upload_off f886
 filter e3d3
 filter_1 e3d0
 filter_2 e3d1
@@ -753,6 +788,8 @@ find_replace e881
 fingerprint e90d
 fire_extinguisher f1d8
 fire_hydrant f1a3
+fire_hydrant_alt f8f1
+fire_truck f8f2
 fireplace ea43
 first_page e5dc
 fit_screen ea10
@@ -778,7 +815,9 @@ flip_camera_ios ea38
 flip_to_back e882
 flip_to_front e883
 flood ebe6
+flourescent ec31
 flourescent f00d
+fluorescent ec31
 flutter_dash e00b
 fmd_bad f00e
 fmd_good f00f
@@ -798,6 +837,7 @@ food_bank f1f2
 forest ea99
 fork_left eba0
 fork_right ebac
+forklift f868
 format_align_center e234
 format_align_justify e235
 format_align_left e236
@@ -812,6 +852,7 @@ format_indent_increase e23e
 format_italic e23f
 format_line_spacing e240
 format_list_bulleted e241
+format_list_bulleted_add f849
 format_list_numbered e242
 format_list_numbered_rtl e267
 format_overline eb65
@@ -835,6 +876,7 @@ foundation f200
 free_breakfast eb44
 free_cancellation e748
 front_hand e769
+front_loader f869
 fullscreen e5d0
 fullscreen_exit e5d1
 functions e24a
@@ -843,6 +885,7 @@ g_translate e927
 gamepad e30f
 games e021
 garage f011
+gas_meter ec19
 gavel e90e
 generating_tokens e749
 gesture e155
@@ -877,6 +920,8 @@ group_off e747
 group_remove e7ad
 group_work e886
 groups f233
+groups_2 f8df
+groups_3 f8e0
 h_mobiledata f018
 h_plus_mobiledata f019
 hail e9b1
@@ -904,6 +949,7 @@ health_and_safety e1d5
 hearing e023
 hearing_disabled f104
 heart_broken eac2
+heat_pump ec18
 height ea16
 help e887
 help_center f1c0
@@ -1056,6 +1102,7 @@ library_music e030
 light f02a
 light_mode e518
 lightbulb e0f0
+lightbulb_circle ebfe
 lightbulb_outline e90f
 line_axis ea9a
 line_style e919
@@ -1115,6 +1162,7 @@ lock e897
 lock_clock ef57
 lock_open e898
 lock_outline e899
+lock_person f8f3
 lock_reset eade
 login ea77
 logo_dev ead6
@@ -1134,10 +1182,16 @@ lte_mobiledata f02c
 lte_plus_mobiledata f02d
 luggage f235
 lunch_dining ea61
+lyrics ec0b
+macro_off f8d2
 mail e158
+mail_lock ec0a
 mail_outline e0e1
 male e58e
 man e4eb
+man_2 f8e1
+man_3 f8e2
+man_4 f8e3
 manage_accounts f02e
 manage_history ebe7
 manage_search f02f
@@ -1192,6 +1246,7 @@ mode f097
 mode_comment e253
 mode_edit e254
 mode_edit_outline f035
+mode_fan_off ec17
 mode_night f036
 mode_of_travel e7ce
 mode_standby f037
@@ -1224,6 +1279,7 @@ move_to_inbox e168
 move_up eb64
 movie e02c
 movie_creation e404
+movie_edit f840
 movie_filter e43a
 moving e501
 mp e9c3
@@ -1248,6 +1304,7 @@ near_me e569
 near_me_disabled f1ef
 nearby_error f03b
 nearby_off f03c
+nest_cam_wired_stand ec16
 network_cell e1b9
 network_check e640
 network_locked e61a
@@ -1268,6 +1325,7 @@ nightlight f03d
 nightlight_round ef5e
 nights_stay ea46
 no_accounts f03e
+no_adult_content f8fe
 no_backpack f237
 no_cell f1a4
 no_crash ebf0
@@ -1312,6 +1370,8 @@ numbers eac7
 offline_bolt e932
 offline_pin e90a
 offline_share e9c5
+oil_barrel ec15
+on_device_training ebfd
 ondemand_video e63a
 online_prediction f0eb
 opacity e91c
@@ -1334,6 +1394,7 @@ pages e7f9
 pageview e8a0
 paid f041
 palette e40a
+pallet f86a
 pan_tool e925
 pan_tool_alt ebb9
 panorama e40b
@@ -1379,6 +1440,9 @@ perm_media e8a7
 perm_phone_msg e8a8
 perm_scan_wifi e8a9
 person e7fd
+person_2 f8e4
+person_3 f8e5
+person_4 f8e6
 person_add e7fe
 person_add_alt ea4d
 person_add_alt_1 ef65
@@ -1484,7 +1548,10 @@ priority_high e645
 privacy_tip f0dc
 private_connectivity e744
 production_quantity_limits e1d1
+propane ec14
+propane_tank ec13
 psychology ea4a
+psychology_alt f8ea
 public e80b
 public_off f1ca
 publish e255
@@ -1522,6 +1589,7 @@ raw_off f04f
 raw_on f050
 read_more ef6d
 real_estate_agent e73a
+rebase_edit f846
 receipt e8b0
 receipt_long ef6e
 recent_actors e03f
@@ -1542,8 +1610,10 @@ remove_done e9d3
 remove_from_queue e067
 remove_moderator e9d4
 remove_red_eye e417
+remove_road ebfc
 remove_shopping_cart e928
 reorder e8fe
+repartition f8e8
 repeat e040
 repeat_on e9d6
 repeat_one e041
@@ -1573,6 +1643,8 @@ rice_bowl f1f5
 ring_volume e0d1
 rocket eba5
 rocket_launch eb9b
+roller_shades ec12
+roller_shades_closed ec11
 roller_skating ebcd
 roofing f201
 room e8b4
@@ -1625,6 +1697,7 @@ screen_rotation_alt ebee
 screen_search_desktop ef70
 screen_share e0e2
 screenshot f056
+screenshot_monitor ec08
 scuba_diving ebce
 sd e9dd
 sd_card e623
@@ -1645,6 +1718,7 @@ send_and_archive ea0c
 send_time_extension eadb
 send_to_mobile f05c
 sensor_door f1b5
+sensor_occupied ec10
 sensor_window f1b4
 sensors e51e
 sensors_off e51f
@@ -1677,9 +1751,11 @@ settings_suggest f05e
 settings_system_daydream e1c3
 settings_voice e8c8
 severe_cold ebd3
+shape_line f8d3
 share e80d
 share_arrival_time e524
 share_location f05f
+shelves f86e
 shield e9e0
 shield_moon eaa9
 shop e8c9
@@ -1749,6 +1825,7 @@ snowmobile e503
 snowshoeing e514
 soap f1b2
 social_distance e1cb
+solar_power ec0f
 sort e164
 sort_by_alpha e053
 sos ebf7
@@ -1951,6 +2028,7 @@ token ea25
 toll e8e0
 tonality e427
 topic f1c8
+tornado e199
 touch_app e913
 tour ef75
 toys e332
@@ -1958,6 +2036,7 @@ track_changes e8e1
 traffic e565
 train e570
 tram e571
+transcribe f8ec
 transfer_within_a_station e572
 transform e428
 transgender e58d
@@ -1969,6 +2048,8 @@ trending_flat e8e4
 trending_neutral e8e4
 trending_up e8e5
 trip_origin e57b
+trolley f86b
+troubleshoot e1d2
 try f07c
 tsunami ebd8
 tty f1aa
@@ -1985,13 +2066,16 @@ turned_in_not e8e7
 tv e333
 tv_off e647
 two_wheeler e9f9
+type_specimen f8f0
 u_turn_left eba1
 u_turn_right eba2
 umbrella f1ad
 unarchive e169
 undo e166
 unfold_less e5d6
+unfold_less_double f8cf
 unfold_more e5d7
+unfold_more_double f8d0
 unpublished f236
 unsubscribe e0eb
 upcoming f07e
@@ -2011,11 +2095,14 @@ vertical_align_bottom e258
 vertical_align_center e259
 vertical_align_top e25a
 vertical_distribute e076
+vertical_shades ec0e
+vertical_shades_closed ec0d
 vertical_split e949
 vibration e62d
 video_call e070
 video_camera_back f07f
 video_camera_front f080
+video_chat f8a0
 video_collection e04a
 video_file eb87
 video_label e071
@@ -2065,6 +2152,7 @@ vpn_key e0da
 vpn_key_off eb7a
 vpn_lock e62f
 vrpano f082
+wallet f8ff
 wallet_giftcard e8f6
 wallet_membership e8f7
 wallet_travel e8f8
@@ -2099,11 +2187,13 @@ webhook eb92
 wechat ea81
 weekend e16b
 west f1e6
-whatsapp ea9c
 whatshot e80e
 wheelchair_pickup f1ab
 where_to_vote e177
 widgets e1bd
+width_full f8f5
+width_normal f8f6
+width_wide f8f7
 wifi e63e
 wifi_1_bar e4ca
 wifi_2_bar e4d9
@@ -2119,12 +2209,15 @@ wifi_tethering e1e2
 wifi_tethering_error ead9
 wifi_tethering_error_rounded f086
 wifi_tethering_off f087
+wind_power ec0c
 window f088
 wine_bar f1e8
 woman e13e
+woman_2 f8e7
 woo_commerce ea6d
 wordpress ea9f
 work e8f9
+work_history ec09
 work_off e942
 work_outline e943
 workspace_premium e7af

@@ -1,0 +1,37 @@
+on:
+  workflow_dispatch:
+  schedule:
+  - cron: "0 2 * * 5"
+jobs:
+  update-symbols:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+    - name: free disk space
+      run: |
+        sudo swapoff -a
+        sudo rm -f /swapfile
+        sudo apt clean
+        docker image prune -a -f
+        df -h
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.11
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r update/requirements.txt
+    - name: Run Update Script
+      working-directory: ./update
+      run: |
+        python update_symbols.py
+    - name: commit
+      run: |
+        git add .
+        git diff --staged --quiet || git -c user.name='GitHub Actions Bot' -c user.email='<>' commit -m 'Update Symbols'
+        git push origin master
