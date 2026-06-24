@@ -2,9 +2,9 @@
 
 These are two different official icon sets from Google, using the same underlying designs. Material Symbols is the current set, introduced in April 2022, built on variable font technology. Material Icons is the classic set, but no longer updated. More details below.
 
-The icons can be browsed in a more user-friendly way at https://fonts.google.com/icons. Use the popdown menu near top left to choose between the two sets; Material Symbols is the default.
+The icons can be browsed in a more user-friendly way at https://fonts.google.com/icons. Use the dropdown menu near the top left to choose between the two sets; Material Symbols is the default.
 
-The icons are designed under the [material design guidelines](https://material.io/guidelines/).
+The icons are designed under the [Material Design guidelines](https://material.io/guidelines/).
 
 ## Icon Requests
 
@@ -40,7 +40,7 @@ Google does not currently maintain the npm package for this repo, past v3 (2016)
 
 - Only WOFF2 fonts and CSS
 - Lighter version of `material-icons` package
-- Doesn't support [older browsers](https://caniuse.com/woff2) such as Internet Explorer because of dropping WOFF (v1)
+- Does not support [older browsers](https://caniuse.com/woff2) such as Internet Explorer due to dropping WOFF (v1)
 
 ### [@material-design-icons/svg](https://github.com/marella/material-design-icons/tree/main/svg#readme) [![npm (scoped)](https://img.shields.io/npm/v/@material-design-icons/svg)](https://www.npmjs.com/package/@material-design-icons/svg) [![install size](https://packagephobia.com/badge?p=@material-design-icons/svg)](https://packagephobia.com/result?p=@material-design-icons/svg)
 
@@ -68,9 +68,9 @@ The following directories in this repo contain specifically Material Symbols (no
 - variablefont
 
 What is currently _not_ available in Material Symbols?
-- only the 20 and 24 px versions are designed with perfect pixel-grid alignment
-- the only pre-made fonts are the variable fonts
-- there are no two-tone icons
+- Only the 20 and 24 px versions are designed with perfect pixel-grid alignment
+- The only pre-made fonts are the variable fonts
+- There are no two-tone icons
 
 ## Material Icons
 
