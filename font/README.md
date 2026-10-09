@@ -5,24 +5,26 @@ Material Icons are the non-variable classic icon fonts, while the Material Symbo
 The recommended way to use the Material Icons font is by linking to the web font hosted on Google Fonts:
 
 ```html
-<!-- https://material.io/resources/icons/?style=baseline -->
+<!-- https://fonts.google.com/icons?icon.set=Material+Icons&icon.style=Filled -->
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet">
 
-<!-- https://material.io/resources/icons/?style=outline -->
+<!-- https://fonts.google.com/icons?icon.set=Material+Icons&icon.style=Outlined -->
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
       rel="stylesheet">
 
-<!-- https://material.io/resources/icons/?style=round -->
+<!-- https://fonts.google.com/icons?icon.set=Material+Icons&icon.style=Rounded -->
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
       rel="stylesheet">
 
-<!-- https://material.io/resources/icons/?style=sharp -->
+<!-- https://fonts.google.com/icons?icon.set=Material+Icons&icon.style=Sharp -->
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
       rel="stylesheet">
 
-<!-- https://material.io/resources/icons/?style=twotone -->
+<!-- https://fonts.google.com/icons?icon.set=Material+Icons&icon.style=Two+tone -->
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone"
       rel="stylesheet">
 ```
+
+> **Note:** The older `https://fonts.googleapis.com/icon?family=Material+Icons` URL format is deprecated and may fail to load. Use the `css2` URL format shown above instead.
 

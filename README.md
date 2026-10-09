@@ -4,7 +4,7 @@ These are two different official icon sets from Google, using the same underlyin
 
 The icons can be browsed in a more user-friendly way at https://fonts.google.com/icons. Use the popdown menu near top left to choose between the two sets; Material Symbols is the default.
 
-The icons are designed under the [material design guidelines](https://material.io/guidelines/).
+The icons are designed under the [material design guidelines](https://m2.material.io/design/iconography/system-icons.html).
 
 ## Icon Requests
 
@@ -132,6 +132,9 @@ The `font` and `variablefont` folders contain pre-generated font files that can 
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet">
 ```
+
+> **Note:** The older `https://fonts.googleapis.com/icon?family=Material+Icons` URL format is deprecated and may fail to load. Use the `css2` URL format shown above instead.
+
 Read more on [Material Symbols](https://developers.google.com/fonts/docs/material_symbols/) or [Material Icons](https://developers.google.com/fonts/docs/material_icons/) in the Google Fonts developer guide.
 
 
