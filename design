@@ -1,0 +1,43 @@
+Material Design Icons ialah set ikon yang direka oleh Google berdasarkan prinsip Material Design, iaitu bahasa reka bentuk visual yang digunakan secara meluas dalam Android, web, dan aplikasi moden.
+
+Terdapat dua versi utama:
+
+1. Material Icons oleh Google
+
+URL rasmi: https://fonts.google.com/icons
+
+Mudah digunakan dengan tag <span class="material-icons">home</span>
+
+Termasuk dalam Google Fonts – boleh dipanggil melalui CDN.
+
+
+
+2. Material Design Icons (MDI) oleh Pihak Ketiga
+
+Projek sumber terbuka yang memperluaskan ikon asal Google.
+
+URL: https://materialdesignicons.com
+
+Lebih 7,000 ikon termasuk varian yang tiada dalam versi Google.
+
+
+
+
+Cara Guna (Google Icons):
+
+<!-- Import melalui CDN -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- Guna dalam HTML -->
+<i class="material-icons">search</i>
+
+Cara Guna (MDI - materialdesignicons.com):
+
+<!-- Import CSS -->
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet">
+
+<!-- Guna dalam HTML -->
+<i class="mdi mdi-home"></i>
+
+Adakah anda ingin gunakan ikon ini dalam projek React, Vue, atau lain-lain?
+
