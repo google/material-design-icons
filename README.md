@@ -72,6 +72,23 @@ What is currently _not_ available in Material Symbols?
 - the only pre-made fonts are the variable fonts
 - there are no two-tone icons
 
+### Caveat: the `icon_names` subset can render axes differently than the full font
+
+Google Fonts recommends the [`icon_names` property](https://developers.google.com/fonts/docs/material_symbols#optimizing-with-the-icon_names-property) to shrink payloads by requesting only the glyphs you use. This is a _server-side_ subset: the generated CSS points at a `fonts.gstatic.com/l/font?kit=...` URL, while the full, un-subset font is served from the canonical `fonts.gstatic.com/s/materialsymbolsrounded/...` path.
+
+The two can render the same icon at a different stroke, fill, or weight state, regardless of the `font-variation-settings` your CSS specifies (for example `'wght' 300`, `'FILL' 0`). What's known so far:
+- It shows up with a large `icon_names` list (~400 names); a short list (2 icons) does not reproduce it.
+- Only the subset is affected — the full font renders correctly.
+- Because the subset is served dynamically, the output can change on a Google Fonts font-version rollout with no change to your app or its repo. Build pipelines that inline Google Fonts CSS (for example Angular CLI `optimization.fonts: true`) can bake a broken subset into a production bundle.
+
+Workarounds that work today:
+- Drop the `&icon_names=...` parameter and accept the larger full-font payload.
+- Self-host the full variable font, shipped here at `variablefont/MaterialSymbolsRounded[FILL,GRAD,opsz,wght].woff2`.
+
+> This is a Google Fonts serving behavior, not an issue with the icon files in this repo, so a pull request here cannot change it.
+
+Tracking: [#1997](https://github.com/google/material-design-icons/issues/1997), with related [#1834](https://github.com/google/material-design-icons/issues/1834) and [#1818](https://github.com/google/material-design-icons/issues/1818).
+
 ## Material Icons
 
 The icons can be browsed in a more user-friendly way at https://fonts.google.com/icons?icon.set=Material+Icons
