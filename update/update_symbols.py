@@ -129,13 +129,10 @@ def _do_fetch_delayed(src_url, dest_file, i, total):
 
 
 def _do_fetch(src_url, dest_file):
-    try :
-        resp = requests.get(src_url, headers = _HEADERS)
-        resp.raise_for_status()
-        dest_file.parent.mkdir(parents=True, exist_ok=True)
-        dest_file.write_bytes(resp.content)
-    except Exception as e:
-        print(str(e))
+    resp = requests.get(src_url, headers=_HEADERS)
+    resp.raise_for_status()
+    dest_file.parent.mkdir(parents=True, exist_ok=True)
+    dest_file.write_bytes(resp.content)
 
 
 def _do_fetches(fetches):
